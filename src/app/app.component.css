@@ -1,0 +1,19 @@
+.title{
+    width: 100%;
+}
+h1{
+    justify-content: center;
+    margin: 0px;
+}
+.header{
+    margin: 0px;
+    height: 100%;
+    background-image: url(../app/img/restaurant.jpg);
+    background-position: center;
+    display: flex;
+}
+.events{
+    
+    justify-content: center;
+}
+
