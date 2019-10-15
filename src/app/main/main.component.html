@@ -1,15 +1,24 @@
 <div class = "main">
     
     <div class = "info">
-    <div *ngIf= "chosen === 'home'">
-        <app-home></app-home>
-    </div>
-    <div *ngIf= "chosen === 'restaurant'" >
-        <app-restaurants></app-restaurants>
-    </div>
-    <div *ngIf= "chosen === 'swimming'">
-        <app-swimming-pool></app-swimming-pool>
-    </div>
+        <div *ngIf= "chosen === 'home'">
+            <app-home></app-home>
+        </div>
+        <div *ngIf= "chosen === 'restaurant'" >
+            <app-restaurants></app-restaurants>
+        </div>
+        <div *ngIf= "chosen === 'bars'">
+            <app-bars></app-bars>
+        </div>
+        <div *ngIf= "chosen === 'saloon'">
+            <app-saloon></app-saloon>
+        </div>
+        <div *ngIf= "chosen === 'spa'">
+            <app-spa></app-spa>
+        </div>
+        <div *ngIf= "chosen === 'swimming'">
+            <app-swimming-pool></app-swimming-pool>
+        </div>
     </div>
 </div>
 

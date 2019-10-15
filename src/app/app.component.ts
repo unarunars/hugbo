@@ -1,30 +1,24 @@
-import { Component, Output } from '@angular/core';
+import { Component, Output,ViewChild, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent  {
   title = 'reykjavik-gui';
   
-  @Output() chosen: string = "";
+  
+  @Output() chosen: string = "home";
 
-  refresh(){
-
-  }
   constructor(){
-    
   }
-  openSideNav(){
-    console.log("hehe");
-  }
+ 
   goHome(){
     
     this.chosen = "home";
   }
   goRestaurant(){
-  
     this.chosen = "restaurant";
   }
   goBars(){
