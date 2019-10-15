@@ -9,6 +9,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { SwimmingPoolComponent } from './swimming-pool/swimming-pool.component';
 import { HomeComponent } from './home/home.component';
+import { SaloonComponent } from './saloon/saloon.component';
+import { SpaComponent } from './spa/spa.component';
+import { BarsComponent } from './bars/bars.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './home/home.component';
     MainComponent,
     RestaurantsComponent,
     SwimmingPoolComponent,
-    HomeComponent
+    HomeComponent,
+    SaloonComponent,
+    SpaComponent,
+    BarsComponent
   ],
   imports: [
     BrowserModule,
