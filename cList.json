@@ -1,0 +1,80 @@
+{
+  "restaurant":[ 
+        {"name": "Fiskfélagið",
+         "other": [
+              "Vesturgata 2a, Grófartorg, 101 Reykjavík", "fishcompany.is", "552 5300"
+            ]},
+        {"name": "Grillmarkaðurinn", 
+         "other": [
+              "Lækjargata 2a, 101 Reykjavík", "grillmarkadurinn.is", "571 7777"
+            ]},
+        {"name": "Sæta Svínið Gastropub", 
+         "other": [
+              "Hafnarstræti, 101 Reykjavík", "saetasvinid.is", "555 2900"
+        ]},
+        {"name": "Apotek Kitchen+Bar", 
+         "other": [
+              "Austurstræti 16, 101 Reykjavík", "fishcompany.is", "552 5300"
+        ]},
+        {"name": "Sjávargrillið", 
+         "other": [
+              "Skólavörðustígur 14, 101 Reykjavík", "sjavargrillid.is", "571 1100"
+        ]},
+        {"name": "Kol",  
+         "other": [
+              "Skólavörðustígur 40, 101 Reykjavík", "kolrestaurant.is", "517 7474"
+        ]},
+        {"name": "Rok", 
+         "other": [
+              "Frakkastígur 26a, 101 Reykjavík", "rokrestaurant.is", "544 4443"
+        ]},
+        {"name": "Sushi Social", 
+         "other": [
+              "Þingholtsstræti 5, 101 Reykjavík", "sushisocial.is", "568 6600"
+        ]},
+        {"name": "Skólabrú Restaurant", 
+         "other": [
+              "Pósthússtræti 17, 101 Reykjavík", "skolabru.is", "511 1690"
+        ]},
+        {"name": "Lækjarbrekka", 
+         "other": [
+              "Bankastræti 2, 101 Reykjavík", "laekjabrekka.is", "551 4430"
+        ]}
+    ], 
+  "sund" :[
+        {"name": "Sundhöllin",
+         "other": [
+              "Barónsstígur 45a, 101 Reykjavík", "reykjavik.is", "411 5350"
+          ]},
+        {"name": "Vesturbæjarlaug", 
+         "other": [
+             "Hofsvallagata 107, 107 Reykjavík", "vesturbaejarlaug.is", "411 5150"
+        ]},
+        {"name": "Sundlaug Seltjarnarness", 
+         "other": [
+              "Hrólfsskálavör 13, 170 Seltjarnarnes", "seltjarnarnes.is", "561 1551"
+        ]},
+        {"name": "Laugardalslaug", 
+         "other": [
+              "Sundlaugavegur 105, Reykjavík", "reykjavik.is", "411 5100"
+        ]}
+    ],
+  "cafes" :[
+        {"name": "Te og Kaffi", 
+         "other": [
+            "Austurstræti 18, 101 Reykjavík", "teogkaffi.is", "527 2884"
+        ]},
+        {"name": "Café Babalú", 
+         "other": [
+            "Skólavörðustígur 22, 101 Reykjavík", "babalu.is", "555 8845"
+        ]},
+        {"name": "Kaffibrennslan", 
+         "other": [
+            "Laugavegur 21, 101, 101 Reykjavík", "kaffibrennslan101.is", "511 8888"
+        ]},
+        {"name": "Iðnó",
+         "other": [
+           "Vonarstræti 3, 101 Reykjavík", "idnorvk.is", "537 8800"
+        ]}
+    ]
+}
