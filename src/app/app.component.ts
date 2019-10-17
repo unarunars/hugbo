@@ -13,7 +13,7 @@ export class AppComponent  {
 
   constructor(){
   }
- 
+  
   goHome(){
     
     this.chosen = "home";
