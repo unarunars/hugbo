@@ -13,7 +13,7 @@ export class RestaurantsComponent implements OnInit {
 
   ngOnInit() {
     const mapProperties = {
-      center: new google.maps.LatLng(35.2271, -80.8431),
+      center: new google.maps.LatLng(64.1436456, -21.9270884),
       zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
  };

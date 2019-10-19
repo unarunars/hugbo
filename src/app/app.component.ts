@@ -27,8 +27,8 @@ export class AppComponent  {
   goSaloon(){
     this.chosen = "saloon";
   }
-  goSpa(){
-    this.chosen = "spa";
+  goCafe(){
+    this.chosen = "cafe";
   }
   goSwimming(){
     this.chosen = "swimming";

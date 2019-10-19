@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-saloon',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./saloon.component.css']
 })
 export class SaloonComponent implements OnInit {
+  @ViewChild('map', {static: true}) mapElement: any;
+  map: google.maps.Map;
 
-  constructor() { }
+constructor() { }
 
   ngOnInit() {
-  }
-
+  const mapProperties = {
+    center: new google.maps.LatLng(64.1436456, -21.9270884),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+}
 }
