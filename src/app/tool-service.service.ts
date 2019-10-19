@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-//import { readJSON } from 
+import { Observable } from 'rxjs';
+//import { readJSON } from '../api/DatabaseFetch.js';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +10,14 @@ import { HttpClient } from '@angular/common/http';
 export class ToolServiceService {
 
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    //private readjson: readJSON
   ) { }
-  getJson(){
-
+  getJson(): Observable<any>{
+    console.log()
+   /* this.http.get('https://api.myjson.com/bins/11wwo4').subscribe(t =>{
+      console.log(t);
+    })*/
+    return this.http.get('https://api.myjson.com/bins/11wwo4');
     }
 }

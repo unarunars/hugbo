@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav'; 
 import { createHostListener } from '@angular/compiler/src/core';
+import { ToolServiceService } from '../tool-service.service'
 
 @Component({
   selector: 'app-main',
@@ -10,7 +11,13 @@ import { createHostListener } from '@angular/compiler/src/core';
 export class MainComponent implements OnInit, OnChanges {
   
   @Input() chosen: string;
-  constructor() { }
+  restaurant: any[];
+  swimmingPool: any[];
+  cafe: any[];
+  gotData: boolean = false;
+  constructor(
+    private toolService: ToolServiceService,
+  ) { }
 
   ngOnChanges(changes: SimpleChanges){
     if( changes.chosen ){
@@ -18,6 +25,19 @@ export class MainComponent implements OnInit, OnChanges {
     }
   }
   ngOnInit() {
+    this.refresh();
+    console.log(this.restaurant);
+    this.gotData = true;
+
+  }
+  refresh(){
+    let activities = this.toolService.getJson();
+    activities.subscribe( t=>{
+      console.log(t);
+      this.restaurant = t.restaurant;
+      this.swimmingPool = t.sund;
+      this.cafe = t.cafe;
+    })
     console.log(this.chosen);
   }
 
