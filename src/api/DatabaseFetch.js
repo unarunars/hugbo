@@ -1,6 +1,9 @@
+const fetch = require('isomorphic-fetch');
+
 async function readJSON(){
     const response = await fetch('https://api.myjson.com/bins/11wwo4');
     const myJson = await response.json();
-    console.log(JSON.stringify(myJson));
+    console.log(myJson);
+    return myJson;
 }
 readJSON();
