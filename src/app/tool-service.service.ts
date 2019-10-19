@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+//import { readJSON } from 
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +12,6 @@ export class ToolServiceService {
     private http: HttpClient
   ) { }
   getJson(){
+
     }
 }
