@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -6,5 +7,9 @@ import { Injectable } from '@angular/core';
 //hérna á að vera endapunktarnir
 export class ToolServiceService {
 
-  constructor() { }
+  constructor(
+    private http: HttpClient
+  ) { }
+  getJson(){
+    }
 }
