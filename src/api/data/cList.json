@@ -39,9 +39,13 @@
         {"name": "Lækjarbrekka", 
          "other": [
               "Bankastræti 2, 101 Reykjavík", "laekjabrekka.is", "551 4430"
-        ]}
+        ]},
+        {"name": "Snaps Bistro",
+          "other": [
+            "Þórsgata 1, 101 Reykjavík", "snapsbistro.is", "511 6677"
+         ]}
     ], 
-  "sund" :[
+  "swim" :[
         {"name": "Sundhöllin",
          "other": [
               "Barónsstígur 45a, 101 Reykjavík", "reykjavik.is", "411 5350"
@@ -75,6 +79,130 @@
         {"name": "Iðnó",
          "other": [
            "Vonarstræti 3, 101 Reykjavík", "idnorvk.is", "537 8800"
-        ]}
+        ]},
+        {"name": "Kaldi Bar/Café",
+          "other": [
+            "Laugavegur 20b, 101 Reykjavík", "facebook.com", "581 2200"
+         ]},
+         {"name": "Mokka Kaffi",
+          "other": [
+            "Skólavörðustígur 3a, 101 Reykjavík", "mokka.is", "552 1174"
+         ]},
+     {"name": "Cupcake Cafe",
+          "other": [
+            "Grettisgata 3, 101 Reykjavík", "Vefsíðu vantar", "823 3041"
+         ]}
+    ],
+  "hairsaloons" :[
+     {"name": "Skuggi hárgreiðslustofa", 
+      "other": [
+         "Ingólfsstræti 8, 101 Reykjavík", "Vefsíðu vantar", "571 4420"
+     ]},
+     {"name": "Græna Stofan", 
+          "other": [
+            "Óðinsgata 7, 101 Reykjavík", "Vefsíðu vantar", "552 1375"
+         ]},
+     {"name": "Slippurinn Hárgreiðslustofa", 
+          "other": [
+            "Laugavegur 48b, 101 Reykjavík", "slippur.timapantanir.is", "511 6660"
+         ]},
+     {"name": "Hár í Höndum", 
+          "other": [
+            "Bergstaðarstræti 13, 101 Reykjavík", "Vefsíðu vantar", "562 3338"
+         ]},
+     {"name": "Rakararnir", 
+          "other": [
+            "Klapparstígur 40, 101 Reykjavík", "Vefsíðu vantar", "551 3010"
+         ]},
+     {"name": "Effect", 
+          "other": [
+            "Bergstaðarstræti 13, 101 Reykjavík", "Vefsíðu vantar", "562 3338"
+         ]},
+     {"name": "Hárgreiðslistofan Valhöll", 
+          "other": [
+            "Óðinsgata 2, 101 Reykjavík", "Vefsíðu vantar", "552 2138"
+         ]},
+     {"name": "Hár og Heilsa", 
+          "other": [
+            "Bergstaðarstræti 13, 101 Reykjavík", "Vefsíðu vantar", "511 2100"
+         ]},
+     {"name": "Hárhornið", 
+          "other": [
+            "Hverfisgata 117, 105 Reykjavík", "facebook.com", "552 3800"
+         ]},
+     {"name": "Reykjavík Hair", 
+          "other": [
+            "Borgartún 8, 105 Reykjavík", "Vefsíðu vantar", "555 1001"
+         ]},
+     {"name": "Sjoppan", 
+          "other": [
+            "Katrínartún 2, 105 Reykjavík", "Vefsíðu vantar", "511 1221"
+         ]}   
+    ],
+  "bars" :[
+     {"name": "Kaffibarinn", 
+          "other": [
+        "Bergstaðarstræti 1, 101 Reykjavík", "kaffibarinn.is", "551 1588"
+     ]},
+     {"name": "Den Danske Kro ( Danska Kráin )", 
+          "other": [
+            "Ingólfsstræti 3, 101 Reykjavík", "danski.is", "552 0070"
+         ]},
+     {"name": "Lebowski Bar", 
+          "other": [
+            "Laugavegur 20a, 101 Reykjavík", "lebowskibar.is", "552 2300"
+         ]},
+     {"name": "Klaustur Bar", 
+          "other": [
+            "Kirkjutorgi 4, 101 Reykjavík", "klaustur.bar", "571 4421"
+         ]},
+     {"name": "Micro bar", 
+          "other": [
+            "Vesturgata 2, 101 Reykjavík", "facebook.com", "865 8389"
+         ]},
+     {"name": "Gaukurinn", 
+          "other": [
+            "Tryggvagata 22, 101 Reykjavík", "gaukurinn.is", "958 0212"
+         ]},
+     {"name": "Pablo Discobar", 
+          "other": [
+            "Veltusund 1, 101 Reykjavík", "pablodiscobar.is", "552 7333"
+         ]},
+     {"name": "Skúli Craft Bar", 
+          "other": [
+            "Aðalstræti 9, 101 Reykjavík", "facebook.com", "519 6455"
+         ]},
+     {"name": "Bjarni Fel Sportbar", 
+          "other": [
+            "Austurstræti 20, 101 Reykjavík", "Vefsíðu vantar", "561 2240"
+         ]},
+     {"name": "Prikið", 
+          "other": [
+            "Bankastræti 12, 101 Reykjavík", "prikid.is", "551 2866"
+         ]},
+     {"name": "Solon Bistro & Bar", 
+          "other": [
+            "Bankastræti 7a, 101 Reykjavík", "solon.is", "562 3232"
+         ]},
+     {"name": "Íslenski barinn", 
+          "other": [
+            "Ingólfsstræti 1a, 101 Reykjavík", "islenskibarinn.is", "517 6767"
+         ]},
+     {"name": "Ölstofa Kormáks of Skjaldar", 
+          "other": [
+            "Vegamótastígur 4, 101 Reykjavík", "Vefsíðu vantar", "552 4687"
+         ]},
+     {"name": "Bravó", 
+          "other": [
+            "Laugavegur 22, 101 Reykjavík", "Vefsíðu vantar", "No Phone"
+         ]},
+     {"name": "Kiki Queer Bar", 
+          "other": [
+            "Laugavegur 22, 101 Reykjavík", "kiki.is", "571 0194"
+         ]},
+         {"name": "Vedur", 
+          "other": [
+            "Klapparstígur 33, 101 Reykjavík", "vedurbarinn.is", "561 2240"
+         ]}
     ]
 }
