@@ -25,20 +25,13 @@ export class MainComponent implements OnInit, OnChanges {
     }
   }
   ngOnInit() {
-    this.refresh();
+    //this.refresh();
     console.log(this.restaurant);
-    this.gotData = true;
+    //this.gotData = true;
 
   }
   refresh(){
-    let activities = this.toolService.getJson();
-    activities.subscribe( t=>{
-      console.log(t);
-      this.restaurant = t.restaurant;
-      this.swimmingPool = t.sund;
-      this.cafe = t.cafe;
-    })
-    console.log(this.chosen);
+    console.log()
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, Input } from '@angular/core';
 import {  } from 'googlemaps'; 
+import { ToolServiceService } from '../tool-service.service';
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
@@ -8,12 +9,20 @@ import {  } from 'googlemaps';
 export class RestaurantsComponent implements OnInit {
   @ViewChild('map', {static: true}) mapElement: any;
     map: google.maps.Map;
-  @Input() restaurant;
-  constructor() { }
+  list: any[];
+  isData: boolean = false;
+  constructor(
+    private toolservise: ToolServiceService,
+  ) { }
 
   ngOnInit() {
-    
-    console.log(this.restaurant);
+    let items = this.toolservise.getJson();
+    items.subscribe( t=>{
+      this.list = t.restaurant;
+      console.log(t.restaurant);
+    })
+    this.isData = true;
+    console.log(this.list)
     const mapProperties = {
       center: new google.maps.LatLng(64.1436456, -21.9270884),
       zoom: 15,

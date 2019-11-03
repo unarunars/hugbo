@@ -15,9 +15,9 @@
                 <mat-button-toggle value="night">Nætur barir</mat-button-toggle>
                 <mat-button-toggle value="popular">Vinsælast</mat-button-toggle>
             </mat-button-toggle-group>
-            <p>
-                hér koma listar og myndir
-            </p>
+            <div  class = "list" *ngFor = "let i of list">
+                <p>{{i.name}}</p>
+            </div>
         </div>
             <div  #map style="width:100%;height:100%;"></div>
     </div>
