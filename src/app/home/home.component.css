@@ -1,3 +1,23 @@
 .main{
     width: 100%;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  img {
+    border-radius: 10%;
+  }
+  .img-container {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+  
+  .clearfix::after {
+    padding-bottom: 50px;
+    content: "";
+    clear: both;
+    display: table;
+  }
