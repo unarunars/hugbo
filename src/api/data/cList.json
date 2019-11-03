@@ -177,94 +177,232 @@
         {"name": "Cupcake Cafe", 
              "address": "Grettisgata 3",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
+             "mail": "Vefsíðu vantar",
              "phone": "823 3041",
              "image":"" 
             }
         ],
    
         "hairsaloons" :[
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+   
+        {"name": "Skuggi hárgreiðslustofa", 
+             "address": "Ingólfstræti 8",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "571 4420",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Græna Stofan", 
+             "address": "Óðinsgata 7",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "552 1375",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Slippurinn Hárgreiðslustofa", 
+             "address": "Laugavegur 48b",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "slippur.timapantanir.is",
+             "phone": "511 6660",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Hár í Höndum", 
+             "address": "Veltusundi 1",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "562 3338",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Rakararnir", 
+             "address": "Klapparstígur 40",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "551 3010",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Effect", 
+             "address": "Bergstaðarstræti 13",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "562 3338",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Hárgreiðslustöðin Valhöll", 
+             "address": "Óðinsgata 2",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "552 2138",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Hár og Heilsa", 
+             "address": "Bergstaðarstræti 13",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "Vefsíðu vantar",
+             "phone": "511 2100",
+             "image":"" 
+            },
+        
+        {"name": "Hárhornið", 
+             "address": "Hverfisgata 117",
+             "postalcode": "105 Reykjavík",
+             "mail": "facebook.com",
+             "phone": "552 3800",
+             "image":"" 
+            },
+   
+        {"name": "Reykjavík Hair", 
+             "address": "Borgartún 8",
+             "postalcode": "105 Reykjavík",
+             "mail": "Vefsíðu vantar",
+             "phone": "555 1001",
+             "image":"" 
+            },
+   
+        {"name": "Sjoppan", 
+             "address": "Katrínartún 2",
+             "postalcode": "105 Reykjavík",
+             "mail": "Vefsíðu vantar",
+             "phone": "511 1221",
              "image":"" 
             }
    
         ],
    
         "bars" : [
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+   
+        {"name": "Kaffibarinn", 
+             "address": "Bergstaðarstræti 1",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "kaffibarinn.is",
+             "phone": "551 1588",
              "image":"" 
             },
    
-        {"name": "Cupcake Cafe", 
-             "address": "Grettisgata 3",
+        {"name": "Den Danske Kro (Danska Kráin)", 
+             "address": "Ingólfsstræti 3",
              "postalcode": "101 Reykjavík",
-             "mail": "Vefs+iðu vantar",
-             "phone": "823 3041",
+             "mail": "danski.is",
+             "phone": "552 0070",
+             "image":"" 
+            },
+   
+        {"name": "Lebowski Bar", 
+             "address": "Laugavegur 20a",
+             "postalcodl": "101 Reykjavík",
+             "mail": "lebowskibar.is",
+             "phone": "552 2300",
+             "image":"" 
+            },
+   
+        {"name": "Klaustur Bar", 
+             "address": "Kirkjutorgi 4",
+             "postalcode": "101 Reykjavík",
+             "mail": "klaustur.bar",
+             "phone": "571 4421",
+             "image":"" 
+            },
+   
+        {"name": "Micro bar", 
+             "address": "Vesturgata 2",
+             "postalcode": "101 Reykjavík",
+             "mail": "facebook.com",
+             "phone": "865 8389",
+             "image":"" 
+            },
+   
+        {"name": "Gaukurinn", 
+             "address": "Tryggvagata 22",
+             "postalcode": "101 Reykjavík",
+             "mail": "gaukurinn.is",
+             "phone": "958 0212",
+             "image":"" 
+            },
+   
+        {"name": "Pablo Discobar", 
+             "address": "Veltusund 1",
+             "postalcode": "101 Reykjavík",
+             "mail": "pablodiscobar.is",
+             "phone": "552 7333",
+             "image":"" 
+            },
+   
+        {"name": "Skúli Craft Bar", 
+             "address": "Aðalstræti 9",
+             "postalcode": "101 Reykjavík",
+             "mail": "facebook.com",
+             "phone": "519 6455",
+             "image":"" 
+            },
+   
+        {"name": "Bjarni Fel Sportbar", 
+             "address": "Austurstræti 20",
+             "postalcode": "101 Reykjavík",
+             "mail": "Vefsíðu vantar",
+             "phone": "561 2240",
+             "image":"" 
+            },
+   
+        {"name": "Prikið", 
+             "address": "Bankastræti 12",
+             "postalcode": "101 Reykjavík",
+             "mail": "prikid.is",
+             "phone": "551 2866",
+             "image":"" 
+            },
+   
+        {"name": "Solon Bistro & Bar", 
+             "address": "Bankastræti 7a",
+             "postalcode": "101 Reykjavík",
+             "mail": "solon.is",
+             "phone": "562 3232",
+             "image":"" 
+            },
+   
+        {"name": "Íslenski barinn", 
+             "address": "Ingólfsstræti 1a",
+             "postalcode": "101 Reykjavík",
+             "mail": "islenskibarinn.is",
+             "phone": "517 6767",
+             "image":"" 
+            },
+   
+        {"name": "Ölstofa Kormáks og Skjaldar", 
+             "address": "Vegamótastígur 4",
+             "postalcode": "101 Reykjavík",
+             "mail": "Vefsíðu vantar",
+             "phone": "552 4687",
+             "image":"" 
+            },
+   
+        {"name": "Bravó", 
+             "address": "Laugavegur 22",
+             "postalcode": "101 Reykjavík",
+             "mail": "Vefsíðu vantar",
+             "phone": "Enginn sími",
+             "image":"" 
+            },
+   
+        {"name": "Kiki Queer Bar", 
+             "address": "Laugavegur 22",
+             "postalcode": "101 Reykjavík",
+             "mail": "kiki.is",
+             "phone": "571 0194",
+             "image":"" 
+            },
+        
+        {"name": "Veður", 
+             "address": "Klapparstígur 33",
+             "postalcode": "101 Reykjavík",
+             "mail": "vedurbarinn.is",
+             "phone": "561 2240",
              "image":"" 
             }
         ]
-}
+   }
