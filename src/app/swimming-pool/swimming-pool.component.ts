@@ -7,6 +7,7 @@ import { ToolServiceService } from '../tool-service.service';
   styleUrls: ['./swimming-pool.component.css']
 })
 export class SwimmingPoolComponent implements OnInit {
+  //listinn fyrir sundlaugar
   list: any[];
   @ViewChild('map', {static: true}) mapElement: any;
   map: google.maps.Map;
@@ -14,13 +15,15 @@ export class SwimmingPoolComponent implements OnInit {
 constructor(
   private toolservise: ToolServiceService
 ) { }
-
+//hook sem nær í observerable frá tools  
 ngOnInit() {
   let items = this.toolservise.getJson();
+  //subscripa í listann
     items.subscribe( t=>{
-      this.list = t.cafes;
+      this.list = t.swimming;
       console.log(t);
     })
+    // google maps API...
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),
     zoom: 15,

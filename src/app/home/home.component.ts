@@ -16,8 +16,6 @@ export class HomeComponent implements OnInit {
   ){ }
 
   ngOnInit() {
-    console.log(this.exportService.stringReykjavik());
-    //console.log(this.databaseConnect.clientConnect());
 
   }
   

@@ -14,14 +14,14 @@ export class SaloonComponent implements OnInit {
 constructor(
   private toolservise: ToolServiceService,
 ) { }
-
+//hook sem nær í observerable frá tools  
   ngOnInit() {
     let items = this.toolservise.getJson();
+    //subscripa í listann
     items.subscribe( t=>{
       this.list = t.hairsaloons;
-      console.log(t.hairsaloons);
     })
-    console.log(this.list)
+    //ná í úr google maps API
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),
     zoom: 15,

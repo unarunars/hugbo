@@ -13,9 +13,9 @@ export class AppComponent  {
 
   constructor(){
   }
-  
+  // click event segir hvaða takka var ýtt á
+  //sendir svo chosen strenginn í hina componentana úr htmlinu
   goHome(){
-    
     this.chosen = "home";
   }
   goRestaurant(){
