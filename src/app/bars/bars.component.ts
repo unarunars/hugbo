@@ -23,7 +23,7 @@ ngOnInit() {
   let items = this.toolservise.getJson();
   //subscripar það svo í listann
     items.subscribe( t=>{
-      this.list = t.cafes;
+      this.list = t.bars;
       console.log(t);
     })
     //taka frá google maps API

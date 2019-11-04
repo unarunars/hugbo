@@ -29,6 +29,10 @@ h1{
 .events{
     
     justify-content: center;
+    color: #b3b3b3;
+}
+.logo{
+    color: #b3b3b3;
 }
 .main{
     height: 100%;

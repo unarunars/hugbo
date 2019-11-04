@@ -20,7 +20,7 @@ ngOnInit() {
   let items = this.toolservise.getJson();
   //subscripa í listann
     items.subscribe( t=>{
-      this.list = t.swimming;
+      this.list = t.swim;
       console.log(t);
     })
     // google maps API...
