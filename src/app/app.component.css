@@ -8,7 +8,8 @@ h1{
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../app/img/reykjavik.jpg");
-    height: 50%;
+    height: 70%;
+    padding-top: 40px;
     display: flex;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,13 +26,13 @@ h1{
     color: white;
   }
 
-
 .events{
     
     justify-content: center;
 }
 .main{
     height: 100%;
+    background: #1a1a1a;
 }
 
 .fade-in {
@@ -46,4 +47,70 @@ h1{
       opacity:1;
     }
   }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    font-size: 0;
+    z-index: 4;
+}
+
+.main-nav .main-menu {
+    padding: 0 10px 0 40px;
+    margin: 0 auto;
+    background: #1a1a1a;
+    max-width: 1920px;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    outline: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    font: normal 18px/1 klavika,Arial,sans-serif;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 31px 22px 30px;
+    transition: padding-right 150ms ease-out;
+    outline: none;
+}
+
+.main-nav Button:hover {
+    color: white;
+    transition: color 150ms ease-out;
+    outline: none;
+}
+
+.main-nav Button {
+    outline: none;
+}
+
+Button {
+    text-decoration: none;
+    outline: none;
+}
+
+Button:hover {
+    text-decoration-color: red;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.main-logo {
+    position: absolute;
+    right: 23px;
+    top: 0;
+    margin: 0;
+    height: 128px;
+    cursor: pointer;
+    transition: top .2s ease-in-out;
+    z-index: 3;
+}
 
