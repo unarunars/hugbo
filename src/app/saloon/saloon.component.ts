@@ -29,4 +29,20 @@ constructor(
 };
 this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
 }
+clickedBar(item){
+  this.list.map(t =>{
+    //console.log(t);
+    if(t.name === item.name){
+      if(!t.isClicked){
+        t.isClicked = true;
+      console.log(t);
+      }else {
+        t.isClicked = false;
+      }
+      
+    }
+    
+  })
+  
+}
 }

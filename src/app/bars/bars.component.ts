@@ -10,6 +10,7 @@ export class BarsComponent implements OnInit {
   //globalbreyta fyrir listann af kaffihúsum til
   //að geta ítrað í gegnum hann í html-inu
   list: any[];
+  
 
   //til að tengja google maps
   @ViewChild('map', {static: true}) mapElement: any;
@@ -35,11 +36,22 @@ ngOnInit() {
 };
 this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
 }
+
 clickedBar(item){
-  console.log(item);
-  if(!item.clicked){
-    item.clicked =true;
-  }
+  this.list.map(t =>{
+    //console.log(t);
+    if(t.name === item.name){
+      if(!t.isClicked){
+        t.isClicked = true;
+      console.log(t);
+      }else {
+        t.isClicked = false;
+      }
+      
+    }
+    
+  })
+  
 }
 
 }
