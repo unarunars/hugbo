@@ -5,3 +5,12 @@
  .all{
     height: 100%;
  }
+ .item{
+    border-bottom: 1px solid;
+    height: 150px;
+    display: flex;
+ }
+ .image{
+    height: 150px;
+      width: 200px;
+   }
