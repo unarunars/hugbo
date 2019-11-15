@@ -20,7 +20,7 @@ export class ToolServiceService {
    /* this.http.get('https://api.myjson.com/bins/11wwo4').subscribe(t =>{
       console.log(t);
     })*/
-    return this.http.get('https://api.myjson.com/bins/16tj8g');
+    return this.http.get('https://api.myjson.com/bins/19xsda');
     }
   getRestaurants(): any[]{
     let activities = this.getJson();

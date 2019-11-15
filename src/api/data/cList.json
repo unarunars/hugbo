@@ -5,7 +5,8 @@
             "postalcode": "101 Reykjavík",
             "website": "fishcompany.is",
             "phone": "552 5300",
-            "image":""
+            "image":"",
+            "comments":""
              },
             
            {"name": "Grillmarkaðurinn", 
@@ -13,7 +14,8 @@
              "postalcode": "101 Reykjavík",
              "website": "grillmarkadurinn.is",
              "phone": "571 7777",
-             "image":""
+             "image":"",
+             "comments":""
              },
    
            {"name": "Sæta Svínið Gastropub", 
@@ -21,7 +23,8 @@
              "postalcode": "101 Reykjavík",
              "website": "saetasvinid.is",
              "phone": "555 2900",
-             "image":"" 
+             "image":"",
+             "comments":""
             },
    
         {"name": "Apotek Kitchen+Bar", 
@@ -29,7 +32,8 @@
              "postalcode": "101 Reykjavík",
              "website": "apotekrestaurant.is",
              "phone": "552 5300",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Sjávargrillið", 
@@ -37,7 +41,8 @@
              "postalcode": "101 Reykjavík",
              "website": "sjavargrillid.is",
              "phone": "571 1100",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Kol", 
@@ -45,7 +50,8 @@
              "postalcode": "101 Reykjavík",
              "website": "kolrestaurant.is",
              "phone": "517 7474",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Rok", 
@@ -53,7 +59,8 @@
              "postalcode": "101 Reykjavík",
              "website": "rokrestaurant.is",
              "phone": "544 4443",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Sushi Social", 
@@ -61,7 +68,8 @@
              "postalcode": "101 Reykjavík",
              "website": "sushisocial.is",
              "phone": "568 6600",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Skólabrú Restaurant", 
@@ -69,7 +77,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "skolabru.is",
              "phone": "511 1690",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Lækjarbrekka", 
@@ -77,7 +86,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "laekjabrekka.is",
              "phone": "551 4430",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Snaps Bistro", 
@@ -85,7 +95,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "snapsbistro.is",
              "phone": "511 6677",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             }
         ],
    
@@ -96,7 +107,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "reykjavik.is",
              "phone": "411 5350",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Vesturbæjarlaug", 
@@ -104,7 +116,8 @@
              "postalcode": "107 Reykjavík",
              "mail": "vesturbaejarlaug.is",
              "phone": "411 5150",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Sundlaug Seltjarnarness", 
@@ -112,7 +125,8 @@
              "postalcode": "170 Seltjarnarnes",
              "mail": "seltjarnarnes.is",
              "phone": "561 1551",
-             "image":"" 
+             "image":"",
+             "comments":""
             },
    
         {"name": "Laugardalslaug", 
@@ -120,7 +134,8 @@
              "postalcode": "105 Reykjavík",
              "mail": "reykjavik.is",
              "phone": "411 5100",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             }
         ],
    
@@ -131,7 +146,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "teogkaffi.is",
              "phone": "527 2884",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Café Babalú", 
@@ -139,7 +155,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "bablu.is",
              "phone": "555 8845",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Kaffibrennslan", 
@@ -147,7 +164,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "kaffibrennslan101.is",
              "phone": "511 8888",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Iðnó", 
@@ -155,7 +173,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "idnorvk.is",
              "phone": "537 8800",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Kaldi Bar/Café", 
@@ -163,7 +182,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "facebook.com",
              "phone": "581 2200",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Mokka Kaffi", 
@@ -171,7 +191,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "mokka.is",
              "phone": "552 1174",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Cupcake Cafe", 
@@ -179,7 +200,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "823 3041",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             }
         ],
    
@@ -190,7 +212,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "571 4420",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Græna Stofan", 
@@ -198,7 +221,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "552 1375",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Slippurinn Hárgreiðslustofa", 
@@ -206,7 +230,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "slippur.timapantanir.is",
              "phone": "511 6660",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Hár í Höndum", 
@@ -214,7 +239,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "562 3338",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Rakararnir", 
@@ -222,7 +248,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "551 3010",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Effect", 
@@ -230,7 +257,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "562 3338",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Hárgreiðslustöðin Valhöll", 
@@ -238,7 +266,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "552 2138",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Hár og Heilsa", 
@@ -246,7 +275,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "511 2100",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
         
         {"name": "Hárhornið", 
@@ -254,7 +284,8 @@
              "postalcode": "105 Reykjavík",
              "mail": "facebook.com",
              "phone": "552 3800",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Reykjavík Hair", 
@@ -262,7 +293,8 @@
              "postalcode": "105 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "555 1001",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Sjoppan", 
@@ -270,7 +302,8 @@
              "postalcode": "105 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "511 1221",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             }
    
         ],
@@ -282,7 +315,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "kaffibarinn.is",
              "phone": "551 1588",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Den Danske Kro (Danska Kráin)", 
@@ -290,7 +324,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "danski.is",
              "phone": "552 0070",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Lebowski Bar", 
@@ -298,7 +333,8 @@
              "postalcodl": "101 Reykjavík",
              "mail": "lebowskibar.is",
              "phone": "552 2300",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Klaustur Bar", 
@@ -306,7 +342,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "klaustur.bar",
              "phone": "571 4421",
-             "image":"" 
+             "image":"",
+             "comments":""
             },
    
         {"name": "Micro bar", 
@@ -314,7 +351,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "facebook.com",
              "phone": "865 8389",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Gaukurinn", 
@@ -322,7 +360,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "gaukurinn.is",
              "phone": "958 0212",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Pablo Discobar", 
@@ -330,7 +369,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "pablodiscobar.is",
              "phone": "552 7333",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Skúli Craft Bar", 
@@ -338,7 +378,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "facebook.com",
              "phone": "519 6455",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Bjarni Fel Sportbar", 
@@ -346,7 +387,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "561 2240",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Prikið", 
@@ -354,7 +396,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "prikid.is",
              "phone": "551 2866",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Solon Bistro & Bar", 
@@ -362,7 +405,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "solon.is",
              "phone": "562 3232",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Íslenski barinn", 
@@ -370,7 +414,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "islenskibarinn.is",
              "phone": "517 6767",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Ölstofa Kormáks og Skjaldar", 
@@ -378,7 +423,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "552 4687",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Bravó", 
@@ -386,7 +432,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "Vefsíðu vantar",
              "phone": "Enginn sími",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
    
         {"name": "Kiki Queer Bar", 
@@ -394,7 +441,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "kiki.is",
              "phone": "571 0194",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             },
         
         {"name": "Veður", 
@@ -402,7 +450,8 @@
              "postalcode": "101 Reykjavík",
              "mail": "vedurbarinn.is",
              "phone": "561 2240",
-             "image":"" 
+             "image":"",
+             "comments":"" 
             }
         ]
    }
