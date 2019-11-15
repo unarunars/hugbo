@@ -31,18 +31,26 @@
                             <p>{{i.address}}</p>
                             <p>{{i.postalcode}}</p>
                             <p>{{i.mail}}</p>
-                            
+                            <div class ="comment" *ngFor = "let c of i.comments">
+                                comment:( 
+                                <p>titill: {{c.title}}</p>
+                                <p>commentið: {{c.comment}}</p>
+                                )
+                            </div>
+            
 
                             
                             <form class="example-form">
                                     <mat-form-field class="example-full-width">
-                                      <input matInput placeholder="Fyrirsögn" value="">
+                                      <input matInput (keyup)="onKeyTitle($event)" placeholder="Fyrirsögn" value="">
                                     </mat-form-field>
                                   
                                     <mat-form-field class="example-full-width">
-                                      <textarea matInput placeholder="skildu eftir athugasemd"></textarea>
+                                      <textarea (keyup)="onKeyComment($event)" matInput placeholder="skildu eftir comment??"></textarea>
                                     </mat-form-field>
-                                  </form>
+                            </form>
+                            <button (click)= "submitComment()" mat-button>Skrá comment??</button>
+
                     </div>
             </div>
         </div>

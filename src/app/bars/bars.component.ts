@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ToolServiceService } from '../tool-service.service';
 
 @Component({
@@ -10,7 +10,10 @@ export class BarsComponent implements OnInit {
   //globalbreyta fyrir listann af kaffihúsum til
   //að geta ítrað í gegnum hann í html-inu
   list: any[];
-  
+  barsComment: any[];
+  title: string = "";
+  comment: string = "";
+  isDataReady: boolean = false;
 
   //til að tengja google maps
   @ViewChild('map', {static: true}) mapElement: any;
@@ -20,13 +23,18 @@ constructor(
   //smiður fyrir tool service 
   private toolservise: ToolServiceService
 ) { }
+
 //hook sem nær í observerable frá tools
 ngOnInit() {
   let items = this.toolservise.getJson();
   //subscripar það svo í listann
     items.subscribe( t=>{
       this.list = t.bars;
+      t.bars.map(item =>{
+        this.barsComment = item.comments;
+      })
       console.log(t);
+      this.isDataReady = true;
     })
     //taka frá google maps API
   const mapProperties = {
@@ -46,12 +54,25 @@ clickedBar(item){
       console.log(t);
       }else {
         t.isClicked = false;
-      }
-      
+      } 
     }
-    
   })
   
+}
+onKeyTitle(event: any){
+  console.log(event.target.value);
+  this.title = event.target.value;
+}
+onKeyComment(event: any){
+  this.comment = event.target.value;
+  console.log(this.comment);
+}
+submitComment(){
+  let obj = {'title': this.title, 'comment': this.comment};
+  this.barsComment.push(obj);
+  console.log(obj);
+  console.log(this.barsComment);
+  this.toolservise.postCommentJson(this.barsComment);
 }
 
 }

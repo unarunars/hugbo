@@ -20,8 +20,17 @@ export class ToolServiceService {
    /* this.http.get('https://api.myjson.com/bins/11wwo4').subscribe(t =>{
       console.log(t);
     })*/
-    return this.http.get('https://api.myjson.com/bins/1hhzr2');
+    return this.http.get('https://api.myjson.com/bins/731fi');
     }
+    postCommentJson(any: any[]){
+      console.log(any);
+      this.http.post('https://api.myjson.com/bins/731fi', any);
+      let activities = this.getJson();
+      activities.subscribe( t => {
+        console.log(t);
+    })
+    }
+  
   getRestaurants(): any[]{
     let activities = this.getJson();
     activities.subscribe( t => {
