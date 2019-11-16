@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { SaloonComponent } from './saloon/saloon.component';
 import { SpaComponent } from './spa/spa.component';
 import { BarsComponent } from './bars/bars.component';
+import { AgmCoreModule} from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,11 @@ import { BarsComponent } from './bars/bars.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAzn6Mo5YCWIhzWE3Rnqp9dc_LatK7VA0Y',
+      libraries: ['places']
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

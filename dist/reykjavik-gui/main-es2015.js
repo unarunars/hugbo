@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class = \"header\" >\n  <div class=\"logo\">\n    <button mat-button (click)=\"goHome()\">\n        ReykjavíkLogo\n      </button>\n  </div>\n  <div class = \"events\">\n    <button mat-button (click)=\"goRestaurant()\">\n      Veitingarstaðir\n    </button>\n    <button mat-button (click)=\"goBars()\">\n        Barir\n    </button>\n    <button mat-button (click)=\"goSaloon()\">\n        Hárgreiðslustofur\n    </button>\n    <button mat-button (click)=\"goSpa()\">\n        Spa\n    </button>\n    <button mat-button (click)=\"goSwimming()\">\n        Sundlaugar\n    </button>\n    \n  </div>\n</div>\n<div class=\"\">\n\n</div>\n<app-main [chosen] = \"chosen\"></app-main>");
+/* harmony default export */ __webpack_exports__["default"] = ("  \r\n  <div class=\"main\">\r\n      <div class=\"main-nav\">\r\n          <div class=\"main-side-nav\">\r\n              <ul class=\"main-menu\">\r\n                  <li>\r\n                  <button mat-button (click)=\"goRestaurant()\">\r\n                      Veitingarstaðir\r\n                    </button>\r\n                    </li>\r\n                    <li>\r\n                    <button mat-button (click)=\"goBars()\">\r\n                        Barir\r\n                    </button>\r\n                  </li>\r\n                  <li>\r\n                    <button mat-button (click)=\"goSaloon()\">\r\n                        Hárgreiðslustofur\r\n                    </button>\r\n                  </li>\r\n                  <li>\r\n                    <button mat-button (click)=\"goCafe()\">\r\n                        Kaffihús\r\n                    </button>\r\n                  </li>\r\n                  <li>\r\n                    <button mat-button (click)=\"goSwimming()\">\r\n                        Sundlaugar\r\n                    </button>\r\n                  </li>\r\n              </ul>\r\n\r\n              <div class=\"main-logo\">\r\n                <button mat-button (click)=\"goHome()\">\r\n                    ReykjavíkLogo\r\n                </button>\r\n              </div>\r\n        </div>\r\n      </div>\r\n\r\n\r\n\r\n\r\n  <!--\r\n  <div class=\"logo\">\r\n    <button mat-button (click)=\"goHome()\">\r\n        ReykjavíkLogo\r\n      </button>\r\n  </div>\r\n  <div class = \"events\">\r\n    <button mat-button (click)=\"goRestaurant()\">\r\n      Veitingarstaðir\r\n    </button>\r\n    <button mat-button (click)=\"goBars()\">\r\n        Barir\r\n    </button>\r\n    <button mat-button (click)=\"goSaloon()\">\r\n        Hárgreiðslustofur\r\n    </button>\r\n    <button mat-button (click)=\"goCafe()\">\r\n        Kaffihús\r\n    </button>\r\n    <button mat-button (click)=\"goSwimming()\">\r\n        Sundlaugar\r\n    </button>\r\n    \r\n  </div>\r\n-->\r\n  <div class=\"hero-image\">\r\n      <div class=\"hero-text\">\r\n          <div class=\"fade-in\">\r\n            <h1 style=\"font-size:90px\">Reykjavík</h1>\r\n            Þar sem draumar koma til að deyja\r\n          </div>\r\n      </div>\r\n    </div>\r\n\r\n<div class=\"\">\r\n\r\n</div>\r\n<app-main class=\"main\" [chosen] = \"chosen\"></app-main>\r\n\r\n</div>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>bars works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class = \"all\">\n<form class=\"form\">\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Leita af bar\" value=\"\">\n        </mat-form-field>\n    </form>\n    \n    <div class=\"main\">\n        <div class=\"toggeButton\">\n            <h1>Barir</h1>\n            <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n                <mat-button-toggle value=\"kokteil\">Kokteila barir</mat-button-toggle>\n                <mat-button-toggle value=\"sport\">Sport barir</mat-button-toggle>\n                <mat-button-toggle value=\"craft\">Craf barir</mat-button-toggle>\n                <mat-button-toggle value=\"night\">Nætur barir</mat-button-toggle>\n                <mat-button-toggle value=\"popular\">Vinsælast</mat-button-toggle>\n            </mat-button-toggle-group>\n            <div  class = \"list\" *ngFor = \"let i of list\">\n                <div   class = \"item\">\n                    <div class = \"image\">\n                        <!--Þetta á að vera myndin í json, einhver að laga?-->\n                        <img src=\"bar.jpg\" alt=\"bars\">\n                    </div>\n                    <div class= \"click\" (click)= \"clickedBar(i)\">\n                        <h3 >{{i.name}}</h3>\n                        <p>{{i.phone}}</p>\n                    </div>\n                </div>\n                    \n                        <div *ngIf = \"i.isClicked\">\n                            <p>{{i.address}}</p>\n                            <p>{{i.postalcode}}</p>\n                            <p>{{i.mail}}</p>\n                            <div class =\"comment\" *ngFor = \"let c of i.comments\">\n                                comment:( \n                                <p>titill: {{c.title}}</p>\n                                <p>commentið: {{c.comment}}</p>\n                                )\n                            </div>\n            \n\n                            \n                            <form class=\"example-form\">\n                                    <mat-form-field class=\"example-full-width\">\n                                      <input matInput (keyup)=\"onKeyTitle($event)\" placeholder=\"Fyrirsögn\" value=\"\">\n                                    </mat-form-field>\n                                  \n                                    <mat-form-field class=\"example-full-width\">\n                                      <textarea (keyup)=\"onKeyComment($event)\" matInput placeholder=\"skildu eftir comment??\"></textarea>\n                                    </mat-form-field>\n                            </form>\n                            <button (click)= \"submitComment()\" mat-button>Skrá comment??</button>\n\n                    </div>\n            </div>\n        </div>\n        <agm-map class = \"map\" [latitude] = \"latitute\" [longitude]= \"longitude\">\n\n        </agm-map>\n           <!--\n            <div  #map style=\"width:100%;height:100%;\"></div>\n           --> \n    </div>\n</div>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class = \"main\">\n    <h1>Reykjavík</h1>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n    </p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class = \"main\">\r\n<h2>Fréttir</h2>\r\n<p>Nýtt þessa vikuna:</p>\r\n\r\n<div class=\"clearfix\">\r\n  <div class=\"img-container\">\r\n                <img src=\"../../assets/sundlaug.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                <div class=\"text-block\">\r\n                        <h4>Sundlaugar</h4>\r\n                </div>\r\n\r\n                <p>     Íslandsmeistaramót í sundi verður haldið helgina \r\n                        8 – 10 nóvember næstkomandi í Ásvallalaug, \r\n                        Hafnafirði. Af þeirri ástæðu verður laugin lokuð þá daga.  \r\n                        Suðurbæjarlaug verður opin að venju.\r\n                </p>\r\n\r\n  </div>\r\n\r\n  <div class=\"img-container\">\r\n                <img src=\"../../assets/bar.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                <div class=\"text-block\">\r\n                        <h4>Barir</h4>\r\n                      </div>\r\n                <p>\r\n                                American Bar\r\n                                \r\n                                American Bar við Austurstræti 8 opnar í dag, en það eru bræðurnir Hermann og Ingvar Svendsen sem standa að baki á þessum veitingastað.\r\n                                \r\n                                </p>\r\n  </div>\r\n  <div class=\"img-container\">\r\n                <img src=\"../../assets/veitingastadur.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                <div class=\"text-block\">\r\n                        <h4>Veitingastaðir</h4>\r\n                      </div>\r\n                <p>\r\n                                KRYDD veitingastaður - Staðsettur er við Strandgötu 34 í Hafnargötu í húsi Hafnarborg, menningar- og listamiðstöð Hafnarfjarðar\r\n                                Yfirkokkur er Hilmar Þór Harðarson matreiðslumaður\r\n                                \r\n                        </p>\r\n  </div>\r\n                <div class=\"img-container\">\r\n                              <img src=\"../../assets/har.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                              <div class=\"text-block\">\r\n                                <h4>Hárgreiðslustofur</h4>\r\n                              </div>\r\n                              <p>Í dag, föstudag, opnar ný hárgreiðslustofa í Þorlákshöfn. Stofan heitir Kompan og er til húsa á Selvogsbraut 41, milli bakarísins og Vínbúðarinnar.</p>\r\n                </div>\r\n                <div class=\"img-container\">\r\n                              <img src=\"../../assets/kaffi.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                              <div class=\"text-block\">\r\n                                <h4>Kaffihús</h4>\r\n                              </div>\r\n                              <p>Góð þátttaka var á fyrsta kaffihúsi Brákarhlíðar sem haldið var fimmtudaginn 4. september sl. \r\n                                      Þema kaffihússins var rúllutertur sem voru með sultu, smjörkremi og með rjóma og ávöxtum. \r\n                                      Þá voru á boðstólum heitar brauðrúllutertur og snúðar.</p>\r\n                </div>\r\n                <div class=\"img-container\">\r\n                              <img src=\"../../assets/veitingastadur.jpg\" alt=\"Italy\" style=\"width:100%\">\r\n                              <div class=\"text-block\">\r\n                                <h4>Veitingastaðir</h4>\r\n                              </div>\r\n                              <p>Það er ekk­ert lát á spenn­andi nýj­ung­um í miðborg­inni og nýj­asta viðbót­in í veit­inga­geir­an­um er veit­ingastaður­inn Lóa Bar-Bistro á Center-hót­el­inu á Lauga­vegi 95-99. Staður­inn er sér­lega fal­lega hannaður og mat­seðill­inn þykir ein­stak­lega skemmti­leg­ur.</p>\r\n                </div>\r\n</div>\r\n\r\n<div class = \"main\">\r\n    <h1>{{Resturants}}</h1>\r\n    <p class=\"line-1 anim-typewriter\">Damn!.... Þessi síða er svo falleg!</p>\r\n</div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class = \"main\">\n    \n    <div class = \"info\">\n        <div *ngIf= \"chosen === 'home'\">\n            <app-home></app-home>\n        </div>\n        <div *ngIf= \"chosen === 'restaurant'\" >\n            <app-restaurants></app-restaurants>\n        </div>\n        <div *ngIf= \"chosen === 'bars'\">\n            <app-bars></app-bars>\n        </div>\n        <div *ngIf= \"chosen === 'saloon'\">\n            <app-saloon></app-saloon>\n        </div>\n        <div *ngIf= \"chosen === 'spa'\">\n            <app-spa></app-spa>\n        </div>\n        <div *ngIf= \"chosen === 'swimming'\">\n            <app-swimming-pool></app-swimming-pool>\n        </div>\n    </div>\n</div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div  class = \"main\">\n    \n    <div class = \"info\">\n        <div class = \"app\" *ngIf= \"chosen === 'home'\">\n            <app-home></app-home>\n        </div>\n        <div class = \"app\"  *ngIf= \"chosen === 'restaurant'\" >\n            <app-restaurants></app-restaurants>\n        </div>\n        <div class = \"app\"  *ngIf= \"chosen === 'bars'\">\n            <app-bars></app-bars>\n        </div>\n        <div class = \"app\"  *ngIf= \"chosen === 'saloon'\">\n            <app-saloon></app-saloon>\n        </div>\n        <div (cafe) = \"cafe\" class = \"app\" *ngIf= \"chosen === 'cafe'\">\n            <app-spa></app-spa>\n        </div>\n        <div (swimmingPoo) = \"swimmingPool\"class = \"app\" *ngIf= \"chosen === 'swimming'\">\n            <app-swimming-pool></app-swimming-pool>\n        </div>\n    </div>\n</div>\n\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<h1>Veitingarstaðir</h1>\n<button mat-button>Vinsælast</button>\n<button mat-button>$</button>\n<button mat-button>$$</button>\n<button mat-button>$$$</button>\n<button mat-button>Allt</button>\n<div #map style=\"width:100%;height:400px\"></div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\n<div class= \"all\">\n<form class=\"form\">\n    <mat-form-field class=\"example-full-width\">\n      <input matInput placeholder=\"Leita af veitingarstað\" value=\"\">\n    </mat-form-field>\n</form>\n\n<div class=\"main\" >\n    <div class=\"toggeButton\">\n        <h1>Veitingarstaðir</h1>\n        <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n            <mat-button-toggle value=\"bold\">Vinstælast</mat-button-toggle>\n            <mat-button-toggle value=\"bold\">$</mat-button-toggle>\n            <mat-button-toggle value=\"italic\">$$</mat-button-toggle>\n            <mat-button-toggle value=\"underline\">$$$</mat-button-toggle>\n        </mat-button-toggle-group>\n        <div  class = \"list\" *ngFor = \"let i of list\">\n                <div   class = \"item\">\n\n                <div class = \"image\">\n                        <!--Þetta á að vera myndin í json, einhver að laga?-->\n                        <img src=\"bar.jpg\" alt=\"bars\">\n                </div>\n                <div class= \"click\" (click)= \"clickedBar(i)\">\n                    <h3 >{{i.name}}</h3>\n                    <p>{{i.phone}}</p>\n                </div>\n            </div>\n            <div *ngIf = \"i.isClicked\">\n                    <p>{{i.address}}</p>\n                    <p>{{i.postalcode}}</p>\n                    <p>{{i.mail}}</p>\n                    \n\n                    \n                    <form class=\"example-form\">\n                            <mat-form-field class=\"example-full-width\">\n                              <input matInput placeholder=\"Fyrirsögn\" value=\"\">\n                            </mat-form-field>\n                          \n                            <mat-form-field class=\"example-full-width\">\n                              <textarea matInput placeholder=\"skildu eftir athugasemd\"></textarea>\n                            </mat-form-field>\n                          </form>\n            </div>\n        </div>\n    </div>\n        <div #map style=\"width:100%;height:100%;\"></div>\n</div>\n</div>\n\n\n");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>saloon works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class =\"all\">\n    <form class=\"form\">\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Leita af hárgreiðslustofu\" value=\"\">\n        </mat-form-field>\n    </form>\n    \n    <div class=\"main\">\n        <div class=\"toggeButton\">\n            <h1>Hárgreiðslustofu</h1>\n            <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n                <mat-button-toggle value=\"barber\">Rakarastofur</mat-button-toggle>\n                <mat-button-toggle value=\"saloons\">Hárgreiðslustofur</mat-button-toggle>\n                <mat-button-toggle value=\"noBooking\">Engar tímapanntanir</mat-button-toggle>\n                <mat-button-toggle value=\"popular\">Vinsælast</mat-button-toggle>\n                \n            </mat-button-toggle-group>\n            <div  class = \"list\" *ngFor = \"let i of list\">\n                    <div   class = \"item\">\n\n                            <div class = \"image\">\n                                    <!--Þetta á að vera myndin í json, einhver að laga?-->\n                                    <img src=\"bar.jpg\" alt=\"bars\">\n                            </div>\n                            <div class= \"click\" (click)= \"clickedBar(i)\">\n                                <h3 >{{i.name}}</h3>\n                                <p>{{i.phone}}</p>\n                            </div>\n                        </div>\n                        <div *ngIf = \"i.isClicked\">\n                                <p>{{i.address}}</p>\n                                <p>{{i.postalcode}}</p>\n                                <p>{{i.mail}}</p>\n                                \n            \n                                \n                                <form class=\"example-form\">\n                                        <mat-form-field class=\"example-full-width\">\n                                          <input matInput placeholder=\"Fyrirsögn\" value=\"\">\n                                        </mat-form-field>\n                                      \n                                        <mat-form-field class=\"example-full-width\">\n                                          <textarea matInput placeholder=\"skildu eftir athugasemd\"></textarea>\n                                        </mat-form-field>\n                                      </form>\n                        </div>\n                    </div>\n                </div>\n            <div  #map style=\"width:100%;height:100%\"></div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>spa works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class =\"all\">\n\n    <form class=\"form\">\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Leita af kaffihúsi\" value=\"\">\n        </mat-form-field>\n    </form>\n    \n    <div class=\"main\">\n        <div class=\"toggeButton\">\n            <h1>Kaffihús</h1>\n            <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n                <mat-button-toggle value=\"popular\">Vinstælast</mat-button-toggle>\n                <mat-button-toggle value=\"cheap\">$</mat-button-toggle>\n                <mat-button-toggle value=\"normalPrice\">$$</mat-button-toggle>\n                <mat-button-toggle value=\"expensive\">$$$</mat-button-toggle>\n            </mat-button-toggle-group>\n            <div  class = \"list\" *ngFor = \"let i of list\">\n                    <div   class = \"item\">\n\n                            <div class = \"image\">\n                                    <!--Þetta á að vera myndin í json, einhver að laga?-->\n                                    <img src=\"bar.jpg\" alt=\"bars\">\n                            </div>\n                            <div class= \"click\" (click)= \"clickedBar(i)\">\n                                <h3 >{{i.name}}</h3>\n                                <p>{{i.phone}}</p>\n                            </div>\n                        </div>\n                        <div *ngIf = \"i.isClicked\">\n                                <p>{{i.address}}</p>\n                                <p>{{i.postalcode}}</p>\n                                <p>{{i.mail}}</p>\n                                \n            \n                                \n                                <form class=\"example-form\">\n                                        <mat-form-field class=\"example-full-width\">\n                                          <input matInput placeholder=\"Fyrirsögn\" value=\"\">\n                                        </mat-form-field>\n                                      \n                                        <mat-form-field class=\"example-full-width\">\n                                          <textarea matInput placeholder=\"skildu eftir athugasemd\"></textarea>\n                                        </mat-form-field>\n                                      </form>\n                        </div>\n                    </div>\n                </div>\n            <div  #map style=\"width:100%;height:100%;\"></div>\n    </div>\n</div>\n");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<p>swimming-pool works!</p>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class =\"all\">\n<form class=\"form\">\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Leita af sundlaug\" value=\"\">\n        </mat-form-field>\n    </form>\n\n    <div class=\"main\">\n        <div class=\"toggeButton\">\n            <h1>Veitingarstaðir</h1>\n            <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n                <mat-button-toggle value=\"popular\">Vinstælast</mat-button-toggle>\n                <mat-button-toggle value=\"inside\">Innilaug</mat-button-toggle>\n                <mat-button-toggle value=\"outside\">Útilaug</mat-button-toggle>\n                <mat-button-toggle value=\"steam\">Gufu</mat-button-toggle>\n                <mat-button-toggle value=\"kids\">Barnalaug</mat-button-toggle>\n                <mat-button-toggle value=\"cold\">Köldum pott</mat-button-toggle>\n\n            </mat-button-toggle-group>\n            <div  class = \"list\" *ngFor = \"let i of list\">\n                    <div   class = \"item\">\n\n                            <div class = \"image\">\n                                    <!--Þetta á að vera myndin í json, einhver að laga?-->\n                                    <img src=\"bar.jpg\" alt=\"bars\">\n                            </div>\n                            <div class= \"click\" (click)= \"clickedBar(i)\">\n                                <h3 >{{i.name}}</h3>\n                                <p>{{i.phone}}</p>\n                            </div>\n                        </div>\n                        <div *ngIf = \"i.isClicked\">\n                                <p>{{i.address}}</p>\n                                <p>{{i.postalcode}}</p>\n                                <p>{{i.mail}}</p>\n                                \n            \n                                \n                                <form class=\"example-form\">\n                                        <mat-form-field class=\"example-full-width\">\n                                          <input matInput placeholder=\"Fyrirsögn\" value=\"\">\n                                        </mat-form-field>\n                                      \n                                        <mat-form-field class=\"example-full-width\">\n                                          <textarea matInput placeholder=\"skildu eftir athugasemd\"></textarea>\n                                        </mat-form-field>\n                                      </form>\n                        </div>\n                    </div>\n                </div>\n            <div  #map style=\"width:100%;height:100%\"></div>\n    </div>\n</div>");
 
 /***/ }),
 
@@ -356,6 +356,71 @@ function __importDefault(mod) {
 
 /***/ }),
 
+/***/ "./src/api/database-connect.service.ts":
+/*!*********************************************!*\
+  !*** ./src/api/database-connect.service.ts ***!
+  \*********************************************/
+/*! exports provided: DatabaseConnectService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DatabaseConnectService", function() { return DatabaseConnectService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+//import { Client } from 'pg';
+let DatabaseConnectService = class DatabaseConnectService {
+    /*client = new Client({
+      user: '',
+      host: 'localhost',
+      password: '12345678',
+      database: 'lmao',
+      port: '3456'
+    });*/
+    constructor() { }
+};
+DatabaseConnectService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], DatabaseConnectService);
+
+
+
+/***/ }),
+
+/***/ "./src/api/export.service.ts":
+/*!***********************************!*\
+  !*** ./src/api/export.service.ts ***!
+  \***********************************/
+/*! exports provided: ExportService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ExportService", function() { return ExportService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let ExportService = class ExportService {
+    constructor() { }
+    stringReykjavik() {
+        return 'lmao';
+    }
+};
+ExportService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ExportService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/app-routing.module.ts":
 /*!***************************************!*\
   !*** ./src/app/app-routing.module.ts ***!
@@ -395,7 +460,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".title{\r\n    width: 100%;\r\n}\r\nh1{\r\n    justify-content: center;\r\n    margin: 0px;\r\n}\r\n.header{\r\n    margin: 0px;\r\n    height: 100%;\r\n    background-image: url('reykjavik.jpg');\r\n    background-position: center;\r\n    display: flex;\r\n}\r\n.events{\r\n    \r\n    justify-content: center;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osc0NBQStDO0lBQy9DLDJCQUEyQjtJQUMzQixhQUFhO0FBQ2pCO0FBQ0E7O0lBRUksdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudGl0bGV7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5oMXtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgbWFyZ2luOiAwcHg7XHJcbn1cclxuLmhlYWRlcntcclxuICAgIG1hcmdpbjogMHB4O1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC4uL2FwcC9pbWcvcmV5a2phdmlrLmpwZyk7XHJcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcbi5ldmVudHN7XHJcbiAgICBcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".title{\r\n    width: 100%;\r\n}\r\nh1{\r\n    justify-content: center;\r\n    margin: 0px;\r\n}\r\n.hero-image {\r\n    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('reykjavik.jpg');\r\n    height: 70%;\r\n    padding-top: 40px;\r\n    display: flex;\r\n    background-position: center;\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n    position: relative;\r\n  }\r\n.hero-text {\r\n    text-align: center;\r\n    position: absolute;\r\n    top: 50%;\r\n    left: 50%;\r\n    transform: translate(-50%, -50%);\r\n    color: white;\r\n  }\r\n.events{\r\n    \r\n    justify-content: center;\r\n    color: #b3b3b3;\r\n}\r\n.logo{\r\n    color: #b3b3b3;\r\n}\r\n.main{\r\n    height: 100%;\r\n    background: #1a1a1a;\r\n}\r\n.fade-in {\r\n    -webkit-animation: fadeIn ease 10s;\r\n            animation: fadeIn ease 10s;\r\n}\r\n@-webkit-keyframes fadeIn {\r\n    0% {\r\n      opacity:0;\r\n    }\r\n    100% {\r\n      opacity:1;\r\n    }\r\n  }\r\n@keyframes fadeIn {\r\n    0% {\r\n      opacity:0;\r\n    }\r\n    100% {\r\n      opacity:1;\r\n    }\r\n  }\r\n.main-nav {\r\n    position: fixed;\r\n    top: 0;\r\n    bottom: auto;\r\n    left: 0;\r\n    right: 0;\r\n    font-size: 0;\r\n    z-index: 4;\r\n}\r\n.main-nav .main-menu {\r\n    padding: 0 10px 0 40px;\r\n    margin: 0 auto;\r\n    background: #1a1a1a;\r\n    max-width: 1920px;\r\n    -ms-box-sizing: border-box;\r\n    -o-box-sizing: border-box;\r\n    box-sizing: border-box;\r\n    border-bottom: 1px solid transparent;\r\n    outline: none;\r\n}\r\n.main-nav li {\r\n    display: inline-block;\r\n    font: normal 18px/1 klavika,Arial,sans-serif;\r\n    color: #666;\r\n    text-transform: uppercase;\r\n    letter-spacing: 2px;\r\n    padding: 31px 22px 30px;\r\n    transition: padding-right 150ms ease-out;\r\n    outline: none;\r\n}\r\n.main-nav Button:hover {\r\n    color: white;\r\n    transition: color 150ms ease-out;\r\n    outline: none;\r\n}\r\n.main-nav Button {\r\n    outline: none;\r\n}\r\nButton {\r\n    text-decoration: none;\r\n    outline: none;\r\n}\r\nButton:hover {\r\n    -webkit-text-decoration-color: red;\r\n            text-decoration-color: red;\r\n    text-decoration: none;\r\n    outline: none;\r\n}\r\n.main-logo {\r\n    position: absolute;\r\n    right: 23px;\r\n    top: 0;\r\n    margin: 0;\r\n    height: 128px;\r\n    cursor: pointer;\r\n    transition: top .2s ease-in-out;\r\n    z-index: 3;\r\n}\r\n\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixXQUFXO0FBQ2Y7QUFFQTtJQUNJLCtGQUEwRztJQUMxRyxXQUFXO0lBQ1gsaUJBQWlCO0lBQ2pCLGFBQWE7SUFDYiwyQkFBMkI7SUFDM0IsNEJBQTRCO0lBQzVCLHNCQUFzQjtJQUN0QixrQkFBa0I7RUFDcEI7QUFFQTtJQUNFLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsUUFBUTtJQUNSLFNBQVM7SUFDVCxnQ0FBZ0M7SUFDaEMsWUFBWTtFQUNkO0FBRUY7O0lBRUksdUJBQXVCO0lBQ3ZCLGNBQWM7QUFDbEI7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGtDQUEwQjtZQUExQiwwQkFBMEI7QUFDOUI7QUFFQTtJQUNJO01BQ0UsU0FBUztJQUNYO0lBQ0E7TUFDRSxTQUFTO0lBQ1g7RUFDRjtBQVBGO0lBQ0k7TUFDRSxTQUFTO0lBQ1g7SUFDQTtNQUNFLFNBQVM7SUFDWDtFQUNGO0FBRUE7SUFDRSxlQUFlO0lBQ2YsTUFBTTtJQUNOLFlBQVk7SUFDWixPQUFPO0lBQ1AsUUFBUTtJQUNSLFlBQVk7SUFDWixVQUFVO0FBQ2Q7QUFFQTtJQUNJLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQiwwQkFBMEI7SUFDMUIseUJBQXlCO0lBQ3pCLHNCQUFzQjtJQUN0QixvQ0FBb0M7SUFDcEMsYUFBYTtBQUNqQjtBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLDRDQUE0QztJQUM1QyxXQUFXO0lBQ1gseUJBQXlCO0lBQ3pCLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIsd0NBQXdDO0lBQ3hDLGFBQWE7QUFDakI7QUFFQTtJQUNJLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsYUFBYTtBQUNqQjtBQUVBO0lBQ0ksYUFBYTtBQUNqQjtBQUVBO0lBQ0kscUJBQXFCO0lBQ3JCLGFBQWE7QUFDakI7QUFFQTtJQUNJLGtDQUEwQjtZQUExQiwwQkFBMEI7SUFDMUIscUJBQXFCO0lBQ3JCLGFBQWE7QUFDakI7QUFHQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsTUFBTTtJQUNOLFNBQVM7SUFDVCxhQUFhO0lBQ2IsZUFBZTtJQUNmLCtCQUErQjtJQUMvQixVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50aXRsZXtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbmgxe1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDBweDtcclxufVxyXG5cclxuLmhlcm8taW1hZ2Uge1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogbGluZWFyLWdyYWRpZW50KHJnYmEoMCwgMCwgMCwgMC41KSwgcmdiYSgwLCAwLCAwLCAwLjUpKSwgdXJsKFwiLi4vYXBwL2ltZy9yZXlramF2aWsuanBnXCIpO1xyXG4gICAgaGVpZ2h0OiA3MCU7XHJcbiAgICBwYWRkaW5nLXRvcDogNDBweDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XHJcbiAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcbiAgXHJcbiAgLmhlcm8tdGV4dCB7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIGxlZnQ6IDUwJTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gIH1cclxuXHJcbi5ldmVudHN7XHJcbiAgICBcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgY29sb3I6ICNiM2IzYjM7XHJcbn1cclxuLmxvZ297XHJcbiAgICBjb2xvcjogI2IzYjNiMztcclxufVxyXG4ubWFpbntcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGJhY2tncm91bmQ6ICMxYTFhMWE7XHJcbn1cclxuXHJcbi5mYWRlLWluIHtcclxuICAgIGFuaW1hdGlvbjogZmFkZUluIGVhc2UgMTBzO1xyXG59XHJcblxyXG5Aa2V5ZnJhbWVzIGZhZGVJbiB7XHJcbiAgICAwJSB7XHJcbiAgICAgIG9wYWNpdHk6MDtcclxuICAgIH1cclxuICAgIDEwMCUge1xyXG4gICAgICBvcGFjaXR5OjE7XHJcbiAgICB9XHJcbiAgfVxyXG5cclxuICAubWFpbi1uYXYge1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgYm90dG9tOiBhdXRvO1xyXG4gICAgbGVmdDogMDtcclxuICAgIHJpZ2h0OiAwO1xyXG4gICAgZm9udC1zaXplOiAwO1xyXG4gICAgei1pbmRleDogNDtcclxufVxyXG5cclxuLm1haW4tbmF2IC5tYWluLW1lbnUge1xyXG4gICAgcGFkZGluZzogMCAxMHB4IDAgNDBweDtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgYmFja2dyb3VuZDogIzFhMWExYTtcclxuICAgIG1heC13aWR0aDogMTkyMHB4O1xyXG4gICAgLW1zLWJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICAtby1ib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCB0cmFuc3BhcmVudDtcclxuICAgIG91dGxpbmU6IG5vbmU7XHJcbn1cclxuXHJcbi5tYWluLW5hdiBsaSB7XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgICBmb250OiBub3JtYWwgMThweC8xIGtsYXZpa2EsQXJpYWwsc2Fucy1zZXJpZjtcclxuICAgIGNvbG9yOiAjNjY2O1xyXG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICAgIGxldHRlci1zcGFjaW5nOiAycHg7XHJcbiAgICBwYWRkaW5nOiAzMXB4IDIycHggMzBweDtcclxuICAgIHRyYW5zaXRpb246IHBhZGRpbmctcmlnaHQgMTUwbXMgZWFzZS1vdXQ7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcblxyXG4ubWFpbi1uYXYgQnV0dG9uOmhvdmVyIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIHRyYW5zaXRpb246IGNvbG9yIDE1MG1zIGVhc2Utb3V0O1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxufVxyXG5cclxuLm1haW4tbmF2IEJ1dHRvbiB7XHJcbiAgICBvdXRsaW5lOiBub25lO1xyXG59XHJcblxyXG5CdXR0b24ge1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxufVxyXG5cclxuQnV0dG9uOmhvdmVyIHtcclxuICAgIHRleHQtZGVjb3JhdGlvbi1jb2xvcjogcmVkO1xyXG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gICAgb3V0bGluZTogbm9uZTtcclxufVxyXG5cclxuXHJcbi5tYWluLWxvZ28ge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgcmlnaHQ6IDIzcHg7XHJcbiAgICB0b3A6IDA7XHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBoZWlnaHQ6IDEyOHB4O1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgdHJhbnNpdGlvbjogdG9wIC4ycyBlYXNlLWluLW91dDtcclxuICAgIHotaW5kZXg6IDM7XHJcbn1cclxuXHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -418,6 +483,8 @@ let AppComponent = class AppComponent {
         this.title = 'reykjavik-gui';
         this.chosen = "home";
     }
+    // click event segir hvaða takka var ýtt á
+    //sendir svo chosen strenginn í hina componentana úr htmlinu
     goHome() {
         this.chosen = "home";
     }
@@ -430,8 +497,8 @@ let AppComponent = class AppComponent {
     goSaloon() {
         this.chosen = "saloon";
     }
-    goSpa() {
-        this.chosen = "spa";
+    goCafe() {
+        this.chosen = "cafe";
     }
     goSwimming() {
         this.chosen = "swimming";
@@ -466,16 +533,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _material_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../material.module */ "./src/material.module.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
-/* harmony import */ var _restaurants_restaurants_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./restaurants/restaurants.component */ "./src/app/restaurants/restaurants.component.ts");
-/* harmony import */ var _swimming_pool_swimming_pool_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./swimming-pool/swimming-pool.component */ "./src/app/swimming-pool/swimming-pool.component.ts");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
-/* harmony import */ var _saloon_saloon_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./saloon/saloon.component */ "./src/app/saloon/saloon.component.ts");
-/* harmony import */ var _spa_spa_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./spa/spa.component */ "./src/app/spa/spa.component.ts");
-/* harmony import */ var _bars_bars_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./bars/bars.component */ "./src/app/bars/bars.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm2015/animations.js");
+/* harmony import */ var _restaurants_restaurants_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./restaurants/restaurants.component */ "./src/app/restaurants/restaurants.component.ts");
+/* harmony import */ var _swimming_pool_swimming_pool_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./swimming-pool/swimming-pool.component */ "./src/app/swimming-pool/swimming-pool.component.ts");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _saloon_saloon_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./saloon/saloon.component */ "./src/app/saloon/saloon.component.ts");
+/* harmony import */ var _spa_spa_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./spa/spa.component */ "./src/app/spa/spa.component.ts");
+/* harmony import */ var _bars_bars_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./bars/bars.component */ "./src/app/bars/bars.component.ts");
+/* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/fesm2015/agm-core.js");
+
+
 
 
 
@@ -495,23 +566,27 @@ let AppModule = class AppModule {
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
         declarations: [
-            _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _main_main_component__WEBPACK_IMPORTED_MODULE_6__["MainComponent"],
-            _restaurants_restaurants_component__WEBPACK_IMPORTED_MODULE_8__["RestaurantsComponent"],
-            _swimming_pool_swimming_pool_component__WEBPACK_IMPORTED_MODULE_9__["SwimmingPoolComponent"],
-            _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"],
-            _saloon_saloon_component__WEBPACK_IMPORTED_MODULE_11__["SaloonComponent"],
-            _spa_spa_component__WEBPACK_IMPORTED_MODULE_12__["SpaComponent"],
-            _bars_bars_component__WEBPACK_IMPORTED_MODULE_13__["BarsComponent"]
+            _app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"],
+            _main_main_component__WEBPACK_IMPORTED_MODULE_7__["MainComponent"],
+            _restaurants_restaurants_component__WEBPACK_IMPORTED_MODULE_9__["RestaurantsComponent"],
+            _swimming_pool_swimming_pool_component__WEBPACK_IMPORTED_MODULE_10__["SwimmingPoolComponent"],
+            _home_home_component__WEBPACK_IMPORTED_MODULE_11__["HomeComponent"],
+            _saloon_saloon_component__WEBPACK_IMPORTED_MODULE_12__["SaloonComponent"],
+            _spa_spa_component__WEBPACK_IMPORTED_MODULE_13__["SpaComponent"],
+            _bars_bars_component__WEBPACK_IMPORTED_MODULE_14__["BarsComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"],
-            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_7__["BrowserAnimationsModule"],
-            _material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"],
+            _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_8__["BrowserAnimationsModule"],
+            _material_module__WEBPACK_IMPORTED_MODULE_3__["MaterialModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"],
+            _agm_core__WEBPACK_IMPORTED_MODULE_15__["AgmCoreModule"].forRoot({
+                apiKey: 'AIzaSyAzn6Mo5YCWIhzWE3Rnqp9dc_LatK7VA0Y'
+            })
         ],
         providers: [],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
     })
 ], AppModule);
 
@@ -528,7 +603,7 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2JhcnMvYmFycy5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".main{\r\n    display: flex; \r\n    height: 100%;\r\n }\r\n .all{\r\n    height: 100%;\r\n }\r\n .item{\r\n    display: flex;\r\n }\r\n .image{\r\n    height: 150px;\r\n      width: 200px;\r\n   }\r\n .click:hover{\r\n      cursor: pointer;\r\n   }\r\n .list{\r\n    border-bottom: 1px solid;\r\n\r\n   }\r\n .maps{\r\n      height: 400px;\r\n   }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmFycy9iYXJzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsWUFBWTtDQUNmO0NBQ0E7SUFDRyxZQUFZO0NBQ2Y7Q0FDQTtJQUNHLGFBQWE7Q0FDaEI7Q0FDQTtJQUNHLGFBQWE7TUFDWCxZQUFZO0dBQ2Y7Q0FDQTtNQUNHLGVBQWU7R0FDbEI7Q0FDQTtJQUNDLHdCQUF3Qjs7R0FFekI7Q0FDQTtNQUNHLGFBQWE7R0FDaEIiLCJmaWxlIjoic3JjL2FwcC9iYXJzL2JhcnMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYWlue1xyXG4gICAgZGlzcGxheTogZmxleDsgXHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiB9XHJcbiAuYWxse1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gfVxyXG4gLml0ZW17XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gfVxyXG4gLmltYWdle1xyXG4gICAgaGVpZ2h0OiAxNTBweDtcclxuICAgICAgd2lkdGg6IDIwMHB4O1xyXG4gICB9XHJcbiAgIC5jbGljazpob3ZlcntcclxuICAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICB9XHJcbiAgIC5saXN0e1xyXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xyXG5cclxuICAgfVxyXG4gICAubWFwc3tcclxuICAgICAgaGVpZ2h0OiA0MDBweDtcclxuICAgfSJdfQ== */");
 
 /***/ }),
 
@@ -544,13 +619,78 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BarsComponent", function() { return BarsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
+
 
 
 let BarsComponent = class BarsComponent {
-    constructor() { }
+    constructor(
+    //smiður fyrir tool service 
+    toolservise) {
+        this.toolservise = toolservise;
+        this.title = "";
+        this.comment = "";
+        this.isDataReady = false;
+        this.latitude = 64.1436456;
+        this.longitude = -21.9270884;
+    }
+    //hook sem nær í observerable frá tools
     ngOnInit() {
+        let items = this.toolservise.getJson();
+        //subscripar það svo í listann
+        items.subscribe(t => {
+            this.list = t.bars;
+            t.bars.map(item => {
+                this.barsComment = item.comments;
+            });
+            console.log(t);
+            this.isDataReady = true;
+        });
+        /*
+        //taka frá google maps API
+      const mapProperties = {
+        center: new google.maps.LatLng(64.1436456, -21.9270884),
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
+    }
+    clickedBar(item) {
+        this.list.map(t => {
+            //console.log(t);
+            if (t.name === item.name) {
+                if (!t.isClicked) {
+                    t.isClicked = true;
+                    console.log(t);
+                }
+                else {
+                    t.isClicked = false;
+                }
+            }
+        });
+    }
+    onKeyTitle(event) {
+        console.log(event.target.value);
+        this.title = event.target.value;
+    }
+    onKeyComment(event) {
+        this.comment = event.target.value;
+        console.log(this.comment);
+    }
+    submitComment() {
+        let obj = { 'title': this.title, 'comment': this.comment };
+        this.barsComment.push(obj);
+        console.log(obj);
+        console.log(this.barsComment);
+        this.toolservise.postCommentJson(this.barsComment);
     }
 };
+BarsComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('map', { static: true })
+], BarsComponent.prototype, "mapElement", void 0);
 BarsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-bars',
@@ -572,7 +712,7 @@ BarsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".main{\r\n    width: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9ob21lL2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYWlue1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n  @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);  /* Google Fonts */  .main{\r\n    width: 100%;\r\n    background: #1a1a1a;\r\n}  * {\r\n    box-sizing: border-box;\r\n  }  p {\r\n    color: white;\r\n  }  img {\r\n    border-radius: 10%;\r\n  }  .img-container {\r\n    float: left;\r\n    width: 33.33%;\r\n    padding: 20px;\r\n    position: relative;\r\n  }  .text-block {\r\n    position: absolute;\r\n    border-radius: 100%;\r\n    bottom: 180px;\r\n    right: 30px;\r\n    background: rgba(0, 0, 0, 0.5);\r\n    color: white;\r\n    padding-left: 20px;\r\n    padding-right: 20px;\r\n  }  .clearfix::after {\r\n    padding-bottom: 50px;\r\n    content: \"\";\r\n    clear: both;\r\n    display: table;\r\n  }  .top-left {\r\n    position: absolute;\r\n    top: 50px;\r\n    left: 50px;\r\n    color: blue;\r\n  }  /* Global */  html{\r\n  min-height: 100%;\r\n  overflow: hidden;\r\n}  body{\r\n  height: calc(100vh - 8em);\r\n  padding: 4em;\r\n  color: rgba(255,255,255,.75);\r\n  font-family: 'Anonymous Pro', monospace;  \r\n  background-color: rgb(25,25,25);  \r\n}  .line-1{\r\n    position: relative;\r\n    top: 50%;  \r\n    width: 24em;\r\n    margin: 0 auto;\r\n    border-right: 2px solid rgba(255,255,255,.75);\r\n    font-size: 180%;\r\n    text-align: center;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    transform: translateY(-50%);    \r\n}  /* Animation */  .anim-typewriter{\r\n  -webkit-animation: typewriter 4s steps(35) 1s 1 normal both,\r\n             blinkTextCursor 500ms steps(35) infinite normal;\r\n          animation: typewriter 4s steps(35) 1s 1 normal both,\r\n             blinkTextCursor 500ms steps(35) infinite normal;\r\n}  @-webkit-keyframes typewriter{\r\n  from{width: 0;}\r\n  to{width: 15em;}\r\n}  @keyframes typewriter{\r\n  from{width: 0;}\r\n  to{width: 15em;}\r\n}  @-webkit-keyframes blinkTextCursor{\r\n  from{border-right-color: rgba(255,255,255,.75);}\r\n  to{border-right-color: transparent;}\r\n}  @keyframes blinkTextCursor{\r\n  from{border-right-color: rgba(255,255,255,.75);}\r\n  to{border-right-color: transparent;}\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtFQUNFLGtFQUFrRSxHQURsRSxpQkFBaUIsR0FJbkI7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCLEdBR0E7SUFDSSxzQkFBc0I7RUFDeEIsR0FFQTtJQUNFLFlBQVk7RUFDZCxHQUVBO0lBQ0Usa0JBQWtCO0VBQ3BCLEdBQ0E7SUFDRSxXQUFXO0lBQ1gsYUFBYTtJQUNiLGFBQWE7SUFDYixrQkFBa0I7RUFDcEIsR0FHQTtJQUNFLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsYUFBYTtJQUNiLFdBQVc7SUFDWCw4QkFBOEI7SUFDOUIsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixtQkFBbUI7RUFDckIsR0FFQTtJQUNFLG9CQUFvQjtJQUNwQixXQUFXO0lBQ1gsV0FBVztJQUNYLGNBQWM7RUFDaEIsR0FFQTtJQUNFLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsVUFBVTtJQUNWLFdBQVc7RUFDYixHQUdGLFdBQVcsR0FDWDtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7QUFDbEIsR0FDQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osNEJBQTRCO0VBQzVCLHVDQUF1QztFQUN2QywrQkFBK0I7QUFDakMsR0FDQTtJQUNJLGtCQUFrQjtJQUNsQixRQUFRO0lBQ1IsV0FBVztJQUNYLGNBQWM7SUFDZCw2Q0FBNkM7SUFDN0MsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLDJCQUEyQjtBQUMvQixHQUVBLGNBQWMsR0FDZDtFQUNFOzREQUMwRDtVQUQxRDs0REFDMEQ7QUFDNUQsR0FDQTtFQUNFLEtBQUssUUFBUSxDQUFDO0VBQ2QsR0FBRyxXQUFXLENBQUM7QUFDakIsR0FIQTtFQUNFLEtBQUssUUFBUSxDQUFDO0VBQ2QsR0FBRyxXQUFXLENBQUM7QUFDakIsR0FDQTtFQUNFLEtBQUsseUNBQXlDLENBQUM7RUFDL0MsR0FBRywrQkFBK0IsQ0FBQztBQUNyQyxHQUhBO0VBQ0UsS0FBSyx5Q0FBeUMsQ0FBQztFQUMvQyxHQUFHLCtCQUErQixDQUFDO0FBQ3JDIiwiZmlsZSI6InNyYy9hcHAvaG9tZS9ob21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgIC8qIEdvb2dsZSBGb250cyAqL1xyXG4gIEBpbXBvcnQgdXJsKGh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Bbm9ueW1vdXMrUHJvKTtcclxuXHJcblxyXG4ubWFpbntcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgYmFja2dyb3VuZDogIzFhMWExYTtcclxufVxyXG5cclxuXHJcbioge1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICB9XHJcblxyXG4gIHAge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gIH1cclxuXHJcbiAgaW1nIHtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwJTtcclxuICB9XHJcbiAgLmltZy1jb250YWluZXIge1xyXG4gICAgZmxvYXQ6IGxlZnQ7XHJcbiAgICB3aWR0aDogMzMuMzMlO1xyXG4gICAgcGFkZGluZzogMjBweDtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB9XHJcblxyXG5cclxuICAudGV4dC1ibG9jayB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xyXG4gICAgYm90dG9tOiAxODBweDtcclxuICAgIHJpZ2h0OiAzMHB4O1xyXG4gICAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgcGFkZGluZy1sZWZ0OiAyMHB4O1xyXG4gICAgcGFkZGluZy1yaWdodDogMjBweDtcclxuICB9XHJcbiAgXHJcbiAgLmNsZWFyZml4OjphZnRlciB7XHJcbiAgICBwYWRkaW5nLWJvdHRvbTogNTBweDtcclxuICAgIGNvbnRlbnQ6IFwiXCI7XHJcbiAgICBjbGVhcjogYm90aDtcclxuICAgIGRpc3BsYXk6IHRhYmxlO1xyXG4gIH1cclxuXHJcbiAgLnRvcC1sZWZ0IHtcclxuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICAgIHRvcDogNTBweDtcclxuICAgIGxlZnQ6IDUwcHg7XHJcbiAgICBjb2xvcjogYmx1ZTtcclxuICB9XHJcblxyXG5cclxuLyogR2xvYmFsICovXHJcbmh0bWx7XHJcbiAgbWluLWhlaWdodDogMTAwJTtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG59XHJcbmJvZHl7XHJcbiAgaGVpZ2h0OiBjYWxjKDEwMHZoIC0gOGVtKTtcclxuICBwYWRkaW5nOiA0ZW07XHJcbiAgY29sb3I6IHJnYmEoMjU1LDI1NSwyNTUsLjc1KTtcclxuICBmb250LWZhbWlseTogJ0Fub255bW91cyBQcm8nLCBtb25vc3BhY2U7ICBcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjUsMjUsMjUpOyAgXHJcbn1cclxuLmxpbmUtMXtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIHRvcDogNTAlOyAgXHJcbiAgICB3aWR0aDogMjRlbTtcclxuICAgIG1hcmdpbjogMCBhdXRvO1xyXG4gICAgYm9yZGVyLXJpZ2h0OiAycHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwuNzUpO1xyXG4gICAgZm9udC1zaXplOiAxODAlO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICAgIG92ZXJmbG93OiBoaWRkZW47XHJcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7ICAgIFxyXG59XHJcblxyXG4vKiBBbmltYXRpb24gKi9cclxuLmFuaW0tdHlwZXdyaXRlcntcclxuICBhbmltYXRpb246IHR5cGV3cml0ZXIgNHMgc3RlcHMoMzUpIDFzIDEgbm9ybWFsIGJvdGgsXHJcbiAgICAgICAgICAgICBibGlua1RleHRDdXJzb3IgNTAwbXMgc3RlcHMoMzUpIGluZmluaXRlIG5vcm1hbDtcclxufVxyXG5Aa2V5ZnJhbWVzIHR5cGV3cml0ZXJ7XHJcbiAgZnJvbXt3aWR0aDogMDt9XHJcbiAgdG97d2lkdGg6IDE1ZW07fVxyXG59XHJcbkBrZXlmcmFtZXMgYmxpbmtUZXh0Q3Vyc29ye1xyXG4gIGZyb217Ym9yZGVyLXJpZ2h0LWNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LC43NSk7fVxyXG4gIHRve2JvcmRlci1yaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7fVxyXG59Il19 */");
 
 /***/ }),
 
@@ -588,13 +728,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _api_export_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../api/export.service */ "./src/api/export.service.ts");
+/* harmony import */ var _api_database_connect_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../api/database-connect.service */ "./src/api/database-connect.service.ts");
+
+
 
 
 let HomeComponent = class HomeComponent {
-    constructor() { }
+    constructor(exportService, databaseConnect) {
+        this.exportService = exportService;
+        this.databaseConnect = databaseConnect;
+        this.Resturants = this.exportService.stringReykjavik();
+    }
     ngOnInit() {
     }
 };
+HomeComponent.ctorParameters = () => [
+    { type: _api_export_service__WEBPACK_IMPORTED_MODULE_2__["ExportService"] },
+    { type: _api_database_connect_service__WEBPACK_IMPORTED_MODULE_3__["DatabaseConnectService"] }
+];
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-home',
@@ -616,7 +768,7 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".main{\r\n    display: inline-flex;\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n.card{\r\n    height: 100%;\r\n    \r\n}\r\n.card .mat-card{\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\nbutton{\r\n    width: 100%;\r\n    text-align: left;\r\n}\r\n.info{\r\n    margin-left: 50px;\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBb0I7SUFDcEIsWUFBWTtJQUNaLFdBQVc7QUFDZjtBQUNBO0lBQ0ksWUFBWTs7QUFFaEI7QUFDQTtJQUNJLFlBQVk7SUFDWixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixXQUFXO0lBQ1gsWUFBWTtBQUNoQiIsImZpbGUiOiJzcmMvYXBwL21haW4vbWFpbi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1haW57XHJcbiAgICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG59XHJcbi5jYXJke1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgXHJcbn1cclxuLmNhcmQgLm1hdC1jYXJke1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuYnV0dG9ue1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG59XHJcbi5pbmZve1xyXG4gICAgbWFyZ2luLWxlZnQ6IDUwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".main{\r\n    display: inline-flex;\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\n.card{\r\n    height: 100%;\r\n    \r\n}\r\n.card .mat-card{\r\n    height: 100%;\r\n    width: 100%;\r\n}\r\nbutton{\r\n    width: 100%;\r\n    text-align: left;\r\n}\r\n.info{\r\n    width: 100%;\r\n    height: 100%;\r\n}\r\n.app{\r\n    height: 100%;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxvQkFBb0I7SUFDcEIsWUFBWTtJQUNaLFdBQVc7QUFDZjtBQUNBO0lBQ0ksWUFBWTs7QUFFaEI7QUFDQTtJQUNJLFlBQVk7SUFDWixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFdBQVc7SUFDWCxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxZQUFZO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWFpbntcclxuICAgIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuLmNhcmR7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBcclxufVxyXG4uY2FyZCAubWF0LWNhcmR7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufVxyXG5idXR0b257XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbn1cclxuLmluZm97XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxufVxyXG4uYXBwe1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG59Il19 */");
 
 /***/ }),
 
@@ -632,19 +784,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MainComponent", function() { return MainComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
 
 
+
+// rauninni bara til að hafa snyrtilegra, 
+//svo er if lykkja í html-inu til að vita hvaða component á að koma
 let MainComponent = class MainComponent {
-    constructor() { }
+    constructor(toolService) {
+        this.toolService = toolService;
+    }
+    //ekki notað lengur, kanski seinna?
     ngOnChanges(changes) {
         if (changes.chosen) {
             console.log(this.chosen);
         }
     }
     ngOnInit() {
-        console.log(this.chosen);
     }
 };
+MainComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
 ], MainComponent.prototype, "chosen", void 0);
@@ -669,7 +830,7 @@ MainComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("button{\r\n    width: 200px;\r\n    height: 200px;\r\n    border-radius: 200px;\r\n    background-image: url('dinnerTable.jpg');\r\n    background-size: 200px 200px;\r\n    opacity: 0.5;\r\n    color: white;\r\n    font-size: 50px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcmVzdGF1cmFudHMvcmVzdGF1cmFudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFlBQVk7SUFDWixhQUFhO0lBQ2Isb0JBQW9CO0lBQ3BCLHdDQUE2QztJQUM3Qyw0QkFBNEI7SUFDNUIsWUFBWTtJQUNaLFlBQVk7SUFDWixlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvcmVzdGF1cmFudHMvcmVzdGF1cmFudHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImJ1dHRvbntcclxuICAgIHdpZHRoOiAyMDBweDtcclxuICAgIGhlaWdodDogMjAwcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAyMDBweDtcclxuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCguLi9pbWcvZGlubmVyVGFibGUuanBnKTtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogMjAwcHggMjAwcHg7XHJcbiAgICBvcGFjaXR5OiAwLjU7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LXNpemU6IDUwcHg7XHJcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.main{\r\n   display: flex; \r\n   height: 100%;\r\n}\r\n.all{\r\n   height: 100%;\r\n}\r\n.item{\r\n   display: flex;\r\n}\r\n.image{\r\n   height: 150px;\r\n     width: 200px;\r\n  }\r\n.click:hover{\r\n     cursor: pointer;\r\n  }\r\n.list{\r\n   border-bottom: 1px solid;\r\n\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcmVzdGF1cmFudHMvcmVzdGF1cmFudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7R0FDRyxhQUFhO0dBQ2IsWUFBWTtBQUNmO0FBQ0E7R0FDRyxZQUFZO0FBQ2Y7QUFDQTtHQUNHLGFBQWE7QUFDaEI7QUFDQTtHQUNHLGFBQWE7S0FDWCxZQUFZO0VBQ2Y7QUFDQTtLQUNHLGVBQWU7RUFDbEI7QUFDQTtHQUNDLHdCQUF3Qjs7RUFFekIiLCJmaWxlIjoic3JjL2FwcC9yZXN0YXVyYW50cy9yZXN0YXVyYW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi5tYWlue1xyXG4gICBkaXNwbGF5OiBmbGV4OyBcclxuICAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcbi5hbGx7XHJcbiAgIGhlaWdodDogMTAwJTtcclxufVxyXG4uaXRlbXtcclxuICAgZGlzcGxheTogZmxleDtcclxufVxyXG4uaW1hZ2V7XHJcbiAgIGhlaWdodDogMTUwcHg7XHJcbiAgICAgd2lkdGg6IDIwMHB4O1xyXG4gIH1cclxuICAuY2xpY2s6aG92ZXJ7XHJcbiAgICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIH1cclxuICAubGlzdHtcclxuICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xyXG5cclxuICB9Il19 */");
 
 /***/ }),
 
@@ -685,19 +846,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RestaurantsComponent", function() { return RestaurantsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
+
 
 
 let RestaurantsComponent = class RestaurantsComponent {
-    constructor() { }
+    constructor(toolservise) {
+        this.toolservise = toolservise;
+    }
+    //hook sem nær í observerable frá tools    
     ngOnInit() {
+        let items = this.toolservise.getJson();
+        //subscripa það svo í listann
+        items.subscribe(t => {
+            this.list = t.restaurant;
+        });
+        //ná í úr google maps API
         const mapProperties = {
-            center: new google.maps.LatLng(35.2271, -80.8431),
+            center: new google.maps.LatLng(64.1436456, -21.9270884),
             zoom: 15,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
     }
+    clickedBar(item) {
+        this.list.map(t => {
+            //console.log(t);
+            if (t.name === item.name) {
+                if (!t.isClicked) {
+                    t.isClicked = true;
+                    console.log(t);
+                }
+                else {
+                    t.isClicked = false;
+                }
+            }
+        });
+    }
 };
+RestaurantsComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('map', { static: true })
 ], RestaurantsComponent.prototype, "mapElement", void 0);
@@ -722,7 +911,7 @@ RestaurantsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NhbG9vbi9zYWxvb24uY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.main{\r\n    display: flex; \r\n    height: 100%;\r\n }\r\n .all{\r\n    height: 100%;\r\n }\r\n .item{\r\n    display: flex;\r\n }\r\n .image{\r\n    height: 150px;\r\n      width: 200px;\r\n   }\r\n .click:hover{\r\n      cursor: pointer;\r\n   }\r\n .list{\r\n    border-bottom: 1px solid;\r\n \r\n   }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2Fsb29uL3NhbG9vbi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLGFBQWE7SUFDYixZQUFZO0NBQ2Y7Q0FDQTtJQUNHLFlBQVk7Q0FDZjtDQUNBO0lBQ0csYUFBYTtDQUNoQjtDQUNBO0lBQ0csYUFBYTtNQUNYLFlBQVk7R0FDZjtDQUNBO01BQ0csZUFBZTtHQUNsQjtDQUNBO0lBQ0Msd0JBQXdCOztHQUV6QiIsImZpbGUiOiJzcmMvYXBwL3NhbG9vbi9zYWxvb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4ubWFpbntcclxuICAgIGRpc3BsYXk6IGZsZXg7IFxyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gfVxyXG4gLmFsbHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuIH1cclxuIC5pdGVte1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuIH1cclxuIC5pbWFnZXtcclxuICAgIGhlaWdodDogMTUwcHg7XHJcbiAgICAgIHdpZHRoOiAyMDBweDtcclxuICAgfVxyXG4gICAuY2xpY2s6aG92ZXJ7XHJcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgfVxyXG4gICAubGlzdHtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcclxuIFxyXG4gICB9Il19 */");
 
 /***/ }),
 
@@ -738,13 +927,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SaloonComponent", function() { return SaloonComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
+
 
 
 let SaloonComponent = class SaloonComponent {
-    constructor() { }
+    constructor(toolservise) {
+        this.toolservise = toolservise;
+    }
+    //hook sem nær í observerable frá tools  
     ngOnInit() {
+        let items = this.toolservise.getJson();
+        //subscripa í listann
+        items.subscribe(t => {
+            this.list = t.hairsaloons;
+        });
+        //ná í úr google maps API
+        const mapProperties = {
+            center: new google.maps.LatLng(64.1436456, -21.9270884),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
+    }
+    clickedBar(item) {
+        this.list.map(t => {
+            //console.log(t);
+            if (t.name === item.name) {
+                if (!t.isClicked) {
+                    t.isClicked = true;
+                    console.log(t);
+                }
+                else {
+                    t.isClicked = false;
+                }
+            }
+        });
     }
 };
+SaloonComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('map', { static: true })
+], SaloonComponent.prototype, "mapElement", void 0);
 SaloonComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-saloon',
@@ -766,7 +992,7 @@ SaloonComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NwYS9zcGEuY29tcG9uZW50LmNzcyJ9 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.main{\r\n    display: flex; \r\n    height: 100%;\r\n }\r\n .all{\r\n    height: 100%;\r\n }\r\n .item{\r\n    display: flex;\r\n }\r\n .image{\r\n    height: 150px;\r\n      width: 200px;\r\n   }\r\n .click:hover{\r\n      cursor: pointer;\r\n   }\r\n .list{\r\n    border-bottom: 1px solid;\r\n \r\n   }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3BhL3NwYS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUNJLGFBQWE7SUFDYixZQUFZO0NBQ2Y7Q0FDQTtJQUNHLFlBQVk7Q0FDZjtDQUNBO0lBQ0csYUFBYTtDQUNoQjtDQUNBO0lBQ0csYUFBYTtNQUNYLFlBQVk7R0FDZjtDQUNBO01BQ0csZUFBZTtHQUNsQjtDQUNBO0lBQ0Msd0JBQXdCOztHQUV6QiIsImZpbGUiOiJzcmMvYXBwL3NwYS9zcGEuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxyXG4ubWFpbntcclxuICAgIGRpc3BsYXk6IGZsZXg7IFxyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gfVxyXG4gLmFsbHtcclxuICAgIGhlaWdodDogMTAwJTtcclxuIH1cclxuIC5pdGVte1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuIH1cclxuIC5pbWFnZXtcclxuICAgIGhlaWdodDogMTUwcHg7XHJcbiAgICAgIHdpZHRoOiAyMDBweDtcclxuICAgfVxyXG4gICAuY2xpY2s6aG92ZXJ7XHJcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgfVxyXG4gICAubGlzdHtcclxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcclxuIFxyXG4gICB9Il19 */");
 
 /***/ }),
 
@@ -782,13 +1008,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpaComponent", function() { return SpaComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
 
 
+
+//ÞESSI COMPONENT ÆTTI AÐ HEITA CAFE EIGUM EFTIR AÐ BREYTA
 let SpaComponent = class SpaComponent {
-    constructor() { }
+    constructor(toolservise) {
+        this.toolservise = toolservise;
+    }
+    //hook sem nær í observerable frá tools  
     ngOnInit() {
+        let items = this.toolservise.getJson();
+        //subscripa í listann
+        items.subscribe(t => {
+            this.list = t.cafes;
+        });
+        //google maps API
+        const mapProperties = {
+            center: new google.maps.LatLng(64.1436456, -21.9270884),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
+    }
+    clickedBar(item) {
+        this.list.map(t => {
+            //console.log(t);
+            if (t.name === item.name) {
+                if (!t.isClicked) {
+                    t.isClicked = true;
+                    console.log(t);
+                }
+                else {
+                    t.isClicked = false;
+                }
+            }
+        });
     }
 };
+SpaComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('map', { static: true })
+], SpaComponent.prototype, "mapElement", void 0);
 SpaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-spa',
@@ -810,7 +1074,7 @@ SpaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3N3aW1taW5nLXBvb2wvc3dpbW1pbmctcG9vbC5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\n.main{\r\n    display: flex; \r\n    height: 100%;\r\n }\r\n .all{\r\n    height: 100%;\r\n }\r\n .item{\r\n    display: flex;\r\n }\r\n .image{\r\n    height: 150px;\r\n      width: 200px;\r\n   }\r\n .click:hover{\r\n      cursor: pointer;\r\n   }\r\n .list{\r\n    border-bottom: 1px solid;\r\n \r\n   }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc3dpbW1pbmctcG9vbC9zd2ltbWluZy1wb29sLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksYUFBYTtJQUNiLFlBQVk7Q0FDZjtDQUNBO0lBQ0csWUFBWTtDQUNmO0NBQ0E7SUFDRyxhQUFhO0NBQ2hCO0NBQ0E7SUFDRyxhQUFhO01BQ1gsWUFBWTtHQUNmO0NBQ0E7TUFDRyxlQUFlO0dBQ2xCO0NBQ0E7SUFDQyx3QkFBd0I7O0dBRXpCIiwiZmlsZSI6InNyYy9hcHAvc3dpbW1pbmctcG9vbC9zd2ltbWluZy1wb29sLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuLm1haW57XHJcbiAgICBkaXNwbGF5OiBmbGV4OyBcclxuICAgIGhlaWdodDogMTAwJTtcclxuIH1cclxuIC5hbGx7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiB9XHJcbiAuaXRlbXtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiB9XHJcbiAuaW1hZ2V7XHJcbiAgICBoZWlnaHQ6IDE1MHB4O1xyXG4gICAgICB3aWR0aDogMjAwcHg7XHJcbiAgIH1cclxuICAgLmNsaWNrOmhvdmVye1xyXG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgIH1cclxuICAgLmxpc3R7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XHJcbiBcclxuICAgfSJdfQ== */");
 
 /***/ }),
 
@@ -826,13 +1090,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwimmingPoolComponent", function() { return SwimmingPoolComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _tool_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../tool-service.service */ "./src/app/tool-service.service.ts");
+
 
 
 let SwimmingPoolComponent = class SwimmingPoolComponent {
-    constructor() { }
+    constructor(toolservise) {
+        this.toolservise = toolservise;
+    }
+    //hook sem nær í observerable frá tools  
     ngOnInit() {
+        let items = this.toolservise.getJson();
+        //subscripa í listann
+        items.subscribe(t => {
+            this.list = t.swim;
+            console.log(t);
+        });
+        // google maps API...
+        const mapProperties = {
+            center: new google.maps.LatLng(64.1436456, -21.9270884),
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
+    }
+    clickedBar(item) {
+        this.list.map(t => {
+            //console.log(t);
+            if (t.name === item.name) {
+                if (!t.isClicked) {
+                    t.isClicked = true;
+                    console.log(t);
+                }
+                else {
+                    t.isClicked = false;
+                }
+            }
+        });
     }
 };
+SwimmingPoolComponent.ctorParameters = () => [
+    { type: _tool_service_service__WEBPACK_IMPORTED_MODULE_2__["ToolServiceService"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('map', { static: true })
+], SwimmingPoolComponent.prototype, "mapElement", void 0);
 SwimmingPoolComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-swimming-pool',
@@ -840,6 +1142,81 @@ SwimmingPoolComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./swimming-pool.component.css */ "./src/app/swimming-pool/swimming-pool.component.css")).default]
     })
 ], SwimmingPoolComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/tool-service.service.ts":
+/*!*****************************************!*\
+  !*** ./src/app/tool-service.service.ts ***!
+  \*****************************************/
+/*! exports provided: ToolServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToolServiceService", function() { return ToolServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+//import { readJSON } from '../api/DatabaseFetch.js';
+let ToolServiceService = 
+//hérna á að vera endapunktarnir
+class ToolServiceService {
+    constructor(http) {
+        this.http = http;
+    }
+    getJson() {
+        console.log();
+        /* this.http.get('https://api.myjson.com/bins/11wwo4').subscribe(t =>{
+           console.log(t);
+         })*/
+        return this.http.get('https://api.myjson.com/bins/731fi');
+    }
+    postCommentJson(any) {
+        console.log(any);
+        //þetta er það sem er á hold...
+        this.http.post('https://api.myjson.com/bins/731fi', any);
+        let activities = this.getJson();
+        activities.subscribe(t => {
+            console.log(t);
+        });
+    }
+    getRestaurants() {
+        let activities = this.getJson();
+        activities.subscribe(t => {
+            this.restaurants = t;
+            console.log(t);
+        });
+        console.log(this.restaurants);
+        return this.restaurants;
+    }
+    getCafe() {
+        let activities = this.getJson();
+        activities.subscribe(t => {
+            this.cafe = t.cafe;
+        });
+    }
+    getSwimming() {
+        let activities = this.getJson();
+        activities.subscribe(t => {
+            this.swimming = t.swimming;
+        });
+    }
+};
+ToolServiceService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ToolServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+    //hérna á að vera endapunktarnir
+], ToolServiceService);
 
 
 

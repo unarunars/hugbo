@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, ViewChild,ElementRef, NgZone, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ToolServiceService } from '../tool-service.service';
+import { MapsAPILoader, MouseEvent } from '@agm/core';
 
 @Component({
   selector: 'app-bars',
@@ -14,19 +15,29 @@ export class BarsComponent implements OnInit {
   title: string = "";
   comment: string = "";
   isDataReady: boolean = false;
-
+  lat = 64.147209;
+  lng = -21.942400  ;
+  zoom: number;
+  address: string;
+  private geoCoder;
+  @ViewChild('search', {static: true})
+  public searchElementRef: ElementRef;
   //til að tengja google maps
+  /*
   @ViewChild('map', {static: true}) mapElement: any;
-  map: google.maps.Map;
+  map: google.maps.Map;*/
 
 constructor(
   //smiður fyrir tool service 
-  private toolservise: ToolServiceService
+  private toolservise: ToolServiceService,
+  private mapsAPILoader: MapsAPILoader,
+  private ngZone: NgZone
 ) { }
 
 //hook sem nær í observerable frá tools
 ngOnInit() {
   let items = this.toolservise.getJson();
+
   //subscripar það svo í listann
     items.subscribe( t=>{
       this.list = t.bars;
@@ -36,14 +47,80 @@ ngOnInit() {
       console.log(t);
       this.isDataReady = true;
     })
+    this.setCurrentLocation();
+    //þetta allt tekið frá maps API skoða betur
+    //load Places Autocomplete
+    this.mapsAPILoader.load().then(() => {
+      this.setCurrentLocation();
+      this.geoCoder = new google.maps.Geocoder;
+
+      let autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
+        types: ["address"]
+      });
+      autocomplete.addListener("place_changed", () => {
+        this.ngZone.run(() => {
+          //get the place result
+          let place: google.maps.places.PlaceResult = autocomplete.getPlace();
+
+          //verify result
+          if (place.geometry === undefined || place.geometry === null) {
+            return;
+          }
+
+          //set latitude, longitude and zoom
+          this.lat = place.geometry.location.lat();
+          this.lng = place.geometry.location.lng();
+          this.zoom = 12;
+        });
+      });
+    });
+  /*
     //taka frá google maps API
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),
     zoom: 15,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
 }
+// Get Current Location Coordinates
+private setCurrentLocation() {
+  if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      this.lat = position.coords.latitude;
+      this.lng = position.coords.longitude;
+      this.zoom = 8;
+      this.getAddress(this.lat, this.lng);
+    });
+  }
+}
+
+
+markerDragEnd($event: MouseEvent) {
+  console.log($event);
+  this.lat = $event.coords.lat;
+  this.lng = $event.coords.lng;
+  this.getAddress(this.lat, this.lng);
+}
+
+getAddress(latitude, longitude) {
+  this.geoCoder.geocode({ 'location': { lat: latitude, lng: longitude } }, (results, status) => {
+    console.log(results);
+    console.log(status);
+    if (status === 'OK') {
+      if (results[0]) {
+        this.zoom = 12;
+        this.address = results[0].formatted_address;
+      } else {
+        window.alert('No results found');
+      }
+    } else {
+      window.alert('Geocoder failed due to: ' + status);
+    }
+
+  });
+}
+
 
 clickedBar(item){
   this.list.map(t =>{

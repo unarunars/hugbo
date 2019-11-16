@@ -24,6 +24,7 @@ export class ToolServiceService {
     }
     postCommentJson(any: any[]){
       console.log(any);
+      //þetta er það sem er á hold...
       this.http.post('https://api.myjson.com/bins/731fi', any);
       let activities = this.getJson();
       activities.subscribe( t => {
