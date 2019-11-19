@@ -15,11 +15,12 @@ export class BarsComponent implements OnInit {
   title: string = "";
   comment: string = "";
   isDataReady: boolean = false;
-  lat = 64.147209;
-  lng = -21.942400  ;
+  lat: number; //64.147209;
+  lng: number; //-21.942400  ;
   zoom: number;
   address: string;
   private geoCoder;
+  
   @ViewChild('search', {static: true})
   public searchElementRef: ElementRef;
   //til að tengja google maps
