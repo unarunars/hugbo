@@ -15,8 +15,8 @@ export class BarsComponent implements OnInit {
   title: string = "";
   comment: string = "";
   isDataReady: boolean = false;
-  lat: number; //64.147209;
-  lng: number; //-21.942400  ;
+  lat: number = 64.147209;
+  lng: number = -21.942400  ;
   zoom: number;
   address: string;
   private geoCoder;
@@ -24,9 +24,9 @@ export class BarsComponent implements OnInit {
   @ViewChild('search', {static: true})
   public searchElementRef: ElementRef;
   //til að tengja google maps
-  /*
+  
   @ViewChild('map', {static: true}) mapElement: any;
-  map: google.maps.Map;*/
+  map: google.maps.Map;
 
 constructor(
   //smiður fyrir tool service 
@@ -48,7 +48,14 @@ ngOnInit() {
       console.log(t);
       this.isDataReady = true;
     })
-    this.setCurrentLocation();
+    //taka frá google maps API
+  const mapProperties = {
+    center: new google.maps.LatLng(64.1436456, -21.9270884),
+    zoom: 15,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+    /*this.setCurrentLocation();
     //þetta allt tekið frá maps API skoða betur
     //load Places Autocomplete
     this.mapsAPILoader.load().then(() => {
@@ -58,38 +65,37 @@ ngOnInit() {
       let autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
         types: ["address"]
       });
+      console.log(autocomplete);
       autocomplete.addListener("place_changed", () => {
         this.ngZone.run(() => {
           //get the place result
-          let place: google.maps.places.PlaceResult = autocomplete.getPlace();
-
+          let place: google.maps.places.PlaceResult =  autocomplete.getPlace();
+          console.log(place);
+          console.log(autocomplete.get)
           //verify result
           if (place.geometry === undefined || place.geometry === null) {
             return;
           }
 
           //set latitude, longitude and zoom
-          this.lat = place.geometry.location.lat();
-          this.lng = place.geometry.location.lng();
+          this.lat = -21.9270884//place.geometry.location.lat();
+          this.lng = 64.1436456; //place.geometry.location.lng();
           this.zoom = 12;
         });
       });
-    });
+    });*/
   /*
-    //taka frá google maps API
-  const mapProperties = {
-    center: new google.maps.LatLng(64.1436456, -21.9270884),
-    zoom: 15,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
+    */
 }
 // Get Current Location Coordinates
 private setCurrentLocation() {
+  console.log(this.searchElementRef);
   if ('geolocation' in navigator) {
+    console.log(navigator);
     navigator.geolocation.getCurrentPosition((position) => {
-      this.lat = position.coords.latitude;
-      this.lng = position.coords.longitude;
+      console.log(position.coords.heading);
+      //this.lat = position.coords.latitude;
+      //this.lng = position.coords.longitude;
       this.zoom = 8;
       this.getAddress(this.lat, this.lng);
     });
@@ -129,6 +135,8 @@ clickedBar(item){
     if(t.name === item.name){
       if(!t.isClicked){
         t.isClicked = true;
+        this.lat = 64.122272;
+        this.lng = -21.871059;
       console.log(t);
       }else {
         t.isClicked = false;
