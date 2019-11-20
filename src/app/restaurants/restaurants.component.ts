@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Component, OnInit, ViewChild, Input, ɵɵcontainerRefreshEnd } from '@angular/core';
 import {  } from 'googlemaps'; 
 import { ToolServiceService } from '../tool-service.service';
 @Component({
@@ -16,13 +16,37 @@ export class RestaurantsComponent implements OnInit {
   constructor(
     private toolservise: ToolServiceService,
   ) { }
-//hook sem nær í observerable frá tools    
-  ngOnInit() {
-    let items = this.toolservise.getJson();
+  toogle(e){
+    console.log(e);
+    if(!e){
+      this.refresh();
+    }else{
+      let filtItems = this.toolservise.getJson();
+      let temp = [];
+      
+      filtItems.subscribe(t=>{
+        t.restaurant.map( item =>{
+          console.log(item)
+          if(item.type === e){
+            console.log(e, t.restaurant, item);
+            temp.push(item);
+            console.log(temp);
+          }
+        })
+        this.list = temp;
+      })
+    }
+  }
+    refresh(){
+      let items = this.toolservise.getJson();
     //subscripa það svo í listann
     items.subscribe( t=>{
       this.list = t.restaurant;
     })
+    }
+//hook sem nær í observerable frá tools    
+  ngOnInit() {
+    this.refresh();
     //ná í úr google maps API
     const mapProperties = {
       center: new google.maps.LatLng(64.1436456, -21.9270884),

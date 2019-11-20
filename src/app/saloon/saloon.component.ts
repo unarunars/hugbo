@@ -14,13 +14,36 @@ export class SaloonComponent implements OnInit {
 constructor(
   private toolservise: ToolServiceService,
 ) { }
-//hook sem nær í observerable frá tools  
-  ngOnInit() {
-    let items = this.toolservise.getJson();
+toogle(e){
+  console.log(e);
+  if(!e){
+    this.refresh();
+  }else{
+    let filtItems = this.toolservise.getJson();
+    let temp = [];
+    
+    filtItems.subscribe(t=>{
+      t.hairsaloons.map( item =>{
+        if(item.type === e){
+          console.log(e, t.saloon, item);
+          temp.push(item);
+          console.log(temp);
+        }
+      })
+      this.list = temp;
+    })
+  }
+}
+refresh(){
+  let items = this.toolservise.getJson();
     //subscripa í listann
     items.subscribe( t=>{
       this.list = t.hairsaloons;
     })
+}
+//hook sem nær í observerable frá tools  
+  ngOnInit() {
+    this.refresh();
     //ná í úr google maps API
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),

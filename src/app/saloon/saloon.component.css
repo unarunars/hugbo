@@ -1,22 +1,96 @@
+.main {
+  display: flex;
+  height: 100%;
+}
 
-.main{
-    display: flex; 
-    height: 100%;
- }
- .all{
-    height: 100%;
- }
- .item{
-    display: flex;
- }
- .image{
-    height: 150px;
-      width: 200px;
-   }
-   .click:hover{
-      cursor: pointer;
-   }
-   .list{
-    border-bottom: 1px solid;
- 
-   }
+.all {
+  height: 100%;
+}
+
+.item {
+  display: flex;
+  background: rgba(200,200,200,.75);
+}
+
+/*Search-Box*/
+.search-box{
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0px 5px;
+  width: 20%;
+}
+
+/*Name of place*/
+h3.placeName {
+  font-weight: bolder;
+}
+
+/*Phone Number*/
+p.placePhone {
+  font-style: italic;
+}
+
+/*Other info Ex. Address, PostCode, Website*/
+.xrtraInfo {
+  font-style: italic;
+}
+
+/*Image*/
+.image {
+  height: 150px;
+  width: 200px;
+}
+
+.click:hover {
+  cursor: pointer;
+}
+
+.list {
+  border-bottom: 1px solid;
+}
+
+/*Cotntrols the layout of List area, size*/
+.toggeButton {
+  border-radius: 10px;
+  background: rgba(200,200,200,1);
+  width: 38%;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+
+
+mat-button-toggle-group {
+  flex: flex;
+   align-items: center;
+   justify-content: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+/*Filter buttons*/
+mat-button-toggle {
+  width: 160px;
+  border-radius: 15px;
+  margin: 8px;
+  background-color: coral;
+}
+
+/*Title of comment*/
+.comment-title {
+  position: initial;
+  width: 50%;
+}
+
+/*Comment Section*/
+.comment-sec {
+  position: initial;
+  width: 75%;
+}
+
+/*Percoeved size of comment section area*/
+textarea {
+  height: 150px;
+}

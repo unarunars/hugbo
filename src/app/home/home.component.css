@@ -4,7 +4,7 @@
 
 .main{
     width: 100%;
-    background: #1a1a1a;
+    background: rgba(200,200,200,.75);
 }
 
 
@@ -13,7 +13,7 @@
   }
 
   p {
-    color: white;
+    color: rgb(50,50,50);
   }
 
   img {
