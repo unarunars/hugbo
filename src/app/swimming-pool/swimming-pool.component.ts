@@ -25,11 +25,18 @@ toogle(e){
     
     filtItems.subscribe(t=>{
       t.swim.map( item =>{
-        if(item.type === e){
-          console.log(e, t.saloon, item);
-          temp.push(item);
-          console.log(temp);
+        console.log(item.type);
+        //ÞARF AÐ LAGA ÞETTA
+        for(let i = 0; i< item.type.length; i++){
+          if(item.type[i] === e && temp === []){
+            temp.push(item);
+
+          }else if(item.type[i] === e && temp !== item.type[i]){ 
+            temp.push(item);
+          }
         }
+        console.log(temp);
+        
       })
       this.list = temp;
     })

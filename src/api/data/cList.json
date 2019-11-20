@@ -112,7 +112,8 @@
   ],
   "swim": [{
       "name": "Sundhöll Reykjavíkur",
-      "type": "Kaldur Pottur",
+      "type": ["Kaldur Pottur","Útilaug","Gufa", "Barnalaug"],
+      "opnening": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
       "address": "Barónstígur 45a",
       "postalcode": "101 Reykjavík",
       "mail": "reykjavik.is",
@@ -122,7 +123,8 @@
     },
     {
       "name": "Vesturbæjarlaug",
-      "type": "Kaldur Pottur",
+      "type": ["Kaldur Pottur", "Útilaug", "Kaldur Pottur", "Barnalaug", "Gufa"],
+      "opnening": {"Virkadaga": "6:30-22", "Helgar": "9-22"},
       "address": "Hofsvallagata",
       "postalcode": "107 Reykjavík",
       "mail": "vesturbaejarlaug.is",
@@ -132,7 +134,8 @@
     },
     {
       "name": "Sundlaug Seltjarnarness",
-      "type": "Innilaug",
+      "type": ["Barnalaug","Gufa","Útilaug"],
+      "opnening": {"Virkadaga": "6:30-22", "Helgar": "8-19:30"},
       "address": "Hrólfsskálavör 13",
       "postalcode": "170 Seltjarnarnes",
       "mail": "seltjarnarnes.is",
@@ -142,7 +145,8 @@
     },
     {
       "name": "Laugardalslaug",
-      "type": "Barnalaug",
+      "type": ["Barnalaug", "Útilaug", "Gufa","Kaldur Pottur"],
+      "opnening": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
       "address": "Sundlaugavegur 30",
       "postalcode": "105 Reykjavík",
       "mail": "reykjavik.is",
