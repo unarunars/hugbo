@@ -2,18 +2,26 @@
   "restaurant": [{
       "name": "Fiskfélagið",
       "type": "Sjávarréttir",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Vesturgata 2a, Grófartorg",
       "postalcode": "101 Reykjavík",
       "website": "fishcompany.is",
       "phone": "552 5300",
       "imagesurl": "https://www.fiskfelagid.is/wp-content/uploads/2014/05/fiksfelagid.png",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Grillmarkaðurinn",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Lækjargata 2a",
       "postalcode": "101 Reykjavík",
       "website": "grillmarkadurinn.is",
@@ -24,107 +32,159 @@
     {
       "name": "Sæta Svínið Gastropub",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Hafnarstræti 1-3",
       "postalcode": "101 Reykjavík",
       "website": "saetasvinid.is",
       "phone": "555 2900",
       "imagesurl": "https://pjatt.is/wp-content/uploads/2016/03/s%C3%A6ta_svi%CC%81ni%C3%B0_hafnarstr%C3%A6ti.jpg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Apotek Kitchen+Bar",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Austurstræti 16",
       "postalcode": "101 Reykjavík",
       "website": "apotekrestaurant.is",
       "phone": "552 5300",
       "imagesurl": "https://images.myguide-cdn.com/reykjavik/companies/apotek-restaurant/large/apotek-restaurant-435096.jpg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Sjávargrillið",
       "type": "Sjávarréttir",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Skólavörðustígur 14",
       "postalcode": "101 Reykjavík",
       "website": "sjavargrillid.is",
       "phone": "571 1100",
       "imagesurl": "https://i.pinimg.com/originals/ce/ec/5d/ceec5d827cf27af4c7e1505ad0e59ec7.jpg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Kol",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Skólavörðustígur 40",
       "postalcode": "101 Reykjavík",
       "website": "kolrestaurant.is",
       "phone": "517 7474",
       "imagesurl": "https://guidetoiceland.imgix.net/322087/x/0/the-best-restaurants-in-reykjavik-16?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.1.0&w=1300&s=28e0354f1a13e93aa633f54332407c36",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Rok",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Frakkastígur 26a",
       "postalcode": "101 Reykjavík",
       "website": "rokrestaurant.is",
       "phone": "544 4443",
       "imagesurl": "https://lonelyplanetimages.imgix.net/a/g/hi/t/7888249216adc79a465ff703e606653a-rok.png",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Sushi Social",
       "type": "Sjávarréttir",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Þingholtsstræti 5",
       "postalcode": "101 Reykjavík",
       "website": "sushisocial.is",
       "phone": "568 6600",
       "imagesurl": "https://www.stuckiniceland.com/wp-content/uploads/2019/06/%C2%A9Portra_SSamba_0608-Edit-1200x675.jpeg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Skólabrú Restaurant",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Pósthússtræti 17",
       "postalcode": "101 Reykjavík",
       "mail": "skolabru.is",
       "phone": "511 1690",
       "imagesurl": "https://guidetoiceland.imgix.net/239152/x/0/island-restaurant-tipps-guenstige-restaurants-in-reykjavik-2?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.1.0&w=1300&s=187366d27e4b551bebe7cf553f86ae85",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Lækjarbrekka",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bankastræti 2",
       "postalcode": "101 Reykjavík",
       "mail": "laekjabrekka.is",
       "phone": "551 4430",
       "imagesurl": "https://images.squarespace-cdn.com/content/v1/5bac01dfc46f6d2e9f34dbf9/1538349475496-Z48RQ267QIZ0KFOQ2T22/ke17ZwdGBToddI8pDm48kN015Hzqi6b45XD3KuSWBqR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UQEfeVoqKwv6zYLRurkRZIOwvFD7nZCEwlx8RyQG96JpxyQUbJSMlmHed1ZbHA1JQA/12465859_987250128016310_5746361853505143881_o.jpg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     },
     {
       "name": "Snaps Bistro",
       "type": "Steikur",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Þórsgata 1",
       "postalcode": "101 Reykjavík",
       "mail": "snapsbistro.is",
       "phone": "511 6677",
       "imagesurl": "https://b14.is/wp-content/uploads/2019/01/snaps5.jpg",
-      "comments": [{}]
+      "comments": [{
+
+      }]
     }
   ],
   "swim": [{
       "name": "Sundhöll Reykjavíkur",
-      "type": ["Kaldur Pottur","Útilaug","Gufa", "Barnalaug"],
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "type": ["Kaldur Pottur",
+        "Útilaug",
+        "Gufa",
+        "Barnalaug"
+      ],
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Barónstígur 45a",
       "postalcode": "101 Reykjavík",
       "mail": "reykjavik.is",
@@ -134,8 +194,17 @@
     },
     {
       "name": "Vesturbæjarlaug",
-      "type": ["Kaldur Pottur", "Útilaug", "Kaldur Pottur", "Barnalaug", "Gufa"],
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "9-22"},
+      "type": [
+        "Kaldur Pottur",
+        "Útilaug",
+        "Kaldur Pottur",
+        "Barnalaug",
+        "Gufa"
+      ],
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "9-22"
+      },
       "address": "Hofsvallagata",
       "postalcode": "107 Reykjavík",
       "mail": "vesturbaejarlaug.is",
@@ -145,8 +214,15 @@
     },
     {
       "name": "Sundlaug Seltjarnarness",
-      "type": ["Barnalaug","Gufa","Útilaug"],
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-19:30"},
+      "type": [
+        "Barnalaug",
+        "Gufa",
+        "Útilaug"
+      ],
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-19:30"
+      },
       "address": "Hrólfsskálavör 13",
       "postalcode": "170 Seltjarnarnes",
       "mail": "seltjarnarnes.is",
@@ -156,8 +232,16 @@
     },
     {
       "name": "Laugardalslaug",
-      "type": ["Barnalaug", "Útilaug", "Gufa","Kaldur Pottur"],
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "type": [
+        "Barnalaug",
+        "Útilaug",
+        "Gufa",
+        "Kaldur Pottur"
+      ],
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Sundlaugavegur 30",
       "postalcode": "105 Reykjavík",
       "mail": "reykjavik.is",
@@ -169,7 +253,10 @@
   "cafes": [{
       "name": "Te og Kaffi",
       "type": "Kaffi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Austurstræti 18",
       "postalcode": "101 Reykjavík",
       "mail": "teogkaffi.is",
@@ -180,7 +267,10 @@
     {
       "name": "Café Babalú",
       "type": "Kaffi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Skólavörðustígur 22",
       "postalcode": "101 Reykjavík",
       "mail": "bablu.is",
@@ -191,7 +281,10 @@
     {
       "name": "Kaffibrennslan",
       "type": "Bakkelsi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 21",
       "postalcode": "101 Reykjavík",
       "mail": "kaffibrennslan101.is",
@@ -202,7 +295,10 @@
     {
       "name": "Iðnó",
       "type": "Kaffi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Vonarstræti 3",
       "postalcode": "101 Reykjavík",
       "mail": "idnorvk.is",
@@ -213,7 +309,10 @@
     {
       "name": "Kaldi Bar/Café",
       "type": "Kaffi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 20b",
       "postalcode": "101 Reykjavík",
       "mail": "facebook.com",
@@ -224,7 +323,10 @@
     {
       "name": "Mokka Kaffi",
       "type": "Bakkelsi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Skólavörðustígur 3a",
       "postalcode": "101 Reykjavík",
       "mail": "mokka.is",
@@ -235,7 +337,10 @@
     {
       "name": "Cupcake Cafe",
       "type": "Bakkelsi",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Grettisgata 3",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -247,7 +352,10 @@
   "hairsaloons": [{
       "name": "Skuggi hárgreiðslustofa",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Ingólfstræti 8",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -258,7 +366,10 @@
     {
       "name": "Græna Stofan",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Óðinsgata 7",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -269,7 +380,10 @@
     {
       "name": "Slippurinn Hárgreiðslustofa",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 48b",
       "postalcode": "101 Reykjavík",
       "mail": "slippur.timapantanir.is",
@@ -280,7 +394,10 @@
     {
       "name": "Hár í Höndum",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Veltusundi 1",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -291,7 +408,10 @@
     {
       "name": "Rakararnir",
       "type": "Rakarastofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Klapparstígur 40",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -302,7 +422,10 @@
     {
       "name": "Effect",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bergstaðarstræti 13",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -313,7 +436,10 @@
     {
       "name": "Hárgreiðslustöðin Valhöll",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Óðinsgata 2",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -324,7 +450,10 @@
     {
       "name": "Hár og Heilsa",
       "type": "Hárgreiðslustofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bergstaðarstræti 13",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -335,7 +464,10 @@
     {
       "name": "Hárhornið",
       "type": "Engar Tímapantanir",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Hverfisgata 117",
       "postalcode": "105 Reykjavík",
       "mail": "facebook.com",
@@ -346,7 +478,10 @@
     {
       "name": "Reykjavík Hair",
       "type": "Engar Tímapantanir",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Borgartún 8",
       "postalcode": "105 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -357,7 +492,10 @@
     {
       "name": "Sjoppan",
       "type": "Rakarastofa",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Katrínartún 2",
       "postalcode": "105 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -369,7 +507,10 @@
   "bars": [{
       "name": "Kaffibarinn",
       "type": "Kokteilbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bergstaðarstræti 1",
       "postalcode": "101 Reykjavík",
       "mail": "kaffibarinn.is",
@@ -383,7 +524,10 @@
     {
       "name": "Den Danske Kro (Danska Kráin)",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Ingólfsstræti 3",
       "postalcode": "101 Reykjavík",
       "mail": "danski.is",
@@ -397,7 +541,10 @@
     {
       "name": "Lebowski Bar",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 20a",
       "postalcodl": "101 Reykjavík",
       "mail": "lebowskibar.is",
@@ -411,7 +558,10 @@
     {
       "name": "Klaustur Bar",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Kirkjutorgi 4",
       "postalcode": "101 Reykjavík",
       "mail": "klaustur.bar",
@@ -425,7 +575,10 @@
     {
       "name": "Micro bar",
       "type": "Craft-Bar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Vesturgata 2",
       "postalcode": "101 Reykjavík",
       "mail": "facebook.com",
@@ -439,7 +592,10 @@
     {
       "name": "Gaukurinn",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Tryggvagata 22",
       "postalcode": "101 Reykjavík",
       "mail": "gaukurinn.is",
@@ -453,7 +609,10 @@
     {
       "name": "Pablo Discobar",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Veltusund 1",
       "postalcode": "101 Reykjavík",
       "mail": "pablodiscobar.is",
@@ -467,7 +626,10 @@
     {
       "name": "Skúli Craft Bar",
       "type": "Craft-Bar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Aðalstræti 9",
       "postalcode": "101 Reykjavík",
       "mail": "facebook.com",
@@ -481,7 +643,10 @@
     {
       "name": "Bjarni Fel Sportbar",
       "type": "Sport-Bar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Austurstræti 20",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -495,7 +660,10 @@
     {
       "name": "Prikið",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bankastræti 12",
       "postalcode": "101 Reykjavík",
       "mail": "prikid.is",
@@ -509,7 +677,10 @@
     {
       "name": "Solon Bistro & Bar",
       "type": "Kokteilbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Bankastræti 7a",
       "postalcode": "101 Reykjavík",
       "mail": "solon.is",
@@ -523,7 +694,10 @@
     {
       "name": "Íslenski barinn",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Ingólfsstræti 1a",
       "postalcode": "101 Reykjavík",
       "mail": "islenskibarinn.is",
@@ -537,7 +711,10 @@
     {
       "name": "Ölstofa Kormáks og Skjaldar",
       "type": "Craft-Bar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Vegamótastígur 4",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -551,7 +728,10 @@
     {
       "name": "Bravó",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 22",
       "postalcode": "101 Reykjavík",
       "mail": "Vefsíðu vantar",
@@ -565,7 +745,10 @@
     {
       "name": "Kiki Queer Bar",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Laugavegur 22",
       "postalcode": "101 Reykjavík",
       "mail": "kiki.is",
@@ -579,7 +762,10 @@
     {
       "name": "Veður",
       "type": "Næturbar",
-      "openings": {"Virkadaga": "6:30-22", "Helgar": "8-22"},
+      "openings": {
+        "Virkadaga": "6:30-22",
+        "Helgar": "8-22"
+      },
       "address": "Klapparstígur 33",
       "postalcode": "101 Reykjavík",
       "mail": "vedurbarinn.is",
