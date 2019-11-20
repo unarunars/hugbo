@@ -9,29 +9,24 @@
     <div class="toggeButton">
       <h1>Veitingarstaðir</h1>
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-<<<<<<< HEAD
         <mat-button-toggle (click) = "toogle('Vegan')">Vegan</mat-button-toggle>
         <mat-button-toggle (click) = "toogle('Sjávarréttir')">Sjávarétta</mat-button-toggle>
         <mat-button-toggle (click) = "toogle('Steikur')">Steikhús</mat-button-toggle>
         <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
 
-=======
-        <mat-button-toggle value="bold">Vinsælast</mat-button-toggle>
-        <mat-button-toggle value="bold">Steikur</mat-button-toggle>
-        <mat-button-toggle value="bold">Sjávarrétta</mat-button-toggle>
-        <mat-button-toggle value="bold">Vegan</mat-button-toggle>
->>>>>>> 6151aac8522ee56dcf9c60a6a83c099c6ec21855
       </mat-button-toggle-group>
       <div class="list" *ngFor="let i of list">
         <div class="item">
 
-          <div class="image">
-            <!--Þetta á að vera myndin í json, einhver að laga?-->
-            <img ng-src="{{i.imageurl}" alt="image">
-          </div>
+            <div class="images">
+                <!--Þetta á að vera myndin í json, einhver að laga?-->
+                    <img alt="image" [src]="i.imagesurl">                
+              </div>
           <div class="click" (click)="clickedBar(i)">
             <h3 class="placeName">{{i.name}}</h3>
             <p class=" placePhone">{{i.phone}}</p>
+            <p class="workDays">Virkir dagar:{{i.openings.Virkadaga}}</p>
+              <p class="weekends">Helgar:{{i.openings.Helgar}}</p>
           </div>
         </div>
         <div *ngIf="i.isClicked">

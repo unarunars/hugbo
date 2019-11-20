@@ -12,30 +12,24 @@
           <div class="toggeButton">
               <h1>Barir</h1>
               <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-<<<<<<< HEAD
                   <mat-button-toggle (click) = "toogle('Kokteilbar')">Kokteila barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Sport-Bar')">Sport barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Craft-Bar')">craft barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Næturbar')">Nætur barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
-=======
-                  <mat-button-toggle value="kokteil">Kokteil</mat-button-toggle>
-                  <mat-button-toggle value="sport">Sport</mat-button-toggle>
-                  <mat-button-toggle value="craft">Craft</mat-button-toggle>
-                  <mat-button-toggle value="night">Nætur</mat-button-toggle>
-                  <mat-button-toggle value="popular">Vinsælast</mat-button-toggle>
->>>>>>> 6151aac8522ee56dcf9c60a6a83c099c6ec21855
               </mat-button-toggle-group>
               <div class="list" *ngFor="let i of list">
                 <div class="item">
         
-                  <div class="image">
-                    <!--Þetta á að vera myndin í json, einhver að laga?-->
-                    <img ng-src="{{i.imageurl}" alt="image">
-                  </div>
+                    <div class="images">
+                        <!--Þetta á að vera myndin í json, einhver að laga?-->
+                            <img alt="image" [src]="i.imagesurl">                
+                      </div>
                   <div class="click" (click)="clickedBar(i)">
                     <h3 class="placeName">{{i.name}}</h3>
                     <p class="placePhone">{{i.phone}}</p>
+                    <p class="workDays">Virkir dagar:{{i.openings.Virkadaga}}</p>
+              <p class="weekends">Helgar:{{i.openings.Helgar}}</p>
                   </div>
                 </div>
 

@@ -20,7 +20,7 @@ export class ToolServiceService {
    /* this.http.get('https://api.myjson.com/bins/11wwo4').subscribe(t =>{
       console.log(t);
     })*/
-    return this.http.get('https://api.myjson.com/bins/axms6');
+    return this.http.get('https://api.myjson.com/bins/oyua6');
     }
     postCommentJson(any: any[]){
       console.log(any);

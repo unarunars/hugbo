@@ -20,16 +20,17 @@
       <div class="list" *ngFor="let i of list">
         <div class="item">
 
-          <div class="image">
+          <div class="images">
             <!--Þetta á að vera myndin í json, einhver að laga?-->
-            <img ng-src="{{i.imageurl}" alt="image">
+                <img alt="image" [src]="i.imagesurl">                
           </div>
+
           <div class="click" (click)="clickedBar(i)">
             <h3 class="placeName">{{i.name}}</h3>
             <p class=" placePhone">{{i.phone}}</p>
             
-              <p>Virkir dagar:{{i.opening}}</p>
-              <p>Helgar:{{i.opening}}</p>
+              <p class="workDays">Virkir dagar:{{i.openings.Virkadaga}}</p>
+              <p class="weekends">Helgar:{{i.openings.Helgar}}</p>
             
           </div>
         </div>

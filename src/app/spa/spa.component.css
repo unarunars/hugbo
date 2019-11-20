@@ -9,7 +9,9 @@
  
  .item {
    display: flex;
-   background: rgba(200,200,200,.75);
+   background: rgba(200,200,200,1);
+   margin: 0px 5px;
+   padding-top: 10px;
  }
  
 /*Search-Box*/
@@ -25,7 +27,7 @@
    font-weight: bolder;
  }
  /*Phone Number*/
- p.placePhone {
+ p.placePhone p.workDays p.weekends {
    font-style: italic;
  }
  
@@ -35,10 +37,16 @@
  }
  
  /*Image*/
- .image {
-   height: 150px;
-   width: 200px;
- }
+.images {
+  height: 150px;
+  width: 200px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 10%;
+}
  
  .click:hover {
    cursor: pointer;
