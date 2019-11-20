@@ -1,47 +1,46 @@
-  
   <div class="main">
-      <div class="main-nav">
-          <div class="main-side-nav">
-              <ul class="main-menu">
-                  <li>
-                  <button mat-button (click)="goRestaurant()">
-                      Veitingarstaðir
-                    </button>
-                    </li>
-                    <li>
-                    <button mat-button (click)="goBars()">
-                        Barir
-                    </button>
-                  </li>
-                  <li>
-                    <button mat-button (click)="goSaloon()">
-                        Hárgreiðslustofur
-                    </button>
-                  </li>
-                  <li>
-                    <button mat-button (click)="goCafe()">
-                        Kaffihús
-                    </button>
-                  </li>
-                  <li>
-                    <button mat-button (click)="goSwimming()">
-                        Sundlaugar
-                    </button>
-                  </li>
-              </ul>
+    <div class="main-nav">
+      <div class="main-side-nav">
+        <ul class="main-menu">
+          <li>
+            <button mat-button (click)="goRestaurant()">
+              Veitingarstaðir
+            </button>
+          </li>
+          <li>
+            <button mat-button (click)="goBars()">
+              Barir
+            </button>
+          </li>
+          <li>
+            <button mat-button (click)="goSaloon()">
+              Hárgreiðslustofur
+            </button>
+          </li>
+          <li>
+            <button mat-button (click)="goCafe()">
+              Kaffihús
+            </button>
+          </li>
+          <li>
+            <button mat-button (click)="goSwimming()">
+              Sundlaugar
+            </button>
+          </li>
+        </ul>
 
-              <div class="main-logo">
-                <button mat-button (click)="goHome()">
-                    ReykjavíkLogo
-                </button>
-              </div>
+        <div class="main-logo">
+          <button mat-button (click)="goHome()">
+            ReykjavíkLogo
+          </button>
         </div>
       </div>
+    </div>
 
 
 
 
-  <!--
+    <!--
   <div class="logo">
     <button mat-button (click)="goHome()">
         ReykjavíkLogo
@@ -66,18 +65,18 @@
     
   </div>
 -->
-  <div class="hero-image">
+    <div class="hero-image">
       <div class="hero-text">
-          <div class="fade-in">
-            <h1 style="font-size:90px">Reykjavík</h1>
-            Þar sem draumar koma til að deyja
-          </div>
+        <div class="fade-in">
+          <h1 style="font-size:90px">Reykjavík</h1>
+          Þar sem draumar koma til að deyja
+        </div>
       </div>
     </div>
 
-<div class="">
+    <div class="">
 
-</div>
-<app-main class="main" [chosen] = "chosen"></app-main>
+    </div>
+    <app-main class="main" [chosen]="chosen"></app-main>
 
-</div>
+  </div>

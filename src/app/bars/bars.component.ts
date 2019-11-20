@@ -48,14 +48,15 @@ ngOnInit() {
       console.log(t);
       this.isDataReady = true;
     })
-    //taka frá google maps API
+    //taka frá google maps API þetta er það ef þú villt prufa hitt... 
+    /*
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),
     zoom: 15,
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
-this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
-    /*this.setCurrentLocation();
+this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
+    this.setCurrentLocation();
     //þetta allt tekið frá maps API skoða betur
     //load Places Autocomplete
     this.mapsAPILoader.load().then(() => {
@@ -78,12 +79,12 @@ this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
           }
 
           //set latitude, longitude and zoom
-          this.lat = -21.9270884//place.geometry.location.lat();
-          this.lng = 64.1436456; //place.geometry.location.lng();
+          this.lat = //place.geometry.location.lat();
+          this.lng =  //place.geometry.location.lng();
           this.zoom = 12;
         });
       });
-    });*/
+    });
   /*
     */
 }
@@ -94,8 +95,8 @@ private setCurrentLocation() {
     console.log(navigator);
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position.coords.heading);
-      //this.lat = position.coords.latitude;
-      //this.lng = position.coords.longitude;
+      this.lat = position.coords.latitude;
+      this.lng = position.coords.longitude;
       this.zoom = 8;
       this.getAddress(this.lat, this.lng);
     });
@@ -135,8 +136,8 @@ clickedBar(item){
     if(t.name === item.name){
       if(!t.isClicked){
         t.isClicked = true;
-        this.lat = 64.122272;
-        this.lng = -21.871059;
+       // this.lat = 64.122272;
+       // this.lng = -21.871059;
       console.log(t);
       }else {
         t.isClicked = false;

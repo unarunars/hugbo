@@ -1,54 +1,50 @@
-
-
-<div class= "all">
-<form class="form">
-    <mat-form-field class="example-full-width">
+<div class="all">
+  <form class="form">
+    <mat-form-field class="search-box">
       <input matInput placeholder="Leita af veitingarstað" value="">
     </mat-form-field>
-</form>
+  </form>
 
-<div class="main" >
+  <div class="main">
     <div class="toggeButton">
-        <h1>Veitingarstaðir</h1>
-        <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-            <mat-button-toggle value="bold">Vinstælast</mat-button-toggle>
-            <mat-button-toggle value="bold">$</mat-button-toggle>
-            <mat-button-toggle value="italic">$$</mat-button-toggle>
-            <mat-button-toggle value="underline">$$$</mat-button-toggle>
-        </mat-button-toggle-group>
-        <div  class = "list" *ngFor = "let i of list">
-                <div   class = "item">
+      <h1>Veitingarstaðir</h1>
+      <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="bold">Vinsælast</mat-button-toggle>
+        <mat-button-toggle value="bold">$</mat-button-toggle>
+        <mat-button-toggle value="italic">$$</mat-button-toggle>
+        <mat-button-toggle value="underline">$$$</mat-button-toggle>
+      </mat-button-toggle-group>
+      <div class="list" *ngFor="let i of list">
+        <div class="item">
 
-                <div class = "image">
-                        <!--Þetta á að vera myndin í json, einhver að laga?-->
-                        <img src="bar.jpg" alt="bars">
-                </div>
-                <div class= "click" (click)= "clickedBar(i)">
-                    <h3 >{{i.name}}</h3>
-                    <p>{{i.phone}}</p>
-                </div>
-            </div>
-            <div *ngIf = "i.isClicked">
-                    <p>{{i.address}}</p>
-                    <p>{{i.postalcode}}</p>
-                    <p>{{i.mail}}</p>
-                    
-
-                    
-                    <form class="example-form">
-                            <mat-form-field class="example-full-width">
-                              <input matInput placeholder="Fyrirsögn" value="">
-                            </mat-form-field>
-                          
-                            <mat-form-field class="example-full-width">
-                              <textarea matInput placeholder="skildu eftir athugasemd"></textarea>
-                            </mat-form-field>
-                          </form>
-            </div>
+          <div class="image">
+            <!--Þetta á að vera myndin í json, einhver að laga?-->
+            <img ng-src="{{i.imageurl}" alt="image">
+          </div>
+          <div class="click" (click)="clickedBar(i)">
+            <h3 class="placeName">{{i.name}}</h3>
+            <p class=" placePhone">{{i.phone}}</p>
+          </div>
         </div>
+        <div *ngIf="i.isClicked">
+          <p class="xtraInfo">{{i.address}}</p>
+          <p class="xtraInfo">{{i.postalcode}}</p>
+          <p class="xtraInfo">{{i.mail}}</p>
+
+
+
+          <form class="example-form">
+            <mat-form-field class="comment-title">
+              <input matInput placeholder="Fyrirsögn" value="">
+            </mat-form-field>
+
+            <mat-form-field class="comment-sec">
+              <textarea matInput placeholder="skildu eftir athugasemd"></textarea>
+            </mat-form-field>
+          </form>
+        </div>
+      </div>
     </div>
-        <div #map style="width:100%;height:100%;"></div>
+    <div #map style="width:60%;height:100%; position: fixed;"></div>
+  </div>
 </div>
-</div>
-
-
