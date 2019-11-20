@@ -12,6 +12,14 @@
   background: rgba(200,200,200,.75);
 }
 
+/*Search-Box*/
+.search-box{
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0px 5px;
+  width: 20%;
+}
+
 /*Name of place*/
 h3.placeName {
   font-weight: bolder;
@@ -49,11 +57,14 @@ p.placePhone {
 
 h1{
    margin: 10px;
+   text-align: center;
 }
 
 
 mat-button-toggle-group {
-  flex: auto;
+  flex: flex;
+   align-items: center;
+   justify-content: center;
   width: 100%;
   padding: 0px 20px;
 }
