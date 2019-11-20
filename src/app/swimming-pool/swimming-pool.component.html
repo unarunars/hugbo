@@ -27,10 +27,10 @@
           <div class="click" (click)="clickedBar(i)">
             <h3 class="placeName">{{i.name}}</h3>
             <p class=" placePhone">{{i.phone}}</p>
-            
-              <p>Virkir dagar:{{i.opening}}</p>
-              <p>Helgar:{{i.opening}}</p>
-            
+            <div *ngFor = "let j of i.opnening">
+              <p>Virkir dagar:{{j.Virkadaga}}</p>
+              <p>Helgar:{{j.Helgar}}</p>
+            </div>
           </div>
         </div>
         <div *ngIf="i.isClicked">
