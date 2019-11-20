@@ -1,681 +1,545 @@
 {
-     "restaurant": [
-       {
-         "name": "Fiskfélagið",
-         "type":"Sjávarréttir",
-         "address": "Vesturgata 2a, Grófartorg",
-         "postalcode": "101 Reykjavík",
-         "website": "fishcompany.is",
-         "phone": "552 5300",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Grillmarkaðurinn",
-         "type":"Steikur",
-         "address": "Lækjargata 2a",
-         "postalcode": "101 Reykjavík",
-         "website": "grillmarkadurinn.is",
-         "phone": "571 7777",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Sæta Svínið Gastropub",
-         "type":"Steikur",
-         "address": "Hafnarstræti 1-3",
-         "postalcode": "101 Reykjavík",
-         "website": "saetasvinid.is",
-         "phone": "555 2900",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Apotek Kitchen+Bar",
-         "type":"Steikur",
-         "address": "Austurstræti 16",
-         "postalcode": "101 Reykjavík",
-         "website": "apotekrestaurant.is",
-         "phone": "552 5300",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Sjávargrillið",
-         "type":"Sjávarréttir",
-         "address": "Skólavörðustígur 14",
-         "postalcode": "101 Reykjavík",
-         "website": "sjavargrillid.is",
-         "phone": "571 1100",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Kol",
-         "type":"Steikur",
-         "address": "Skólavörðustígur 40",
-         "postalcode": "101 Reykjavík",
-         "website": "kolrestaurant.is",
-         "phone": "517 7474",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Rok",
-         "type":"Steikur",
-         "address": "Frakkastígur 26a",
-         "postalcode": "101 Reykjavík",
-         "website": "rokrestaurant.is",
-         "phone": "544 4443",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Sushi Social",
-         "type":"Sjávarréttir",
-         "address": "Þingholtsstræti 5",
-         "postalcode": "101 Reykjavík",
-         "website": "sushisocial.is",
-         "phone": "568 6600",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Skólabrú Restaurant",
-         "type":"Steikur",
-         "address": "Pósthússtræti 17",
-         "postalcode": "101 Reykjavík",
-         "mail": "skolabru.is",
-         "phone": "511 1690",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Lækjarbrekka",
-         "type":"Steikur",
-         "address": "Bankastræti 2",
-         "postalcode": "101 Reykjavík",
-         "mail": "laekjabrekka.is",
-         "phone": "551 4430",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Snaps Bistro",
-         "type":"Steikur",
-         "address": "Þórsgata 1",
-         "postalcode": "101 Reykjavík",
-         "mail": "snapsbistro.is",
-         "phone": "511 6677",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       }
-     ],
-     "swim": [
-       {
-         "name": "Sundhöll Reykjavíkur",
-         "type":"Kaldur Pottur",
-         "address": "Barónstígur 45a",
-         "postalcode": "101 Reykjavík",
-         "mail": "reykjavik.is",
-         "phone": "411 5350",
-         "image": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/sundhollin-web-mstudioreykjavik-66.jpg?itok=cljr1Nwn",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Vesturbæjarlaug",
-         "type":"Kaldur Pottur",
-         "address": "Hofsvallagata",
-         "postalcode": "107 Reykjavík",
-         "mail": "vesturbaejarlaug.is",
-         "phone": "411 5150",
-         "image": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/vesturbaearlaug-ljosmyndir-3.jpg?itok=oEQDFwBw",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Sundlaug Seltjarnarness",
-         "type":"Innilaug",
-         "address": "Hrólfsskálavör 13",
-         "postalcode": "170 Seltjarnarnes",
-         "mail": "seltjarnarnes.is",
-         "phone": "561 1551",
-         "image": "https://www.worldclass.is/media/371799/arbaejarlaug.jpg?width=770&height=385&scale=both&mode=crop",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Laugardalslaug",
-         "type":"Barnalaug",
-         "address": "Sundlaugavegur 30",
-         "postalcode": "105 Reykjavík",
-         "mail": "reykjavik.is",
-         "phone": "411 5100",
-         "image": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/laugardalslaug-1.jpg?itok=KB10QPKP",
-         "comments": [
-           {
-           }
-         ]
-       }
-     ],
-     "cafes": [
-       {
-         "name": "Te og Kaffi",
-         "type":"Kaffi",
-         "address": "Austurstræti 18",
-         "postalcode": "101 Reykjavík",
-         "mail": "teogkaffi.is",
-         "phone": "527 2884",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Café Babalú",
-         "type":"Kaffi",
-         "address": "Skólavörðustígur 22",
-         "postalcode": "101 Reykjavík",
-         "mail": "bablu.is",
-         "phone": "555 8845",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Kaffibrennslan",
-         "type":"Bakkelsi",
-         "address": "Laugavegur 21",
-         "postalcode": "101 Reykjavík",
-         "mail": "kaffibrennslan101.is",
-         "phone": "511 8888",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Iðnó",
-         "type":"Kaffi",
-         "address": "Vonarstræti 3",
-         "postalcode": "101 Reykjavík",
-         "mail": "idnorvk.is",
-         "phone": "537 8800",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Kaldi Bar/Café",
-         "type":"Kaffi",
-         "address": "Laugavegur 20b",
-         "postalcode": "101 Reykjavík",
-         "mail": "facebook.com",
-         "phone": "581 2200",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Mokka Kaffi",
-         "type":"Bakkelsi",
-         "address": "Skólavörðustígur 3a",
-         "postalcode": "101 Reykjavík",
-         "mail": "mokka.is",
-         "phone": "552 1174",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Cupcake Cafe",
-         "type":"Bakkelsi",
-         "address": "Grettisgata 3",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "823 3041",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       }
-     ],
-     "hairsaloons": [
-       {
-         "name": "Skuggi hárgreiðslustofa",
-         "type":"Hárgreiðslustofa",
-         "address": "Ingólfstræti 8",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "571 4420",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Græna Stofan",
-         "type":"Hárgreiðslustofa",
-         "address": "Óðinsgata 7",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "552 1375",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Slippurinn Hárgreiðslustofa",
-         "type":"Hárgreiðslustofa",
-         "address": "Laugavegur 48b",
-         "postalcode": "101 Reykjavík",
-         "mail": "slippur.timapantanir.is",
-         "phone": "511 6660",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Hár í Höndum",
-         "type":"Hárgreiðslustofa",
-         "address": "Veltusundi 1",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "562 3338",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Rakararnir",
-         "type":"Rakarastofa",
-         "address": "Klapparstígur 40",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "551 3010",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Effect",
-         "type":"Hárgreiðslustofa",
-         "address": "Bergstaðarstræti 13",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "562 3338",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Hárgreiðslustöðin Valhöll",
-         "type":"Hárgreiðslustofa",
-         "address": "Óðinsgata 2",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "552 2138",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Hár og Heilsa",
-         "type":"Hárgreiðslustofa",
-         "address": "Bergstaðarstræti 13",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "511 2100",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Hárhornið",
-         "type":"Engar Tímapantanir",
-         "address": "Hverfisgata 117",
-         "postalcode": "105 Reykjavík",
-         "mail": "facebook.com",
-         "phone": "552 3800",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Reykjavík Hair",
-         "type":"Engar Tímapantanir",
-         "address": "Borgartún 8",
-         "postalcode": "105 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "555 1001",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       },
-       {
-         "name": "Sjoppan",
-         "type":"Rakarastofa",
-         "address": "Katrínartún 2",
-         "postalcode": "105 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "511 1221",
-         "image": "",
-         "comments": [
-           {
-           }
-         ]
-       }
-     ],
-     "bars": [
-       {
-         "name": "Kaffibarinn",
-         "type":"Kokteilbar",
-         "address": "Bergstaðarstræti 1",
-         "postalcode": "101 Reykjavík",
-         "mail": "kaffibarinn.is",
-         "phone": "551 1588",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Den Danske Kro (Danska Kráin)",
-         "type":"Næturbar",
-         "address": "Ingólfsstræti 3",
-         "postalcode": "101 Reykjavík",
-         "mail": "danski.is",
-         "phone": "552 0070",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Lebowski Bar",
-         "type":"Næturbar",
-         "address": "Laugavegur 20a",
-         "postalcodl": "101 Reykjavík",
-         "mail": "lebowskibar.is",
-         "phone": "552 2300",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Klaustur Bar",
-         "type":"Næturbar",
-         "address": "Kirkjutorgi 4",
-         "postalcode": "101 Reykjavík",
-         "mail": "klaustur.bar",
-         "phone": "571 4421",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Micro bar",
-         "type":"Craft-Bar",
-         "address": "Vesturgata 2",
-         "postalcode": "101 Reykjavík",
-         "mail": "facebook.com",
-         "phone": "865 8389",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Gaukurinn",
-         "type":"Næturbar",
-         "address": "Tryggvagata 22",
-         "postalcode": "101 Reykjavík",
-         "mail": "gaukurinn.is",
-         "phone": "958 0212",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Pablo Discobar",
-         "type":"Næturbar",
-         "address": "Veltusund 1",
-         "postalcode": "101 Reykjavík",
-         "mail": "pablodiscobar.is",
-         "phone": "552 7333",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Skúli Craft Bar",
-         "type":"Craft-Bar",
-         "address": "Aðalstræti 9",
-         "postalcode": "101 Reykjavík",
-         "mail": "facebook.com",
-         "phone": "519 6455",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Bjarni Fel Sportbar",
-         "type":"Sport-Bar",
-         "address": "Austurstræti 20",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "561 2240",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Prikið",
-         "type":"Næturbar",
-         "address": "Bankastræti 12",
-         "postalcode": "101 Reykjavík",
-         "mail": "prikid.is",
-         "phone": "551 2866",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Solon Bistro & Bar",
-         "type":"Kokteilbar",
-         "address": "Bankastræti 7a",
-         "postalcode": "101 Reykjavík",
-         "mail": "solon.is",
-         "phone": "562 3232",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Íslenski barinn",
-         "type":"Næturbar",
-         "address": "Ingólfsstræti 1a",
-         "postalcode": "101 Reykjavík",
-         "mail": "islenskibarinn.is",
-         "phone": "517 6767",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Ölstofa Kormáks og Skjaldar",
-         "type":"Craft-Bar",
-         "address": "Vegamótastígur 4",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "552 4687",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Bravó",
-         "type":"Næturbar",
-         "address": "Laugavegur 22",
-         "postalcode": "101 Reykjavík",
-         "mail": "Vefsíðu vantar",
-         "phone": "Enginn sími",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Kiki Queer Bar",
-         "type":"Næturbar",
-         "address": "Laugavegur 22",
-         "postalcode": "101 Reykjavík",
-         "mail": "kiki.is",
-         "phone": "571 0194",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       },
-       {
-         "name": "Veður",
-         "type":"Næturbar",
-         "address": "Klapparstígur 33",
-         "postalcode": "101 Reykjavík",
-         "mail": "vedurbarinn.is",
-         "phone": "561 2240",
-         "image": "",
-         "comments": [
-           {
-             "title": "Frábær staður",
-             "comment": "mjög nice að vera þarna"
-           }
-         ]
-       }
-     ]
-   }
+  "restaurant": [{
+      "name": "Fiskfélagið",
+      "type": "Sjávarréttir",
+      "address": "Vesturgata 2a, Grófartorg",
+      "postalcode": "101 Reykjavík",
+      "website": "fishcompany.is",
+      "phone": "552 5300",
+      "imagesurl": "lol.jpg",
+      "comments": [{}]
+    },
+    {
+      "name": "Grillmarkaðurinn",
+      "type": "Steikur",
+      "address": "Lækjargata 2a",
+      "postalcode": "101 Reykjavík",
+      "website": "grillmarkadurinn.is",
+      "phone": "571 7777",
+      "imagesurl": "https://everplaces.com/users/eea6570bf4144e5baa7c1b89ba7a3d84/places/f3dc4c46aa5a4990b548d43eac572a9a/images/36499232c62940d4932d42068a9af274.jpg",
+      "comments": [{}]
+    },
+    {
+      "name": "Sæta Svínið Gastropub",
+      "type": "Steikur",
+      "address": "Hafnarstræti 1-3",
+      "postalcode": "101 Reykjavík",
+      "website": "saetasvinid.is",
+      "phone": "555 2900",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Apotek Kitchen+Bar",
+      "type": "Steikur",
+      "address": "Austurstræti 16",
+      "postalcode": "101 Reykjavík",
+      "website": "apotekrestaurant.is",
+      "phone": "552 5300",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Sjávargrillið",
+      "type": "Sjávarréttir",
+      "address": "Skólavörðustígur 14",
+      "postalcode": "101 Reykjavík",
+      "website": "sjavargrillid.is",
+      "phone": "571 1100",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Kol",
+      "type": "Steikur",
+      "address": "Skólavörðustígur 40",
+      "postalcode": "101 Reykjavík",
+      "website": "kolrestaurant.is",
+      "phone": "517 7474",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Rok",
+      "type": "Steikur",
+      "address": "Frakkastígur 26a",
+      "postalcode": "101 Reykjavík",
+      "website": "rokrestaurant.is",
+      "phone": "544 4443",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Sushi Social",
+      "type": "Sjávarréttir",
+      "address": "Þingholtsstræti 5",
+      "postalcode": "101 Reykjavík",
+      "website": "sushisocial.is",
+      "phone": "568 6600",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Skólabrú Restaurant",
+      "type": "Steikur",
+      "address": "Pósthússtræti 17",
+      "postalcode": "101 Reykjavík",
+      "mail": "skolabru.is",
+      "phone": "511 1690",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Lækjarbrekka",
+      "type": "Steikur",
+      "address": "Bankastræti 2",
+      "postalcode": "101 Reykjavík",
+      "mail": "laekjabrekka.is",
+      "phone": "551 4430",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Snaps Bistro",
+      "type": "Steikur",
+      "address": "Þórsgata 1",
+      "postalcode": "101 Reykjavík",
+      "mail": "snapsbistro.is",
+      "phone": "511 6677",
+      "imagesurl": "",
+      "comments": [{}]
+    }
+  ],
+  "swim": [{
+      "name": "Sundhöll Reykjavíkur",
+      "type": "Kaldur Pottur",
+      "address": "Barónstígur 45a",
+      "postalcode": "101 Reykjavík",
+      "mail": "reykjavik.is",
+      "phone": "411 5350",
+      "imagesurl": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/sundhollin-web-mstudioreykjavik-66.jpg?itok=cljr1Nwn",
+      "comments": [{}]
+    },
+    {
+      "name": "Vesturbæjarlaug",
+      "type": "Kaldur Pottur",
+      "address": "Hofsvallagata",
+      "postalcode": "107 Reykjavík",
+      "mail": "vesturbaejarlaug.is",
+      "phone": "411 5150",
+      "imagesurl": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/vesturbaearlaug-ljosmyndir-3.jpg?itok=oEQDFwBw",
+      "comments": [{}]
+    },
+    {
+      "name": "Sundlaug Seltjarnarness",
+      "type": "Innilaug",
+      "address": "Hrólfsskálavör 13",
+      "postalcode": "170 Seltjarnarnes",
+      "mail": "seltjarnarnes.is",
+      "phone": "561 1551",
+      "imagesurl": "https://www.worldclass.is/media/371799/arbaejarlaug.jpg?width=770&height=385&scale=both&mode=crop",
+      "comments": [{}]
+    },
+    {
+      "name": "Laugardalslaug",
+      "type": "Barnalaug",
+      "address": "Sundlaugavegur 30",
+      "postalcode": "105 Reykjavík",
+      "mail": "reykjavik.is",
+      "phone": "411 5100",
+      "imagesurl": "https://reykjavik.is/sites/default/files/styles/frettamynd/public/myndir_stadir/laugardalslaug-1.jpg?itok=KB10QPKP",
+      "comments": [{}]
+    }
+  ],
+  "cafes": [{
+      "name": "Te og Kaffi",
+      "type": "Kaffi",
+      "address": "Austurstræti 18",
+      "postalcode": "101 Reykjavík",
+      "mail": "teogkaffi.is",
+      "phone": "527 2884",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Café Babalú",
+      "type": "Kaffi",
+      "address": "Skólavörðustígur 22",
+      "postalcode": "101 Reykjavík",
+      "mail": "bablu.is",
+      "phone": "555 8845",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Kaffibrennslan",
+      "type": "Bakkelsi",
+      "address": "Laugavegur 21",
+      "postalcode": "101 Reykjavík",
+      "mail": "kaffibrennslan101.is",
+      "phone": "511 8888",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Iðnó",
+      "type": "Kaffi",
+      "address": "Vonarstræti 3",
+      "postalcode": "101 Reykjavík",
+      "mail": "idnorvk.is",
+      "phone": "537 8800",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Kaldi Bar/Café",
+      "type": "Kaffi",
+      "address": "Laugavegur 20b",
+      "postalcode": "101 Reykjavík",
+      "mail": "facebook.com",
+      "phone": "581 2200",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Mokka Kaffi",
+      "type": "Bakkelsi",
+      "address": "Skólavörðustígur 3a",
+      "postalcode": "101 Reykjavík",
+      "mail": "mokka.is",
+      "phone": "552 1174",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Cupcake Cafe",
+      "type": "Bakkelsi",
+      "address": "Grettisgata 3",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "823 3041",
+      "imagesurl": "",
+      "comments": [{}]
+    }
+  ],
+  "hairsaloons": [{
+      "name": "Skuggi hárgreiðslustofa",
+      "type": "Hárgreiðslustofa",
+      "address": "Ingólfstræti 8",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "571 4420",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Græna Stofan",
+      "type": "Hárgreiðslustofa",
+      "address": "Óðinsgata 7",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "552 1375",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Slippurinn Hárgreiðslustofa",
+      "type": "Hárgreiðslustofa",
+      "address": "Laugavegur 48b",
+      "postalcode": "101 Reykjavík",
+      "mail": "slippur.timapantanir.is",
+      "phone": "511 6660",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Hár í Höndum",
+      "type": "Hárgreiðslustofa",
+      "address": "Veltusundi 1",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "562 3338",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Rakararnir",
+      "type": "Rakarastofa",
+      "address": "Klapparstígur 40",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "551 3010",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Effect",
+      "type": "Hárgreiðslustofa",
+      "address": "Bergstaðarstræti 13",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "562 3338",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Hárgreiðslustöðin Valhöll",
+      "type": "Hárgreiðslustofa",
+      "address": "Óðinsgata 2",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "552 2138",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Hár og Heilsa",
+      "type": "Hárgreiðslustofa",
+      "address": "Bergstaðarstræti 13",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "511 2100",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Hárhornið",
+      "type": "Engar Tímapantanir",
+      "address": "Hverfisgata 117",
+      "postalcode": "105 Reykjavík",
+      "mail": "facebook.com",
+      "phone": "552 3800",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Reykjavík Hair",
+      "type": "Engar Tímapantanir",
+      "address": "Borgartún 8",
+      "postalcode": "105 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "555 1001",
+      "imagesurl": "",
+      "comments": [{}]
+    },
+    {
+      "name": "Sjoppan",
+      "type": "Rakarastofa",
+      "address": "Katrínartún 2",
+      "postalcode": "105 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "511 1221",
+      "imagesurl": "",
+      "comments": [{}]
+    }
+  ],
+  "bars": [{
+      "name": "Kaffibarinn",
+      "type": "Kokteilbar",
+      "address": "Bergstaðarstræti 1",
+      "postalcode": "101 Reykjavík",
+      "mail": "kaffibarinn.is",
+      "phone": "551 1588",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Den Danske Kro (Danska Kráin)",
+      "type": "Næturbar",
+      "address": "Ingólfsstræti 3",
+      "postalcode": "101 Reykjavík",
+      "mail": "danski.is",
+      "phone": "552 0070",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Lebowski Bar",
+      "type": "Næturbar",
+      "address": "Laugavegur 20a",
+      "postalcodl": "101 Reykjavík",
+      "mail": "lebowskibar.is",
+      "phone": "552 2300",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Klaustur Bar",
+      "type": "Næturbar",
+      "address": "Kirkjutorgi 4",
+      "postalcode": "101 Reykjavík",
+      "mail": "klaustur.bar",
+      "phone": "571 4421",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Micro bar",
+      "type": "Craft-Bar",
+      "address": "Vesturgata 2",
+      "postalcode": "101 Reykjavík",
+      "mail": "facebook.com",
+      "phone": "865 8389",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Gaukurinn",
+      "type": "Næturbar",
+      "address": "Tryggvagata 22",
+      "postalcode": "101 Reykjavík",
+      "mail": "gaukurinn.is",
+      "phone": "958 0212",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Pablo Discobar",
+      "type": "Næturbar",
+      "address": "Veltusund 1",
+      "postalcode": "101 Reykjavík",
+      "mail": "pablodiscobar.is",
+      "phone": "552 7333",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Skúli Craft Bar",
+      "type": "Craft-Bar",
+      "address": "Aðalstræti 9",
+      "postalcode": "101 Reykjavík",
+      "mail": "facebook.com",
+      "phone": "519 6455",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Bjarni Fel Sportbar",
+      "type": "Sport-Bar",
+      "address": "Austurstræti 20",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "561 2240",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Prikið",
+      "type": "Næturbar",
+      "address": "Bankastræti 12",
+      "postalcode": "101 Reykjavík",
+      "mail": "prikid.is",
+      "phone": "551 2866",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Solon Bistro & Bar",
+      "type": "Kokteilbar",
+      "address": "Bankastræti 7a",
+      "postalcode": "101 Reykjavík",
+      "mail": "solon.is",
+      "phone": "562 3232",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Íslenski barinn",
+      "type": "Næturbar",
+      "address": "Ingólfsstræti 1a",
+      "postalcode": "101 Reykjavík",
+      "mail": "islenskibarinn.is",
+      "phone": "517 6767",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Ölstofa Kormáks og Skjaldar",
+      "type": "Craft-Bar",
+      "address": "Vegamótastígur 4",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "552 4687",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Bravó",
+      "type": "Næturbar",
+      "address": "Laugavegur 22",
+      "postalcode": "101 Reykjavík",
+      "mail": "Vefsíðu vantar",
+      "phone": "Enginn sími",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Kiki Queer Bar",
+      "type": "Næturbar",
+      "address": "Laugavegur 22",
+      "postalcode": "101 Reykjavík",
+      "mail": "kiki.is",
+      "phone": "571 0194",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    },
+    {
+      "name": "Veður",
+      "type": "Næturbar",
+      "address": "Klapparstígur 33",
+      "postalcode": "101 Reykjavík",
+      "mail": "vedurbarinn.is",
+      "phone": "561 2240",
+      "imagesurl": "",
+      "comments": [{
+        "title": "Frábær staður",
+        "comment": "mjög nice að vera þarna"
+      }]
+    }
+  ]
+}
