@@ -15,14 +15,37 @@ export class SwimmingPoolComponent implements OnInit {
 constructor(
   private toolservise: ToolServiceService
 ) { }
-//hook sem nær í observerable frá tools  
-ngOnInit() {
+toogle(e){
+  console.log(e);
+  if(!e){
+    this.refresh();
+  }else{
+    let filtItems = this.toolservise.getJson();
+    let temp = [];
+    
+    filtItems.subscribe(t=>{
+      t.swim.map( item =>{
+        if(item.type === e){
+          console.log(e, t.saloon, item);
+          temp.push(item);
+          console.log(temp);
+        }
+      })
+      this.list = temp;
+    })
+  }
+}
+refresh(){
   let items = this.toolservise.getJson();
   //subscripa í listann
     items.subscribe( t=>{
       this.list = t.swim;
       console.log(t);
     })
+}
+//hook sem nær í observerable frá tools  
+ngOnInit() {
+  this.refresh();
     // google maps API...
   const mapProperties = {
     center: new google.maps.LatLng(64.1436456, -21.9270884),

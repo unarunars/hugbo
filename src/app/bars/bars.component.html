@@ -12,11 +12,11 @@
           <div class="toggeButton">
               <h1>Veitingarstaðir</h1>
               <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-                  <mat-button-toggle value="kokteil">Kokteila barir</mat-button-toggle>
-                  <mat-button-toggle value="sport">Sport barir</mat-button-toggle>
-                  <mat-button-toggle value="craft">craft barir</mat-button-toggle>
-                  <mat-button-toggle value="night">Nætur barir</mat-button-toggle>
-                  <mat-button-toggle value="popular">Vinsælast</mat-button-toggle>
+                  <mat-button-toggle (click) = "toogle('Kokteilbar')">Kokteila barir</mat-button-toggle>
+                  <mat-button-toggle (click) = "toogle('Sport-Bar')">Sport barir</mat-button-toggle>
+                  <mat-button-toggle (click) = "toogle('Craft-Bar')">craft barir</mat-button-toggle>
+                  <mat-button-toggle (click) = "toogle('Næturbar')">Nætur barir</mat-button-toggle>
+                  <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
               </mat-button-toggle-group>
               <div class="list" *ngFor="let i of list">
                 <div class="item">

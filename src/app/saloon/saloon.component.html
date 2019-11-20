@@ -9,10 +9,10 @@
     <div class="toggeButton">
       <h1>Hárgreiðslustaðir</h1>
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle value="barber">Rakarastofur</mat-button-toggle>
-        <mat-button-toggle value="saloons">Hárgreiðslustofur</mat-button-toggle>
-        <mat-button-toggle value="noBooking">Engar tímapantanir</mat-button-toggle>
-        <mat-button-toggle value="popular">Vinsælast</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('Rakarastofa')">Rakarastofur</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('Hárgreiðslustofa')">Hárgreiðslustofur</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('Engar Tímapantanir')">Engar tímapantanir</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('')">Allt</mat-button-toggle>
       </mat-button-toggle-group>
       <div class="list" *ngFor="let i of list">
         <div class="item">
@@ -45,6 +45,6 @@
         </div>
       </div>
     </div>
-    <div #map style="width:60%;height:100%;position: fixed;"></div>
+  <div #map style="width:60%;height:100%;position: fixed;"></div>
   </div>
 </div>

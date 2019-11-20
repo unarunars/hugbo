@@ -20,6 +20,7 @@ export class BarsComponent implements OnInit {
   zoom: number;
   address: string;
   private geoCoder;
+  @Input() value
   
   @ViewChild('search', {static: true})
   public searchElementRef: ElementRef;
@@ -34,9 +35,29 @@ constructor(
   private mapsAPILoader: MapsAPILoader,
   private ngZone: NgZone
 ) { }
+toogle(e){
+  console.log(e);
+  if(!e){
+    this.refresh();
+  }else{
+    let filtItems = this.toolservise.getJson();
+    let temp = [];
 
-//hook sem nær í observerable frá tools
-ngOnInit() {
+    filtItems.subscribe(t=>{
+      t.bars.map( item =>{
+        console.log(item.type)
+        if(item.type === e){
+          console.log(e, t.bars, item);
+          temp.push(item);
+          console.log(temp);
+        }
+      })
+      this.list = temp;
+    })
+  }
+  console.log(this.list);
+}
+refresh(){
   let items = this.toolservise.getJson();
 
   //subscripar það svo í listann
@@ -48,6 +69,10 @@ ngOnInit() {
       console.log(t);
       this.isDataReady = true;
     })
+}
+//hook sem nær í observerable frá tools
+ngOnInit() {
+  this.refresh();
     //taka frá google maps API þetta er það ef þú villt prufa hitt... 
     /*
   const mapProperties = {
@@ -110,6 +135,7 @@ markerDragEnd($event: MouseEvent) {
   this.lng = $event.coords.lng;
   this.getAddress(this.lat, this.lng);
 }
+
 
 getAddress(latitude, longitude) {
   this.geoCoder.geocode({ 'location': { lat: latitude, lng: longitude } }, (results, status) => {
