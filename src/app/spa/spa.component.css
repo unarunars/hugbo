@@ -12,6 +12,14 @@
    background: rgba(200,200,200,.75);
  }
  
+/*Search-Box*/
+.search-box{
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0px 5px;
+  width: 20%;
+}
+
  /*Name of place*/
  h3.placeName {
    font-weight: bolder;
@@ -44,18 +52,21 @@
  .toggeButton {
     border-radius: 10px;
     background: rgba(200,200,200,1);
-    width: 45%;
+    width: 38%;
  }
  
  h1{
     margin: 10px;
+    text-align: center;
  }
  
  
  mat-button-toggle-group {
-   flex: auto;
+   flex: flex;
+   align-items: center;
+   justify-content: center;
    width: 100%;
-   padding: 0px 20px;
+   padding: 0px 10px;
  }
  
  /*Filter buttons*/

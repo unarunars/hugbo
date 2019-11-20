@@ -10,13 +10,21 @@
       
       <div class="main">
           <div class="toggeButton">
-              <h1>Veitingarstaðir</h1>
+              <h1>Barir</h1>
               <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+<<<<<<< HEAD
                   <mat-button-toggle (click) = "toogle('Kokteilbar')">Kokteila barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Sport-Bar')">Sport barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Craft-Bar')">craft barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle('Næturbar')">Nætur barir</mat-button-toggle>
                   <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
+=======
+                  <mat-button-toggle value="kokteil">Kokteil</mat-button-toggle>
+                  <mat-button-toggle value="sport">Sport</mat-button-toggle>
+                  <mat-button-toggle value="craft">Craft</mat-button-toggle>
+                  <mat-button-toggle value="night">Nætur</mat-button-toggle>
+                  <mat-button-toggle value="popular">Vinsælast</mat-button-toggle>
+>>>>>>> 6151aac8522ee56dcf9c60a6a83c099c6ec21855
               </mat-button-toggle-group>
               <div class="list" *ngFor="let i of list">
                 <div class="item">
@@ -44,14 +52,14 @@
                     </mat-form-field>
         
                     <mat-form-field class="comment-sec">
-                      <textarea matInput placeholder="skildu eftir athugasemd"></textarea>
+                      <textarea matInput placeholder="Skildu eftir athugasemd"></textarea>
                     </mat-form-field>
                   </form>
                 </div>
               </div>
             </div>
           
-          <agm-map class = "map" [latitude] = "lat" [longitude]= "lng" [zoom] = 'zoom' style="width:100%;height:100%; display: inline-flex;">
+          <agm-map class = "map" [latitude] = "lat" [longitude]= "lng" [zoom] = 'zoom' style="width: 100%; height: 100%;">
                   <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"
                   (dragEnd)="markerDragEnd($event)"></agm-marker>
                   <h5>Address: {{address}}</h5>

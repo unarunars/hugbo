@@ -12,6 +12,14 @@
   background: rgba(200,200,200,.75);
 }
 
+/*Search-Box*/
+.searchBox {
+  padding-top: 10px;
+  padding-left: 10px;
+  margin: 0px 5px;
+  width: 20%;
+}
+
 /*Name of place*/
 h3.placeName {
   font-weight: bolder;
@@ -45,23 +53,26 @@ p.placePhone {
 .toggeButton {
   border-radius: 10px;
   background: rgba(200,200,200,.75);
-  width: 45%;
+  width: 40%;
 }
 
 h1 {
   margin: 10px;
+  text-align: center;
 }
 
 
 mat-button-toggle-group {
-  flex: auto;
+  flex: flex;
+   align-items: center;
+   justify-content: center;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 25px;
 }
 
 /*Filter buttons*/
 mat-button-toggle {
-  width: 125px;
+  width: 100px;
   border-radius: 15px;
   margin: 8px;
   background-color: coral;
@@ -84,11 +95,6 @@ textarea {
   height: 150px;
 }
 
-.searchBox {
-  margin: 0px 5px;
-  width: 25%;
-}
-
 .searchNearest {
   width: 35%;
   margin: 0% 14%;
@@ -96,4 +102,9 @@ textarea {
 
 .map {
   height: 400px;
+  width:70%;
+  height:100%; 
+  flex: flex; 
+  align-items: center; 
+  justify-content: center;
 }
