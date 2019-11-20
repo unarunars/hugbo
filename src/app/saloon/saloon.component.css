@@ -50,18 +50,19 @@ p.placePhone {
 
 h1 {
   margin: 10px;
+  text-align: center;
 }
 
 
 mat-button-toggle-group {
   flex: auto;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 25px;
 }
 
 /*Filter buttons*/
 mat-button-toggle {
-  width: 125px;
+  width: 160px;
   border-radius: 15px;
   margin: 8px;
   background-color: coral;

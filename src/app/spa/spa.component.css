@@ -82,3 +82,8 @@
  textarea {
    height: 150px;
  }
+
+ .map{
+   height: 100%;
+   width: 100%;
+ }

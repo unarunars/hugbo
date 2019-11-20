@@ -50,7 +50,7 @@
               </div>
             </div>
           
-          <agm-map class = "map" [latitude] = "lat" [longitude]= "lng" [zoom] = 'zoom' style="width:100%;height:100%;">
+          <agm-map class = "map" [latitude] = "lat" [longitude]= "lng" [zoom] = 'zoom' style="width:100%;height:100%; display: inline-flex;">
                   <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"
                   (dragEnd)="markerDragEnd($event)"></agm-marker>
                   <h5>Address: {{address}}</h5>
