@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MaterialModule } from '../material.module';
+import {MatDialogModule} from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +15,8 @@ import { SaloonComponent } from './saloon/saloon.component';
 import { SpaComponent } from './spa/spa.component';
 import { BarsComponent } from './bars/bars.component';
 import { AgmCoreModule} from '@agm/core';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +27,16 @@ import { AgmCoreModule} from '@agm/core';
     HomeComponent,
     SaloonComponent,
     SpaComponent,
-    BarsComponent
+    BarsComponent,
+    SignInComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    MatDialogModule,
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAzn6Mo5YCWIhzWE3Rnqp9dc_LatK7VA0Y',

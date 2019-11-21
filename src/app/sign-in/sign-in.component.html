@@ -1,0 +1,31 @@
+<h3>Nýskráning</h3>
+
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Notendnafn" (keyup)="onKeyUsername($event)">
+    </mat-form-field>
+      
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Lykilorð" type ="password" (keyup)="onKeyPsw($event)">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Lykilorð aftur" type ="password" (keyup)="onKeyPsw2($event)" >
+    </mat-form-field>
+
+
+    <mat-form-field class="example-full-width">
+        <input matInput placeholder="Netfang" (keyup)="onKeyMail($event)" >
+    </mat-form-field>
+</form>
+<button mat-button (click)= "submit()">Skrá notenda</button>
+<div *ngIf = "isNotValidPsw">
+        Lykilorð vitlaust
+</div>
+
+<div *ngIf = "isNotValidUsename">
+        Notendnafn vantar
+</div>
+<div *ngIf = "isNotValidMail">
+        Netfang vantar
+</div>
+

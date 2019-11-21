@@ -19,6 +19,13 @@
         <div (swimmingPoo) = "swimmingPool"class = "app" *ngIf= "chosen === 'swimming'">
             <app-swimming-pool></app-swimming-pool>
         </div>
+        <div class = "app" *ngIf = "chosen === 'login'">
+            <app-log-in></app-log-in>
+        </div>
+        <div class = "app" *ngIf = "chosen === 'signup'">
+            <app-sign-in></app-sign-in>
+        </div>
+
     </div>
 </div>
 

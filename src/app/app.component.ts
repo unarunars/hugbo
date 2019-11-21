@@ -43,5 +43,13 @@ export class AppComponent  {
   goSwimming(){
     this.chosen = "swimming";
   }
+  goLogin(){
+    console.log("login");
+    this.chosen = "login";
+  }
+  goSignup(){
+    console.log("signup");
+    this.chosen = "signup";
+  }
 
 }
