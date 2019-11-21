@@ -13,6 +13,9 @@ export class RestaurantsComponent implements OnInit {
   //global fylki fyrir veitingastaðina
   //til að ýtra í gegnum það í htmlinu
   list: any[];
+  barsComment: any[];
+  title: string = "";
+  comment: string = "";
   constructor(
     private toolservise: ToolServiceService,
   ) { }
@@ -72,4 +75,19 @@ export class RestaurantsComponent implements OnInit {
     })
     
   }
+  onKeyTitle(event: any){
+  console.log(event.target.value);
+  this.title = event.target.value;
+}
+onKeyComment(event: any){
+  this.comment = event.target.value;
+  console.log(this.comment);
+}
+submitComment(){
+  let obj = {'title': this.title, 'comment': this.comment};
+  this.barsComment.push(obj);
+  console.log(obj);
+  console.log(this.barsComment);
+  this.toolservise.postCommentJson(this.barsComment);
+}
 }

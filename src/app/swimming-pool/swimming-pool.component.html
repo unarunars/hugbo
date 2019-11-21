@@ -22,7 +22,7 @@
 
           <div class="images">
             <!--Þetta á að vera myndin í json, einhver að laga?-->
-                <img alt="image" [src]="i.imagesurl">                
+                <img alt="image" [src]="i.image">                
           </div>
 
           <div class="click" (click)="clickedBar(i)">
@@ -43,13 +43,15 @@
 
           <form class="example-form">
             <mat-form-field class="comment-title">
-              <input matInput placeholder="Fyrirsögn" value="">
+              <input matInput placeholder="Fyrirsögn" (keyup)="onKeyTitle($event)"value="">
             </mat-form-field>
 
             <mat-form-field class="comment-sec">
-              <textarea matInput placeholder="Skildu eftir athugasemd"></textarea>
+              <textarea matInput placeholder="Skildu eftir athugasemd" (keyup)="onKeyComment($event)"></textarea>
             </mat-form-field>
           </form>
+          <button mat-button (click)= "submitComment()">Click me!</button>
+
         </div>
       </div>
     </div>

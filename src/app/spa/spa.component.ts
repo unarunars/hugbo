@@ -9,6 +9,9 @@ import { ToolServiceService } from '../tool-service.service';
 export class SpaComponent implements OnInit {
   //listinn fyrir kaffihúsin
   list: any[];
+  barsComment: any[];
+  title: string = "";
+  comment: string = "";
   @ViewChild('map', {static: true}) mapElement: any;
   map: google.maps.Map;
 
@@ -68,6 +71,21 @@ clickedBar(item){
     
   })
   
+}
+onKeyTitle(event: any){
+  console.log(event.target.value);
+  this.title = event.target.value;
+}
+onKeyComment(event: any){
+  this.comment = event.target.value;
+  console.log(this.comment);
+}
+submitComment(){
+  let obj = {'title': this.title, 'comment': this.comment};
+  this.barsComment.push(obj);
+  console.log(obj);
+  console.log(this.barsComment);
+  this.toolservise.postCommentJson(this.barsComment);
 }
 
 }
