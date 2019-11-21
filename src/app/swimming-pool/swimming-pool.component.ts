@@ -28,12 +28,17 @@ toogle(e){
         console.log(item.type);
         //ÞARF AÐ LAGA ÞETTA
         for(let i = 0; i< item.type.length; i++){
-          if(item.type[i] === e && temp === []){
+          temp.map(g =>{
+            if(item.type[i] === e && temp === []){
             temp.push(item);
 
-          }else if(item.type[i] === e && temp !== item.type[i]){ 
-            temp.push(item);
-          }
+            }else if(item.type[i] === e && g !== item.type[i]){ 
+              //temp.push(item);
+            }else if(item.type[i] === e){
+              temp.push(item);
+            }
+          })
+          
         }
         console.log(temp);
         
