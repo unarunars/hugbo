@@ -1,7 +1,7 @@
 {
   "restaurant": [{
       "name": "Fiskfélagið",
-      "type": "Sjávarréttir",
+      "type": ["Sjávarréttir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -17,7 +17,7 @@
     },
     {
       "name": "Grillmarkaðurinn",
-      "type": "Steikur",
+      "type": ["Steikur","Bistro"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -31,7 +31,7 @@
     },
     {
       "name": "Sæta Svínið Gastropub",
-      "type": "Steikur",
+      "type": ["Steikur", "Bistro"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -47,7 +47,7 @@
     },
     {
       "name": "Apotek Kitchen+Bar",
-      "type": "Steikur",
+      "type": ["Steikur","Bistro"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -63,7 +63,7 @@
     },
     {
       "name": "Sjávargrillið",
-      "type": "Sjávarréttir",
+      "type": ["Sjávarréttir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -79,7 +79,7 @@
     },
     {
       "name": "Kol",
-      "type": "Steikur",
+      "type": ["Steikur"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -95,7 +95,7 @@
     },
     {
       "name": "Rok",
-      "type": "Steikur",
+      "type": ["Steikur"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -111,7 +111,7 @@
     },
     {
       "name": "Sushi Social",
-      "type": "Sjávarréttir",
+      "type": ["Steikur", "Sushi"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -127,7 +127,7 @@
     },
     {
       "name": "Skólabrú Restaurant",
-      "type": "Steikur",
+      "type": ["Steikur", "Sjávarréttir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -143,7 +143,7 @@
     },
     {
       "name": "Lækjarbrekka",
-      "type": "Steikur",
+      "type": ["Steikur" , "Sjávarréttir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -159,7 +159,7 @@
     },
     {
       "name": "Snaps Bistro",
-      "type": "Steikur",
+      "type": ["Steikur", "Bistro"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -169,6 +169,21 @@
       "mail": "snapsbistro.is",
       "phone": "511 6677",
       "imagesurl": "https://b14.is/wp-content/uploads/2019/01/snaps5.jpg",
+      "comments": [{
+
+      }]
+    },{
+      "name": "Veganæs",
+      "type": ["Vegan"],
+      "openings": {
+        "Virkadaga": "16-22",
+        "Helgar": "16-22"
+      },
+      "address": "Tryggvagata 22",
+      "postalcode": "101 Reykjavík",
+      "mail": "veganaes.is/",
+      "phone": "768 8123",
+      "imagesurl": "https://veganaes.files.wordpress.com/2018/08/cropped-18813183_128548737716476_1597278251815164349_n2.jpg",
       "comments": [{
 
       }]
@@ -252,7 +267,7 @@
   ],
   "cafes": [{
       "name": "Te og Kaffi",
-      "type": "Kaffi",
+      "type": ["$$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -266,7 +281,7 @@
     },
     {
       "name": "Café Babalú",
-      "type": "Kaffi",
+      "type": ["$$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -280,7 +295,7 @@
     },
     {
       "name": "Kaffibrennslan",
-      "type": "Bakkelsi",
+      "type": [ "$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -294,7 +309,7 @@
     },
     {
       "name": "Iðnó",
-      "type": "Kaffi",
+      "type": ["$$$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -308,7 +323,7 @@
     },
     {
       "name": "Kaldi Bar/Café",
-      "type": "Kaffi",
+      "type": ["$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -321,8 +336,8 @@
       "comments": [{}]
     },
     {
-      "name": "Mokka Kaffi",
-      "type": "Bakkelsi",
+      "name": ["Mokka Kaffi"],
+      "type": ["$$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -336,7 +351,7 @@
     },
     {
       "name": "Cupcake Cafe",
-      "type": "Bakkelsi",
+      "type": ["$$$"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -351,7 +366,7 @@
   ],
   "hairsaloons": [{
       "name": "Skuggi hárgreiðslustofa",
-      "type": "Hárgreiðslustofa",
+      "type": ["Hárgreiðslustofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -365,7 +380,7 @@
     },
     {
       "name": "Græna Stofan",
-      "type": "Hárgreiðslustofa",
+      "type": ["Hárgreiðslustofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -379,7 +394,7 @@
     },
     {
       "name": "Slippurinn Hárgreiðslustofa",
-      "type": "Hárgreiðslustofa",
+      "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -393,7 +408,7 @@
     },
     {
       "name": "Hár í Höndum",
-      "type": "Hárgreiðslustofa",
+      "type": ["Hárgreiðslustofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -407,7 +422,7 @@
     },
     {
       "name": "Rakararnir",
-      "type": "Rakarastofa",
+      "type": ["Rakarastofa","Engar Tímapantanir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -421,7 +436,7 @@
     },
     {
       "name": "Effect",
-      "type": "Hárgreiðslustofa",
+      "type": ["Rakarastofa", "Engar Tímapantanir"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -434,8 +449,8 @@
       "comments": [{}]
     },
     {
-      "name": "Hárgreiðslustöðin Valhöll",
-      "type": "Hárgreiðslustofa",
+      "name": ["Hárgreiðslustöðin Valhöll"],
+      "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -449,7 +464,7 @@
     },
     {
       "name": "Hár og Heilsa",
-      "type": "Hárgreiðslustofa",
+      "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -463,7 +478,7 @@
     },
     {
       "name": "Hárhornið",
-      "type": "Engar Tímapantanir",
+      "type": ["Engar Tímapantanir", "Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -477,7 +492,7 @@
     },
     {
       "name": "Reykjavík Hair",
-      "type": "Engar Tímapantanir",
+      "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -491,10 +506,10 @@
     },
     {
       "name": "Sjoppan",
-      "type": "Rakarastofa",
+      "type": ["Rakarastofa","Hárgreiðslustofa"],
       "openings": {
-        "Virkadaga": "6:30-22",
-        "Helgar": "8-22"
+        "Virkadaga": "10-18",
+        "Helgar": "11-16"
       },
       "address": "Katrínartún 2",
       "postalcode": "105 Reykjavík",
@@ -502,11 +517,25 @@
       "phone": "511 1221",
       "imagesurl": "https://scontent-lhr3-1.xx.fbcdn.net/v/t31.0-8/10428375_10152292567788025_2880113621859730498_o.jpg?_nc_cat=106&_nc_oc=AQlinJL3jot_VWJImNL5n26j0IeaiodhcPk7WYfRKybIJcMmp-IiejRSfcgvZxvmh0o&_nc_ht=scontent-lhr3-1.xx&oh=629bf43610b2f815b3f3a7ea80766925&oe=5E82E091",
       "comments": [{}]
+    },
+    {
+      "name": "Rauðhetta og Úlfurinn",
+      "type": ["Rakarastofa","Hárgreiðslustofa"],
+      "openings": {
+        "Virkadaga": "9-18",
+        "Helgar": "10-14"
+      },
+      "address": "Bríetartún 9-11",
+      "postalcode": "101 Reykjavík",
+      "mail": "raudhetta.is/",
+      "phone": "511 4004",
+      "imagesurl": "https://scontent.frkv3-1.fna.fbcdn.net/v/t1.0-9/71723660_2032429133524764_6794814128297869312_n.jpg?_nc_cat=106&_nc_ohc=LYgR7DhRn-4AQkMiHHslevwUtYzSR70JSp5DhngE5tbqS_Gi2xypar3lQ&_nc_ht=scontent.frkv3-1.fna&oh=902f2ec3db161a22777bd65e11aa9ee6&oe=5E4648E9",
+      "comments": [{}]
     }
   ],
   "bars": [{
       "name": "Kaffibarinn",
-      "type": "Kokteilbar",
+      "type": ["Kokteilbar","Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -523,7 +552,7 @@
     },
     {
       "name": "Den Danske Kro (Danska Kráin)",
-      "type": "Næturbar",
+      "type": ["Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -540,7 +569,7 @@
     },
     {
       "name": "Lebowski Bar",
-      "type": "Næturbar",
+      "type": ["Næturbar","Kokteilbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -557,7 +586,7 @@
     },
     {
       "name": "Klaustur Bar",
-      "type": "Næturbar",
+      "type": ["Kokteilbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -574,7 +603,7 @@
     },
     {
       "name": "Micro bar",
-      "type": "Craft-Bar",
+      "type": ["Craft-Bar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -591,7 +620,7 @@
     },
     {
       "name": "Gaukurinn",
-      "type": "Næturbar",
+      "type": ["Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -608,7 +637,7 @@
     },
     {
       "name": "Pablo Discobar",
-      "type": "Næturbar",
+      "type": ["Kokteilbar","Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -625,7 +654,7 @@
     },
     {
       "name": "Skúli Craft Bar",
-      "type": "Craft-Bar",
+      "type": ["Craft-Bar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -642,7 +671,7 @@
     },
     {
       "name": "Bjarni Fel Sportbar",
-      "type": "Sport-Bar",
+      "type": ["Sport-Bar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -659,7 +688,7 @@
     },
     {
       "name": "Prikið",
-      "type": "Næturbar",
+      "type": ["Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -676,7 +705,7 @@
     },
     {
       "name": "Solon Bistro & Bar",
-      "type": "Kokteilbar",
+      "type": ["Kokteilbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -693,7 +722,7 @@
     },
     {
       "name": "Íslenski barinn",
-      "type": "Næturbar",
+      "type": ["Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -710,7 +739,7 @@
     },
     {
       "name": "Ölstofa Kormáks og Skjaldar",
-      "type": "Craft-Bar",
+      "type": ["Craft-Bar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -727,7 +756,7 @@
     },
     {
       "name": "Bravó",
-      "type": "Næturbar",
+      "type": ["Næturbar","Kokteilbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -744,7 +773,7 @@
     },
     {
       "name": "Kiki Queer Bar",
-      "type": "Næturbar",
+      "type": ["Næturbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
@@ -761,7 +790,7 @@
     },
     {
       "name": "Veður",
-      "type": "Næturbar",
+      "type": ["Kokteilbar"],
       "openings": {
         "Virkadaga": "6:30-22",
         "Helgar": "8-22"
