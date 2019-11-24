@@ -49,12 +49,15 @@ export class LogInComponent implements OnInit {
       console.log(observerable)
       observerable.subscribe(t =>{
         //this.list = t;
-        console.log("wtf");
         console.log(t);
+        if(t[0]){
+          console.log("skráður inn");
+        }else{
+          console.log("tókst ekki");
+        }
       })
       console.log(observerable);
     }
-    console.log(this.list);
   }
 
 }

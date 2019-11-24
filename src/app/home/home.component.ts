@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ExportService } from '../../api/export.service';
 import { DatabaseConnectService } from '../../api/database-connect.service';
 import { Data } from '@angular/router';
+import { ToolServiceService } from '../tool-service.service';
+
 
 @Component({
   selector: 'app-home',
@@ -12,11 +14,17 @@ export class HomeComponent implements OnInit {
   Resturants: String = this.exportService.stringReykjavik();
   constructor(
     private exportService: ExportService,
-    private databaseConnect: DatabaseConnectService
+    private databaseConnect: DatabaseConnectService,
+    private toolService: ToolServiceService,
+
   ){ }
 
   ngOnInit() {
-
+    let observerable = this.toolService.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t);
+      console.log("héérr!");
+    })
   }
   
 }

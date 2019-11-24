@@ -33,7 +33,12 @@ export class ToolServiceService {
         console.log(t);
     })
     }
+    isLogedIn(){
+      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate');
+      
+    }
     //ekki komið H58DwRYHvH
+    
     getLogedIn(user:any){
       return this.http.post('https://aust-hugbo1.herokuapp.com/login', user);
     }
