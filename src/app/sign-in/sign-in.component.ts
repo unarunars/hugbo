@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ToolServiceService } from '../tool-service.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -14,9 +15,10 @@ export class SignInComponent implements OnInit {
   isNotValidUsename: boolean = false;
   isNotValidPsw: boolean =false;
   isNotValidMail: boolean = false;
+  isRegisterd: boolean = false;
 
   constructor(
-    public dialog: MatDialog
+    private toolservise: ToolServiceService,
   ) { }
 
   ngOnInit() {
@@ -56,6 +58,16 @@ export class SignInComponent implements OnInit {
       this.isNotValidMail = true;
     }if(!this.isNotValidMail && !this.isNotValidPsw && !this.isNotValidUsename){
       console.log("allt rétt bara posta jeehe");
+      let user = {
+        'username': this.username,
+        'email':this.mail,
+        'password': this.psw};
+      let i = this.toolservise.setRegister(user);
+      console.log(i);
+      i.subscribe(t => {
+        console.log(t);
+        this.isRegisterd = t;
+      })
     }
     
 

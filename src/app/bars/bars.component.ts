@@ -19,6 +19,7 @@ export class BarsComponent implements OnInit {
   lng: number = -21.942400  ;
   zoom: number;
   address: string;
+  id: number;
   private geoCoder;
   @Input() value
   
@@ -63,12 +64,18 @@ refresh(){
   //subscripar það svo í listann
     items.subscribe( t=>{
       this.list = t.bars;
-      t.bars.map(item =>{
+      this.getComments(t);
+      /*t.bars.map(item =>{
         this.barsComment = item.comments;
-      })
+      })*/
       console.log(t);
       this.isDataReady = true;
     })
+}
+getComments(t){
+  t.bars.map(item =>{
+        this.barsComment = item.comments;
+      })
 }
 //hook sem nær í observerable frá tools
 ngOnInit() {
@@ -162,6 +169,8 @@ clickedBar(item){
     if(t.name === item.name){
       if(!t.isClicked){
         t.isClicked = true;
+        console.log(t.id);
+        this.id = t.id
        // this.lat = 64.122272;
        // this.lng = -21.871059;
       console.log(t);
@@ -180,12 +189,27 @@ onKeyComment(event: any){
   this.comment = event.target.value;
   console.log(this.comment);
 }
-submitComment(){
-  let obj = {'title': this.title, 'comment': this.comment};
-  this.barsComment.push(obj);
-  console.log(obj);
-  console.log(this.barsComment);
-  this.toolservise.postCommentJson(this.barsComment);
+submitComment(id){
+  let obj = {'title': this.title, 'comment': this.comment,'locations_id' : this.id};
+  //this.barsComment.push(obj);
+  //console.log(obj);
+  //console.log(this.barsComment);
+  let ob = this.toolservise.setComment(obj);
+  ob.subscribe(t =>{
+    console.log(t);
+    if(t.length === 0){
+      console.log("þetta er skráð");
+      console.log(id);
+      this.list.map( item=>{
+        if(item.id = id){
+          console.log()
+          this.refresh();
+        }
+      })
+    }
+
+    
+  })
 }
 
 }

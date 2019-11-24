@@ -16,6 +16,7 @@ export class RestaurantsComponent implements OnInit {
   barsComment: any[];
   title: string = "";
   comment: string = "";
+  id: number;
   constructor(
     private toolservise: ToolServiceService,
   ) { }
@@ -65,6 +66,7 @@ export class RestaurantsComponent implements OnInit {
       if(t.name === item.name){
         if(!t.isClicked){
           t.isClicked = true;
+          this.id = t.id
         console.log(t);
         }else {
           t.isClicked = false;
@@ -83,11 +85,24 @@ onKeyComment(event: any){
   this.comment = event.target.value;
   console.log(this.comment);
 }
-submitComment(){
-  let obj = {'title': this.title, 'comment': this.comment};
-  this.barsComment.push(obj);
-  console.log(obj);
-  console.log(this.barsComment);
-  this.toolservise.postCommentJson(this.barsComment);
+submitComment(id){
+  let obj = {'title': this.title, 'comment': this.comment,'locations_id' : this.id};
+  //this.barsComment.push(obj);
+  //console.log(obj);
+  //console.log(this.barsComment);
+  let ob = this.toolservise.setComment(obj);
+  ob.subscribe(t =>{
+    console.log(t);
+    if(t.length === 0){
+      console.log("þetta er skráð");
+      console.log(id);
+      this.list.map( item=>{
+        if(item.id = id){
+          console.log()
+          this.refresh();
+        }
+      })
+    }
+  })
 }
-}
+  }

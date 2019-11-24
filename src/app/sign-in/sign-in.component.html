@@ -1,3 +1,4 @@
+<div *ngIf = "!isRegisterd">
 <h3>Nýskráning</h3>
 
 <form class="example-form">
@@ -27,5 +28,10 @@
 </div>
 <div *ngIf = "isNotValidMail">
         Netfang vantar
+</div>
+</div>
+<div *ngIf = "isRegisterd">
+    <app-log-in></app-log-in>
+
 </div>
 

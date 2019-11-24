@@ -14,14 +14,14 @@ export class AppComponent  {
 
   constructor(private http: HttpClient) {  
   }
-
+/*
   getData(){
     const url ='https://jsonplaceholder.typicode.com/photos?albumId=1'
     this.http.get(url).subscribe((res)=>{
       this.data = res
       console.log(this.data)
     })
-  }
+  }*/
   
   // click event segir hvaða takka var ýtt á
   //sendir svo chosen strenginn í hina componentana úr htmlinu

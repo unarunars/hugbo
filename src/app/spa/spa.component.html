@@ -31,7 +31,11 @@
           <p class="xtraInfo">{{i.address}}</p>
           <p class="xtraInfo">{{i.postalcode}}</p>
           <p class="xtraInfo">{{i.mail}}</p>
+          <div *ngFor = "let j of i.comments">
+              <p>{{j.title}}</p>
+              <p>{{j.comment}}</p>
 
+            </div>
 
 
           <form class="example-form">
@@ -43,7 +47,7 @@
               <textarea matInput placeholder="Skildu eftir athugasemd"(keyup)="onKeyComment($event)"></textarea>
             </mat-form-field>
           </form>
-          <button mat-button (click)= "submitComment()">Click me!</button>
+          <button mat-button (click)= "submitComment(i.id)">Skrá comment</button>
 
         </div>
       </div>

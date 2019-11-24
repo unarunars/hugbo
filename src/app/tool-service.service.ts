@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import {HttpParams} from "@angular/common/http";
 //import { readJSON } from '../api/DatabaseFetch.js';
 
 @Injectable({
@@ -11,6 +12,7 @@ export class ToolServiceService {
   restaurants: any;
   cafe: any;
   swimming: any;
+  
   constructor(
     private http: HttpClient,
     //private readjson: readJSON
@@ -30,6 +32,21 @@ export class ToolServiceService {
       activities.subscribe( t => {
         console.log(t);
     })
+    }
+    //ekki komið H58DwRYHvH
+    getLogedIn(user:any){
+      return this.http.post('https://aust-hugbo1.herokuapp.com/login', user);
+    }
+    setRegister(user: any):Observable<any>{
+     /* const params = new HttpParams()
+        .set('username', username)
+        .set('email', email)
+        .set('password', password);*/
+        return this.http.post('https://aust-hugbo1.herokuapp.com/register', user,{
+          headers: new HttpHeaders({
+            'Content-Type': 'application/json'
+          })
+        } );
     }
   
   getRestaurants(): any[]{
@@ -53,5 +70,12 @@ export class ToolServiceService {
     activities.subscribe( t => {
       this.swimming = t.swimming;
     })
+  }
+  setComment(comment: any):Observable<any>{
+    return this.http.post('https://aust-hugbo1.herokuapp.com/comment', comment,{
+          headers: new HttpHeaders({
+            'Content-Type': 'application/json'
+          })
+        } );
   }
 }
