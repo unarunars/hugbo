@@ -81,6 +81,8 @@ getComments(t){
 //hook sem nær í observerable frá tools
 ngOnInit() {
   this.refresh();
+/*  this.lat = -21.942400;
+  this.lng = 64.147209;*/
     //taka frá google maps API þetta er það ef þú villt prufa hitt... 
     /*
   const mapProperties = {
@@ -89,9 +91,10 @@ ngOnInit() {
     mapTypeId: google.maps.MapTypeId.ROADMAP
 };
 this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
-    this.setCurrentLocation();
+   // this.setCurrentLocation();
     //þetta allt tekið frá maps API skoða betur
     //load Places Autocomplete
+    
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
       this.geoCoder = new google.maps.Geocoder;
@@ -103,19 +106,19 @@ this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
       autocomplete.addListener("place_changed", () => {
         this.ngZone.run(() => {
           //get the place result
-          let place: google.maps.places.PlaceResult =  autocomplete.getPlace();
+         /* let place: google.maps.places.PlaceResult =  autocomplete.getPlace();
           console.log(place);
           console.log(autocomplete.get)
           //verify result
           if (place.geometry === undefined || place.geometry === null) {
             return;
           }
-
+*/
           //set latitude, longitude and zoom
-          this.lat = //place.geometry.location.lat();
-          this.lng =  //place.geometry.location.lng();
+          this.lat = -21.942400;
+          this.lng = 64.147209;
           this.zoom = 12;
-        });
+        })
       });
     });
   /*
@@ -128,9 +131,9 @@ private setCurrentLocation() {
     console.log(navigator);
     navigator.geolocation.getCurrentPosition((position) => {
       console.log(position.coords.heading);
-      this.lat = position.coords.latitude;
-      this.lng = position.coords.longitude;
-      this.zoom = 8;
+      this.lng = -21.942400;
+      this.lat = 64.147209;
+      this.zoom = 12;
       this.getAddress(this.lat, this.lng);
     });
   }
@@ -172,6 +175,9 @@ clickedBar(item){
         t.isClicked = true;
         console.log(t.id);
         this.id = t.id
+        this.lat = 64.145940000;
+        this.lng = -21.931330000;
+        this.zoom = 17;
        // this.lat = 64.122272;
        // this.lng = -21.871059;
       console.log(t);

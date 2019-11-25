@@ -40,7 +40,7 @@ export class ToolServiceService {
     }
     //ekki komið H58DwRYHvH
     
-    getLogedIn(user:any){
+    getLogedIn(user:any):Observable<any>{
       return this.http.post('https://aust-hugbo1.herokuapp.com/login', user, { withCredentials: true });
     }
     setRegister(user: any):Observable<any>{
