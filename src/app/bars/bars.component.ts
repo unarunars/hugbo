@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild,ElementRef, NgZone, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { ToolServiceService } from '../tool-service.service';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
+import { templateJitUrl } from '@angular/compiler';
 
 @Component({
   selector: 'app-bars',
@@ -37,38 +38,27 @@ constructor(
   private ngZone: NgZone
 ) { }
 toogle(e){
+  let temp = [];
   console.log(e);
   if(!e){
     this.refresh();
   }else{
     let filtItems = this.toolservise.getJson();
-    let temp = [];
-    this.list.map(t=>{
-      console.log(t ,e);
-      for(let i = 0; i < t.type.length; i++){
-        if(t.type[i] === e){
-        temp.push(t);
-        console.log(t.type, e);
-      }
-      }
-      
-    })
-    console.log(temp);
-/*
     filtItems.subscribe(t=>{
-      t.bars.map( item =>{
-        console.log(item.type)
-        if(item.type === e){
-          console.log(e, t.bars, item);
-          temp.push(item);
-          console.log(temp);
+      this.list = t.bars;
+      t.bars.map(item => {
+        console.log(item.type, e)
+        for(let i = 0; i < item.type.length; i++){
+          if(item.type[i] === e){
+            temp.push(item);
+          }
         }
       })
       this.list = temp;
-    })*/
+    })
   }
-  console.log(this.list);
 }
+
 refresh(){
   let items = this.toolservise.getJson();
 

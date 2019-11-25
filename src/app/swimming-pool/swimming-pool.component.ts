@@ -20,34 +20,24 @@ constructor(
   private toolservise: ToolServiceService
 ) { }
 toogle(e){
+  let temp = [];
   console.log(e);
   if(!e){
     this.refresh();
   }else{
     let filtItems = this.toolservise.getJson();
-    let temp = [];
-    
     filtItems.subscribe(t=>{
-      t.swim.map( item =>{
-        console.log(item.type);
-        //ÞARF AÐ LAGA ÞETTA
-        for(let i = 0; i< item.type.length; i++){
-          temp.map(g =>{
-            if(item.type[i] === e && temp === []){
+      this.list = t.swim;
+      t.swim.map(item => {
+        console.log(item.type, e)
+        for(let i = 0; i < item.type.length; i++){
+          if(item.type[i] === e){
             temp.push(item);
-
-            }else if(item.type[i] === e && g !== item.type[i]){ 
-              //temp.push(item);
-            }else if(item.type[i] === e){
-              temp.push(item);
-            }
-          })
-          
+          }
         }
-        console.log(temp);
-        
       })
       this.list = temp;
+      console.log(this.list);
     })
   }
 }

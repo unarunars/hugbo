@@ -21,20 +21,20 @@ export class RestaurantsComponent implements OnInit {
     private toolservise: ToolServiceService,
   ) { }
   toogle(e){
+    let temp = [];
     console.log(e);
     if(!e){
       this.refresh();
     }else{
       let filtItems = this.toolservise.getJson();
-      let temp = [];
-      
       filtItems.subscribe(t=>{
-        t.restaurant.map( item =>{
-          console.log(item)
-          if(item.type === e){
-            console.log(e, t.restaurant, item);
-            temp.push(item);
-            console.log(temp);
+        this.list = t.bars;
+        t.restaurant.map(item => {
+          console.log(item.type, e)
+          for(let i = 0; i < item.type.length; i++){
+            if(item.type[i] === e){
+              temp.push(item);
+            }
           }
         })
         this.list = temp;

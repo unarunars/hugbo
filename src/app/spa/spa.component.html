@@ -1,17 +1,14 @@
 <div class="all">
-  <form class="form">
-    <mat-form-field class="search-box">
-      <input matInput placeholder="Leita af kaffihús" value="">
-    </mat-form-field>
-  </form>
 
   <div class="main">
     <div class="toggeButton">
       <h1>Kaffihús</h1>
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle (click) = "toogle('Kaffi')">Kaffi</mat-button-toggle>
-        <mat-button-toggle (click) = "toogle('Bakkelsi')">Bakkelsi</mat-button-toggle>
-        <mat-button-toggle (click) = "toogle('')">Allt</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('$')">$</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('$$')">$$</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle('$$$')">$$$</mat-button-toggle>
+        <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
+
       </mat-button-toggle-group>
       <div class="list" *ngFor="let i of list">
         <div class="item">
