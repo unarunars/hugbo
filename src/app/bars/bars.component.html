@@ -1,12 +1,5 @@
 <div class = "all">
-  <form class="form">
-          <mat-form-field class="searchBox">
-            <input matInput placeholder="Leita af bar" value="" #search>
-          </mat-form-field>
-          <mat-form-field class="searchNearest">
-              <input matInput placeholder="Sláðu inn heimilisfang" type="text" (keydown.enter)="$event.preventDefault()" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" value="" #search>
-          </mat-form-field>
-      </form>
+  
       
       <div class="main">
           <div class="toggeButton">
@@ -54,7 +47,7 @@
                       <textarea matInput placeholder="Skildu eftir athugasemd"(keyup)="onKeyComment($event)" ></textarea>
                     </mat-form-field>
                   </form>
-                  <button mat-button (click)= "submitComment(i.id)">Skrá comment</button>
+                  <button mat-button (click)= "submitComment(i.id)">Skrá</button>
 
                 </div>
               </div>
