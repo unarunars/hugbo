@@ -1,5 +1,7 @@
 {
   "restaurant": [{
+      "lat": "64.148940000",
+      "lon": "-21.941470000",
       "name": "Fiskfélagið",
       "type": ["Sjávarréttir"],
       "openings": {
@@ -16,6 +18,8 @@
       }]
     },
     {
+      "lat": "64.147030000",
+      "lon": "-21.937260000",
       "name": "Grillmarkaðurinn",
       "type": ["Steikur","Bistro"],
       "openings": {
@@ -190,6 +194,8 @@
     }
   ],
   "swim": [{
+      "lat": "64.141790000",
+      "lon": -21.920260000,
       "name": "Sundhöll Reykjavíkur",
       "type": ["Kaldur Pottur",
         "Útilaug",
@@ -208,6 +214,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.147220000,
+      "lon": -21.952770000,
       "name": "Vesturbæjarlaug",
       "type": [
         "Kaldur Pottur",
@@ -266,6 +274,8 @@
     }
   ],
   "cafes": [{
+      "lat": 64.147400000,
+      "lon": -21.938090000,
       "name": "Te og Kaffi",
       "type": ["$$"],
       "openings": {
@@ -280,6 +290,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.144210000,
+      "lon": -21.930350000,
       "name": "Café Babalú",
       "type": ["$$"],
       "openings": {
@@ -365,6 +377,8 @@
     }
   ],
   "hairsaloons": [{
+    "lat": 64.146170000,
+    "lon": -21.934260000,
       "name": "Skuggi hárgreiðslustofa",
       "type": ["Hárgreiðslustofa"],
       "openings": {
@@ -379,6 +393,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.144040000,
+      "lon": -21.932250000,
       "name": "Græna Stofan",
       "type": ["Hárgreiðslustofa"],
       "openings": {
@@ -534,6 +550,8 @@
     }
   ],
   "bars": [{
+    "lat": 64.145940000,
+    "lon": -21.931330000,
       "name": "Kaffibarinn",
       "type": ["Kokteilbar","Næturbar"],
       "openings": {
@@ -551,6 +569,8 @@
       }]
     },
     {
+      "lat": 64.146340000,
+      "lon": -21.933640000,
       "name": "Den Danske Kro (Danska Kráin)",
       "type": ["Næturbar"],
       "openings": {
