@@ -33,9 +33,9 @@ export class ToolServiceService {
         console.log(t);
     })
     }
+    //virkar ekki enþá siggi lagar á mrg
     isLogedIn(){
-      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate');
-      
+      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate');  
     }
     //ekki komið H58DwRYHvH
     
@@ -47,6 +47,7 @@ export class ToolServiceService {
         .set('username', username)
         .set('email', email)
         .set('password', password);*/
+        console.log(user);
         return this.http.post('https://aust-hugbo1.herokuapp.com/register', user,{
           headers: new HttpHeaders({
             'Content-Type': 'application/json'

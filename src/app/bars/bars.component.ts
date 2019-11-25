@@ -43,7 +43,18 @@ toogle(e){
   }else{
     let filtItems = this.toolservise.getJson();
     let temp = [];
-
+    this.list.map(t=>{
+      console.log(t ,e);
+      for(let i = 0; i < t.type.length; i++){
+        if(t.type[i] === e){
+        temp.push(t);
+        console.log(t.type, e);
+      }
+      }
+      
+    })
+    console.log(temp);
+/*
     filtItems.subscribe(t=>{
       t.bars.map( item =>{
         console.log(item.type)
@@ -54,7 +65,7 @@ toogle(e){
         }
       })
       this.list = temp;
-    })
+    })*/
   }
   console.log(this.list);
 }
