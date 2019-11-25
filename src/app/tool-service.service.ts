@@ -35,7 +35,7 @@ export class ToolServiceService {
     }
     //virkar ekki enþá siggi lagar á mrg
     isLogedIn(){
-      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate', { withCredentials: true });  
+      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate', { withCredentials: true },);  
     }
     //ekki komið H58DwRYHvH
     
