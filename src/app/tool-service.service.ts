@@ -35,12 +35,12 @@ export class ToolServiceService {
     }
     //virkar ekki enþá siggi lagar á mrg
     isLogedIn(){
-      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate');  
+      return this.http.get('https://aust-hugbo1.herokuapp.com/authenticate', { withCredentials: true });  
     }
     //ekki komið H58DwRYHvH
     
     getLogedIn(user:any){
-      return this.http.post('https://aust-hugbo1.herokuapp.com/login', user);
+      return this.http.post('https://aust-hugbo1.herokuapp.com/login', user, { withCredentials: true });
     }
     setRegister(user: any):Observable<any>{
      /* const params = new HttpParams()
