@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, Output } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav'; 
 import { createHostListener } from '@angular/compiler/src/core';
 import { ToolServiceService } from '../tool-service.service'
@@ -12,18 +12,26 @@ import { ToolServiceService } from '../tool-service.service'
 export class MainComponent implements OnInit, OnChanges {
   
   @Input() chosen: string;
+  @Input() username: string;
+  
   
   constructor(
     private toolService: ToolServiceService,
   ) { }
 //ekki notað lengur, kanski seinna?
   ngOnChanges(changes: SimpleChanges){
-    if( changes.chosen ){
-      console.log(this.chosen);
+    if( changes.username ){
+      console.log(this.username);
     }
   }
-  ngOnInit() {
+  ngOnInit(
+
+  ) {
     
+  }
+  user(e){
+    console.log("afhvejru ekki hingað?");
+    console.log(e);
   }
   
 

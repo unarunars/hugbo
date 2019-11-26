@@ -1,3 +1,4 @@
+<div *ngIf = "!isLogedIn">
 <h3>Innskráning</h3>
 
 <form class="example-form">
@@ -18,5 +19,12 @@
         Notendnafn vantar
 </div>
 <button mat-button (click)= "submit()">Skrá inn</button>
+
+
+</div>
+<div *ngIf = "isLogedIn">
+  <app-home></app-home>
+
+</div>
 
 

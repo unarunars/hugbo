@@ -2,7 +2,7 @@
     
     <div class = "info">
         <div class = "app" *ngIf= "chosen === 'home'">
-            <app-home></app-home>
+            <app-home (user) = "user($event)"></app-home>
         </div>
         <div class = "app"  *ngIf= "chosen === 'restaurant'" >
             <app-restaurants></app-restaurants>

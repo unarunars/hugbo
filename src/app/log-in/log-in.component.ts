@@ -13,6 +13,7 @@ export class LogInComponent implements OnInit {
   isNotValidUsename: boolean = false;
   isNotValidPsw: boolean =false;
   list: any;
+  isLogedIn = false;
   constructor(
     private toolservise: ToolServiceService,
   ) { }
@@ -52,8 +53,10 @@ export class LogInComponent implements OnInit {
         console.log(t);
         if(t[0]){
           console.log("skráður inn");
+          this.isLogedIn = true;
         }else{
           console.log("tókst ekki");
+          this.isLogedIn = false;
         }
       })
       console.log(observerable);

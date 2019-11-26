@@ -1,18 +1,44 @@
 import { Component, Output,ViewChild, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { ToolServiceService } from './tool-service.service';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
+export class AppComponent implements OnInit {
   title = 'reykjavik-gui';
+  isLogedIn: boolean; 
+  isData: boolean = false;
   private data:any = []
   
   @Output() chosen: string = "home";
+  @Output() username: string = "";
+  ngOnInit(){
+    console.log("halló");
+    let observerable = this.toolService.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t.username);
+      console.log("héérr!");
+      if(t.username !== undefined) {
+        this.isLogedIn = true;
+        this.username = t.username;
 
-  constructor(private http: HttpClient) {  
+        console.log("skráðu inn");
+      }else{
+        this.isLogedIn = false;
+        console.log("ekki skráður inn")
+        this.username = "";
+
+      }
+    })
+    this.isData = true;
+  }
+  constructor(private http: HttpClient,
+  private toolService: ToolServiceService,
+  ) {  
   }
 /*
   getData(){
@@ -50,6 +76,25 @@ export class AppComponent  {
   goSignup(){
     console.log("signup");
     this.chosen = "signup";
+  }
+  logOut(){
+    let temp = this.toolService.getLogOut();
+    temp.subscribe( t => {
+      console.log(t);
+      let observerable = this.toolService.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t.username);
+      console.log("héérr!");
+      this.username = t.username;
+      if(t.username !== undefined) {
+        this.isLogedIn = true;
+        console.log("ekki loggaður inn");
+      }else{
+        this.isLogedIn = false;
+      }
+    })
+    })
+    
   }
 
 }

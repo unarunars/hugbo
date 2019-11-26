@@ -29,17 +29,23 @@
           </li>
         </ul>
 
-        <div class="main-logo">
+        <div class="main-logo" *ngIf = "isData">
           <button mat-button (click)="goHome()">
             ReykjavíkLogo
           </button>
-          
-          <button mat-button (click)="goLogin()">
-            Login
-          </button>
-          <button mat-button (click)="goSignup()">
-            Signup
-          </button>
+          <div *ngIf = "!isLogedIn">
+            <button mat-button (click)="goLogin()">
+              Login
+            </button>
+            <button mat-button (click)="goSignup()">
+              Signup
+            </button>
+          </div>
+          <div *ngIf = "isLogedIn">
+            <button mat-button (click)="logOut()">
+              logout
+            </button>
+          </div>
           
         </div>
       
@@ -87,6 +93,6 @@
     <div class="">
 
     </div>
-    <app-main class="main" [chosen]="chosen"></app-main>
+    <app-main class="main" [chosen]="chosen" [username] = "username"></app-main>
 
   </div>
