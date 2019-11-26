@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {HttpParams} from "@angular/common/http";
+import { JsonPipe } from '@angular/common';
 //import { readJSON } from '../api/DatabaseFetch.js';
 
 @Injectable({
