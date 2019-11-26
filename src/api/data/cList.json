@@ -1,7 +1,7 @@
 {
   "restaurant": [{
-      "lat": "64.148940000",
-      "lon": "-21.941470000",
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Fiskfélagið",
       "type": ["Sjávarréttir"],
       "openings": {
@@ -18,8 +18,8 @@
       }]
     },
     {
-      "lat": "64.147030000",
-      "lon": "-21.937260000",
+      "lat": 64.147030000,
+      "lon": -21.937260000,
       "name": "Grillmarkaðurinn",
       "type": ["Steikur","Bistro"],
       "openings": {
@@ -194,7 +194,7 @@
     }
   ],
   "swim": [{
-      "lat": "64.141790000",
+      "lat": 64.141790000,
       "lon": -21.920260000,
       "name": "Sundhöll Reykjavíkur",
       "type": ["Kaldur Pottur",
