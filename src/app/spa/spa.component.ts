@@ -20,6 +20,7 @@ export class SpaComponent implements OnInit {
   zoom: number;
   isLogedIn: boolean;
   username: string;
+  
 
   @ViewChild('map', {static: true}) mapElement: any;
   map: google.maps.Map;
@@ -64,7 +65,6 @@ LogedIn() {
       }else{
         console.log("ekki skráður inn")
         this.isLogedIn = false;
-        console.log(this.username)
 
       }
     });
@@ -91,10 +91,11 @@ private setCurrentLocation() {
   if ('geolocation' in navigator) {
     console.log(navigator);
     navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position.coords.heading);
+      //console.log(position.coords.heading);
       this.lng = -21.942400;
       this.lat = 64.147209;
       this.zoom = 12;
+      console.log("wtf");
     });
   }
 }
