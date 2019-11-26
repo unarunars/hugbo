@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild,NgZone } from '@angular/core';
 import { ToolServiceService } from '../tool-service.service';
+import { MapsAPILoader, MouseEvent } from '@agm/core';
+
 
 @Component({
   selector: 'app-swimming-pool',
@@ -13,11 +15,17 @@ export class SwimmingPoolComponent implements OnInit {
   title: string = "";
   comment: string = "";
   id: number;
+  lat: number = 64.147209;
+  lng: number = -21.942400;
+  zoom: number;
   @ViewChild('map', {static: true}) mapElement: any;
   map: google.maps.Map;
 
 constructor(
-  private toolservise: ToolServiceService
+  private toolservise: ToolServiceService,
+  
+  private mapsAPILoader: MapsAPILoader,
+  private ngZone: NgZone
 ) { }
 toogle(e){
   let temp = [];
@@ -53,12 +61,23 @@ refresh(){
 ngOnInit() {
   this.refresh();
     // google maps API...
-  const mapProperties = {
-    center: new google.maps.LatLng(64.1436456, -21.9270884),
-    zoom: 15,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);
+    this.mapsAPILoader.load().then(() => {
+      this.setCurrentLocation();
+      //this.geoCoder = new google.maps.Geocoder;
+      });
+
+}
+// Get Current Location Coordinates
+private setCurrentLocation() {
+  if ('geolocation' in navigator) {
+    console.log(navigator);
+    navigator.geolocation.getCurrentPosition((position) => {
+      console.log(position.coords.heading);
+      this.lng = -21.942400;
+      this.lat = 64.147209;
+      this.zoom = 12;
+    });
+  }
 }
 clickedBar(item){
   this.list.map(t =>{
@@ -67,9 +86,15 @@ clickedBar(item){
       if(!t.isClicked){
         t.isClicked = true;
         this.id = t.id;
+        this.lat = t.lat;
+        this.lng = t.lon;
+        this.zoom = 17;
       console.log(t);
       }else {
         t.isClicked = false;
+        this.lng = -21.942400;
+        this.lat = 64.147209;
+        this.zoom = 12;
       }
       
     }

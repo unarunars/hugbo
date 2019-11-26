@@ -17,7 +17,7 @@ export class BarsComponent implements OnInit {
   comment: string = "";
   isDataReady: boolean = false;
   lat: number = 64.147209;
-  lng: number = -21.942400  ;
+  lng: number = -21.942400;
   zoom: number;
   address: string;
   id: number;
@@ -81,48 +81,14 @@ getComments(t){
 //hook sem nær í observerable frá tools
 ngOnInit() {
   this.refresh();
-/*  this.lat = -21.942400;
-  this.lng = 64.147209;*/
-    //taka frá google maps API þetta er það ef þú villt prufa hitt... 
-    /*
-  const mapProperties = {
-    center: new google.maps.LatLng(64.1436456, -21.9270884),
-    zoom: 15,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-};
-this.map = new google.maps.Map(this.mapElement.nativeElement,    mapProperties);*/
-   // this.setCurrentLocation();
-    //þetta allt tekið frá maps API skoða betur
-    //load Places Autocomplete
+
     
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
-      this.geoCoder = new google.maps.Geocoder;
+      //this.geoCoder = new google.maps.Geocoder;
 
-      let autocomplete = new google.maps.places.Autocomplete(this.searchElementRef.nativeElement, {
-        types: ["address"]
-      });
-      console.log(autocomplete);
-      autocomplete.addListener("place_changed", () => {
-        this.ngZone.run(() => {
-          //get the place result
-         /* let place: google.maps.places.PlaceResult =  autocomplete.getPlace();
-          console.log(place);
-          console.log(autocomplete.get)
-          //verify result
-          if (place.geometry === undefined || place.geometry === null) {
-            return;
-          }
-*/
-          //set latitude, longitude and zoom
-          this.lat = -21.942400;
-          this.lng = 64.147209;
-          this.zoom = 12;
-        })
-      });
     });
-  /*
-    */
+ 
 }
 // Get Current Location Coordinates
 private setCurrentLocation() {
@@ -134,36 +100,8 @@ private setCurrentLocation() {
       this.lng = -21.942400;
       this.lat = 64.147209;
       this.zoom = 12;
-      this.getAddress(this.lat, this.lng);
     });
   }
-}
-
-
-markerDragEnd($event: MouseEvent) {
-  console.log($event);
-  this.lat = $event.coords.lat;
-  this.lng = $event.coords.lng;
-  this.getAddress(this.lat, this.lng);
-}
-
-
-getAddress(latitude, longitude) {
-  this.geoCoder.geocode({ 'location': { lat: latitude, lng: longitude } }, (results, status) => {
-    console.log(results);
-    console.log(status);
-    if (status === 'OK') {
-      if (results[0]) {
-        this.zoom = 12;
-        this.address = results[0].formatted_address;
-      } else {
-        window.alert('No results found');
-      }
-    } else {
-      window.alert('Geocoder failed due to: ' + status);
-    }
-
-  });
 }
 
 
@@ -175,14 +113,17 @@ clickedBar(item){
         t.isClicked = true;
         console.log(t.id);
         this.id = t.id
-        this.lat = 64.145940000;
-        this.lng = -21.931330000;
+        this.lat = t.lat;
+        this.lng = t.lon;
         this.zoom = 17;
        // this.lat = 64.122272;
        // this.lng = -21.871059;
       console.log(t);
       }else {
         t.isClicked = false;
+        this.lng = -21.942400;
+        this.lat = 64.147209;
+        this.zoom = 12;
       } 
     }
   })

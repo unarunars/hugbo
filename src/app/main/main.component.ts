@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, Output } from '@angular/core';
+import { Component, OnInit, Input, OnChanges, SimpleChanges, ChangeDetectionStrategy, Output, EventEmitter } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav'; 
 import { createHostListener } from '@angular/compiler/src/core';
 import { ToolServiceService } from '../tool-service.service'
@@ -13,6 +13,8 @@ export class MainComponent implements OnInit, OnChanges {
   
   @Input() chosen: string;
   @Input() username: string;
+  //@Output() user  = new EventEmitter<any>()
+
   
   
   constructor(
@@ -22,6 +24,8 @@ export class MainComponent implements OnInit, OnChanges {
   ngOnChanges(changes: SimpleChanges){
     if( changes.username ){
       console.log(this.username);
+     // this.user.emit(this.username);
+
     }
   }
   ngOnInit(
