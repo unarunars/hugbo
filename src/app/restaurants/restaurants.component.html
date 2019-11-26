@@ -35,7 +35,7 @@
 
             </div>
 
-
+          <div *ngIf = "username">
           <form class="example-form">
             <mat-form-field class="comment-title">
               <input matInput placeholder="Fyrirsögn" (keyup)="onKeyTitle($event)" value="">
@@ -46,7 +46,7 @@
             </mat-form-field>
           </form>
           <button mat-button (click)= "submitComment(i.id)">Skrá comment</button>
-
+        </div>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Component, Output,ViewChild, OnInit } from '@angular/core';
+import { Component, Output,ViewChild, OnInit, Input } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { ToolServiceService } from './tool-service.service';
 
@@ -10,14 +10,19 @@ import { ToolServiceService } from './tool-service.service';
 })
 export class AppComponent implements OnInit {
   title = 'reykjavik-gui';
-  isLogedIn: boolean; 
   isData: boolean = false;
   private data:any = []
+  isLogedIn: boolean;
   
   @Output() chosen: string = "home";
   @Output() username: string = "";
   ngOnInit(){
     console.log("halló");
+    this.refresh();
+    
+    
+  }
+  refresh(){
     let observerable = this.toolService.isLogedIn();
     observerable.subscribe(t =>{
       console.log(t.username);
@@ -25,12 +30,11 @@ export class AppComponent implements OnInit {
       if(t.username !== undefined) {
         this.isLogedIn = true;
         this.username = t.username;
-
+        console.log(t.username);
         console.log("skráðu inn");
       }else{
         this.isLogedIn = false;
         console.log("ekki skráður inn")
-        this.username = "";
 
       }
     })
@@ -48,7 +52,13 @@ export class AppComponent implements OnInit {
       console.log(this.data)
     })
   }*/
-  
+  getUser(e){
+    console.log(e);
+    this.username = e.username;
+    this.refresh();
+    console.log(this.isLogedIn)
+
+  }
   // click event segir hvaða takka var ýtt á
   //sendir svo chosen strenginn í hina componentana úr htmlinu
   goHome(){
@@ -91,6 +101,8 @@ export class AppComponent implements OnInit {
         console.log("ekki loggaður inn");
       }else{
         this.isLogedIn = false;
+        console.log("loggaður út")
+        this.chosen = "home";
       }
     })
     })

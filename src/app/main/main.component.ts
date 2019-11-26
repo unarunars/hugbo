@@ -12,8 +12,11 @@ import { ToolServiceService } from '../tool-service.service'
 export class MainComponent implements OnInit, OnChanges {
   
   @Input() chosen: string;
-  @Input() username: string;
-  //@Output() user  = new EventEmitter<any>()
+  username: string;
+  isLogedIn: boolean;
+  @Output() user  = new EventEmitter<any>()
+  //@Input(): isLogedIn: boolean; 
+
 
   
   
@@ -29,13 +32,29 @@ export class MainComponent implements OnInit, OnChanges {
     }
   }
   ngOnInit(
-
-  ) {
     
+  ) {
+    console.log(this.username);
   }
-  user(e){
+  logedUser(e){
     console.log("afhvejru ekki hingað?");
     console.log(e);
+     let observerable = this.toolService.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t);
+      console.log("héérr!");
+      if(t === undefined){
+        console.log("ekki loggaður inn");
+        this.user.emit(t);
+        this.username = t.username;
+        this.isLogedIn = false;
+
+      }else{
+        this.isLogedIn = true;
+        console.log("loggaður inn");
+        this.user.emit(t);
+      }
+    })
   }
   
 

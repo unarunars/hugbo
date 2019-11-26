@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { ToolServiceService } from '../tool-service.service';
 
 
@@ -14,6 +14,8 @@ export class LogInComponent implements OnInit {
   isNotValidPsw: boolean =false;
   list: any;
   isLogedIn = false;
+  @Output() user  = new EventEmitter<any>()
+
   constructor(
     private toolservise: ToolServiceService,
   ) { }
@@ -53,11 +55,17 @@ export class LogInComponent implements OnInit {
         console.log(t);
         if(t[0]){
           console.log("skráður inn");
+          this.user.emit(true);
+
           this.isLogedIn = true;
         }else{
           console.log("tókst ekki");
+          this.user.emit(false);
+
           this.isLogedIn = false;
         }
+      this.user.emit(this.isLogedIn);
+
       })
       console.log(observerable);
     }

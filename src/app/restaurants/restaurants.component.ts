@@ -22,6 +22,9 @@ export class RestaurantsComponent implements OnInit {
   lat: number = 64.147209;
   lng: number = -21.942400;
   zoom: number;
+  isDataReady: boolean =false;
+  isLogedIn: boolean;
+  username: string;
   constructor(
     private toolservise: ToolServiceService,
     private mapsAPILoader: MapsAPILoader,
@@ -30,7 +33,6 @@ export class RestaurantsComponent implements OnInit {
   
   toogle(e){
     let temp = [];
-    console.log(e);
     if(!e){
       this.refresh();
     }else{
@@ -38,7 +40,6 @@ export class RestaurantsComponent implements OnInit {
       filtItems.subscribe(t=>{
         this.list = t.bars;
         t.restaurant.map(item => {
-          console.log(item.type, e)
           for(let i = 0; i < item.type.length; i++){
             if(item.type[i] === e){
               temp.push(item);
@@ -54,6 +55,8 @@ export class RestaurantsComponent implements OnInit {
     //subscripa það svo í listann
     items.subscribe( t=>{
       this.list = t.restaurant;
+      this.LogedIn();
+      this.isDataReady = true;
     })
   
     }
@@ -63,7 +66,6 @@ export class RestaurantsComponent implements OnInit {
     this.mapsAPILoader.load().then(() => {
       this.setCurrentLocation();
       //this.geoCoder = new google.maps.Geocoder;
-
     });
   }
   // Get Current Location Coordinates
@@ -71,7 +73,6 @@ private setCurrentLocation() {
   if ('geolocation' in navigator) {
     console.log(navigator);
     navigator.geolocation.getCurrentPosition((position) => {
-      console.log(position.coords.heading);
       this.lng = -21.942400;
       this.lat = 64.147209;
       this.zoom = 12;
@@ -81,8 +82,9 @@ private setCurrentLocation() {
 
   clickedBar(item){
     this.list.map(t =>{
-      //console.log(t);
       if(t.name === item.name){
+      console.log(t);
+
         if(!t.isClicked){
           t.isClicked = true;
           this.id = t.id
@@ -102,6 +104,24 @@ private setCurrentLocation() {
     })
     
   }
+  LogedIn() {
+  let observerable = this.toolservise.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t.username);
+      console.log("héérr!");
+      if(t.username !== undefined) {
+        this.username = t.username;
+        console.log(t.username);
+        console.log("skráðu inn");
+        this.isLogedIn = true;
+      }else{
+        console.log("ekki skráður inn")
+        this.isLogedIn = false;
+
+
+      }
+    });
+}
   onKeyTitle(event: any){
   console.log(event.target.value);
   this.title = event.target.value;

@@ -43,7 +43,7 @@
           </div>
           <div *ngIf = "isLogedIn">
             <button mat-button (click)="logOut()">
-              logout
+                {{username}} logout
             </button>
           </div>
           
@@ -93,6 +93,6 @@
     <div class="">
 
     </div>
-    <app-main class="main" [chosen]="chosen" [username] = "username"></app-main>
+    <app-main class="main" [chosen]="chosen" (user) = "getUser($event)"></app-main>
 
   </div>

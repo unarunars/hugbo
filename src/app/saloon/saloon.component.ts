@@ -18,6 +18,9 @@ export class SaloonComponent implements OnInit {
   lat: number = 64.147209;
   lng: number = -21.942400;
   zoom: number;
+  isLogedIn: boolean;
+  username: string;
+  isDataReady: boolean;
 
 constructor(
   private toolservise: ToolServiceService,
@@ -45,11 +48,16 @@ toogle(e){
     })
   }
 }
+
 refresh(){
   let items = this.toolservise.getJson();
     //subscripa í listann
     items.subscribe( t=>{
       this.list = t.hairsaloons;
+      console.log(t);
+      this.LogedIn();
+      this.isDataReady = true;
+
     })
 }
 //hook sem nær í observerable frá tools  
@@ -60,6 +68,23 @@ refresh(){
       this.setCurrentLocation();
       //this.geoCoder = new google.maps.Geocoder;
 
+    });
+}
+LogedIn() {
+  console.log("fer í LogedIn fallið");
+  let observerable = this.toolservise.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t.username);
+      console.log("héérr!");
+      if(t.username !== undefined) {
+        this.username = t.username;
+        console.log(t.username);
+        console.log("skráðu inn");
+        this.isLogedIn = true;
+      }else{
+        console.log("ekki skráður inn")
+        this.isLogedIn = false;
+      }
     });
 }
 // Get Current Location Coordinates

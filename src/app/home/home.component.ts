@@ -3,7 +3,7 @@ import { ExportService } from '../../api/export.service';
 import { DatabaseConnectService } from '../../api/database-connect.service';
 import { Data } from '@angular/router';
 import { ToolServiceService } from '../tool-service.service';
-
+//import { AppComponent} from '../app/app.component';
 
 @Component({
   selector: 'app-home',
@@ -21,20 +21,18 @@ export class HomeComponent implements OnInit {
   ){ }
 
   ngOnInit() {
-    let observerable = this.toolService.isLogedIn();
+   /* let observerable = this.toolService.isLogedIn();
     observerable.subscribe(t =>{
       console.log(t);
       console.log("héérr!");
       if(t === undefined){
         console.log("ekki loggaður inn");
-        this.user.emit(false);
-        console.log(this.user);
+        //this.user.emit(false);
       }else{
         console.log("loggaður inn");
-        this.user.emit(true);
-        console.log(this.user);
+        //this.user.emit(true);
       }
-    })
+    })*/
   }
   
 }

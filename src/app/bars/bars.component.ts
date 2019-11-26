@@ -21,8 +21,11 @@ export class BarsComponent implements OnInit {
   zoom: number;
   address: string;
   id: number;
+  isLogedIn: boolean;
+  username: string;
   private geoCoder;
-  @Input() value
+  @Input() value;
+  //isLogedin: boolean;
   
   @ViewChild('search', {static: true})
   public searchElementRef: ElementRef;
@@ -70,8 +73,29 @@ refresh(){
         this.barsComment = item.comments;
       })*/
       console.log(t);
+      this.LogedIn();
+
       this.isDataReady = true;
     })
+}
+LogedIn() {
+  console.log("fer í LogedIn fallið");
+  let observerable = this.toolservise.isLogedIn();
+    observerable.subscribe(t =>{
+      console.log(t.username);
+      console.log("héérr!");
+      if(t.username !== undefined) {
+        this.username = t.username;
+        console.log(t.username);
+        console.log("skráðu inn");
+        this.isLogedIn = true;
+      }else{
+        console.log("ekki skráður inn")
+        this.isLogedIn = false;
+
+
+      }
+    });
 }
 getComments(t){
   t.bars.map(item =>{
@@ -88,7 +112,8 @@ ngOnInit() {
       //this.geoCoder = new google.maps.Geocoder;
 
     });
- 
+  console.log(this.isLogedIn);
+  console.log(this.username);
 }
 // Get Current Location Coordinates
 private setCurrentLocation() {
@@ -111,14 +136,12 @@ clickedBar(item){
     if(t.name === item.name){
       if(!t.isClicked){
         t.isClicked = true;
-        console.log(t.id);
         this.id = t.id
         this.lat = t.lat;
         this.lng = t.lon;
         this.zoom = 17;
        // this.lat = 64.122272;
        // this.lng = -21.871059;
-      console.log(t);
       }else {
         t.isClicked = false;
         this.lng = -21.942400;
