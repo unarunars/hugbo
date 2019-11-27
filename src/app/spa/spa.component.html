@@ -4,56 +4,60 @@
     <div class="toggeButton">
       <h1>Kaffihús</h1>
       <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-        <mat-button-toggle (click) = "toogle('$')">$</mat-button-toggle>
-        <mat-button-toggle (click) = "toogle('$$')">$$</mat-button-toggle>
-        <mat-button-toggle (click) = "toogle('$$$')">$$$</mat-button-toggle>
-        <mat-button-toggle (click) = "toogle()">Allt</mat-button-toggle>
+        <mat-button-toggle (click)="toogle('$')">$</mat-button-toggle>
+        <mat-button-toggle (click)="toogle('$$')">$$</mat-button-toggle>
+        <mat-button-toggle (click)="toogle('$$$')">$$$</mat-button-toggle>
+        <mat-button-toggle (click)="toogle()">Allt</mat-button-toggle>
 
       </mat-button-toggle-group>
       <div class="list" *ngFor="let i of list">
         <div class="item">
 
-            <div class="images">
-                <!--Þetta á að vera myndin í json, einhver að laga?-->
-                    <img alt="image" [src]="i.image">                
-              </div>
-          <div class="click" (click)="clickedBar(i)">
-            <h3 class="placeName">{{i.name}}</h3>
-            <p class=" placePhone">{{i.phone}}</p>
-            <p class="workDays">Virkir dagar:{{i.openings.Virkadaga}}</p>
-              <p class="weekends">Helgar:{{i.openings.Helgar}}</p>
+          <div class="images">
+            <!--Þetta á að vera myndin í json, einhver að laga?-->
+            <img alt="image" [src]="i.image">
           </div>
-        </div>
-        <div *ngIf="i.isClicked">
-          <p class="xtraInfo">{{i.address}}</p>
-          <p class="xtraInfo">{{i.postalcode}}</p>
-          <p class="xtraInfo">{{i.mail}}</p>
-          <div *ngFor = "let j of i.comments">
-              <p>{{j.title}}</p>
-              <p>{{j.comment}}</p>
-
+          <div class="click" (click)="clickedBar(i)">
+              <h3 class="placeName"><b>Staður</b> - {{i.name}}</h3>
+              <p class=" placePhone"><b>Sími</b> - {{i.phone}}</p>
+              <p class="workDays"><b>Virkir dagar</b> - {{i.openings.Virkadaga}}</p>
+              <p class="weekends"><b>Helgar</b> - {{i.openings.Helgar}}</p>
+            </div>
+          </div>
+          <div *ngIf="i.isClicked">
+            <p class="xtraInfo"><b>Heimilisfang</b> - {{i.address}}</p>
+            <p class="xtraInfo"><b>Póstnúmer</b> - {{i.postalcode}}</p>
+            <p class="xtraInfo"><b>Vefsíða</b> - {{i.mail}}</p>
+            <div *ngFor="let j of i.comments">
+              <p><b>Kommentatitill</b> - {{j.title}}</p>
+              <p><b>Komment</b> - {{j.comment}}</p>
+  
             </div>
 
-          <div *ngIf = "username">
-          <form class="example-form">
-            <mat-form-field class="comment-title">
-              <input matInput placeholder="Fyrirsögn" (keyup)="onKeyTitle($event)" value="">
-            </mat-form-field>
+          <div *ngIf="username">
+            <form class="example-form">
+              <mat-form-field class="comment-title">
+                <input matInput placeholder="Fyrirsögn" (keyup)="onKeyTitle($event)" value="">
+              </mat-form-field>
 
-            <mat-form-field class="comment-sec">
-              <textarea matInput placeholder="Skildu eftir athugasemd"(keyup)="onKeyComment($event)"></textarea>
-            </mat-form-field>
-          </form>
-          <button mat-button (click)= "submitComment(i.id)">Skrá comment</button>
-        </div>
+              <mat-form-field class="comment-sec">
+                <textarea matInput placeholder="Skildu eftir athugasemd" (keyup)="onKeyComment($event)"></textarea>
+              </mat-form-field>
+              <button class="commentButton" mat-button (click)="submitComment(i.id)">Skrá comment</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    
-    <agm-map class = "map" [latitude] = "lat" [longitude]= "lng" [zoom] = 'zoom' style="width: 100%; height: 100%;">
-        <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true"
-        (dragEnd)="markerDragEnd($event)"></agm-marker>
-    </agm-map>
-  
+
+    <div class="contmap">
+      <div class="gmap">
+        <agm-map class="map" [latitude]="lat" [longitude]="lng" [zoom]='zoom' style="width: 100%; height: 100%;">
+          <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="true" (dragEnd)="markerDragEnd($event)">
+          </agm-marker>
+        </agm-map>
+      </div>
+    </div>
+
   </div>
 </div>

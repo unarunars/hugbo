@@ -12,7 +12,7 @@
       "latitude": "einhva", 
       "address": "Vesturgata 2a, Grófartorg",
       "postalcode": "101 Reykjavík",
-      "website": "fishcompany.is",
+      "mail": "fishcompany.is",
       "phone": "552 5300",
       "imagesurl": "https://www.fiskfelagid.is/wp-content/uploads/2014/05/fiksfelagid.png",
       "comments": [{
@@ -30,12 +30,14 @@
       },
       "address": "Lækjargata 2a",
       "postalcode": "101 Reykjavík",
-      "website": "grillmarkadurinn.is",
+      "mail": "grillmarkadurinn.is",
       "phone": "571 7777",
       "imagesurl": "https://everplaces.com/users/eea6570bf4144e5baa7c1b89ba7a3d84/places/f3dc4c46aa5a4990b548d43eac572a9a/images/36499232c62940d4932d42068a9af274.jpg",
       "comments": [{}]
     },
     {
+      "lat": 64.148460000,
+      "lon": -21.940780000,
       "name": "Sæta Svínið Gastropub",
       "type": ["Steikur", "Bistro"],
       "openings": {
@@ -44,7 +46,7 @@
       },
       "address": "Hafnarstræti 1-3",
       "postalcode": "101 Reykjavík",
-      "website": "saetasvinid.is",
+      "mail": "saetasvinid.is",
       "phone": "555 2900",
       "imagesurl": "https://pjatt.is/wp-content/uploads/2016/03/s%C3%A6ta_svi%CC%81ni%C3%B0_hafnarstr%C3%A6ti.jpg",
       "comments": [{
@@ -52,6 +54,8 @@
       }]
     },
     {
+      "lat": 64.147450000,
+      "lon": -21.938310000,
       "name": "Apotek Kitchen+Bar",
       "type": ["Steikur","Bistro"],
       "openings": {
@@ -60,7 +64,7 @@
       },
       "address": "Austurstræti 16",
       "postalcode": "101 Reykjavík",
-      "website": "apotekrestaurant.is",
+      "mail": "apotekrestaurant.is",
       "phone": "552 5300",
       "imagesurl": "https://images.myguide-cdn.com/reykjavik/companies/apotek-restaurant/large/apotek-restaurant-435096.jpg",
       "comments": [{
@@ -68,6 +72,8 @@
       }]
     },
     {
+      "lat": 64.145140000,
+      "lon": -21.931640000,
       "name": "Sjávargrillið",
       "type": ["Sjávarréttir"],
       "openings": {
@@ -76,7 +82,7 @@
       },
       "address": "Skólavörðustígur 14",
       "postalcode": "101 Reykjavík",
-      "website": "sjavargrillid.is",
+      "mail": "sjavargrillid.is",
       "phone": "571 1100",
       "imagesurl": "https://i.pinimg.com/originals/ce/ec/5d/ceec5d827cf27af4c7e1505ad0e59ec7.jpg",
       "comments": [{
@@ -84,6 +90,8 @@
       }]
     },
     {
+      "lat": 64.142990000,
+      "lon": -21.928650000,
       "name": "Kol",
       "type": ["Steikur"],
       "openings": {
@@ -92,7 +100,7 @@
       },
       "address": "Skólavörðustígur 40",
       "postalcode": "101 Reykjavík",
-      "website": "kolrestaurant.is",
+      "mail": "kolrestaurant.is",
       "phone": "517 7474",
       "imagesurl": "https://guidetoiceland.imgix.net/322087/x/0/the-best-restaurants-in-reykjavik-16?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.1.0&w=1300&s=28e0354f1a13e93aa633f54332407c36",
       "comments": [{
@@ -100,6 +108,8 @@
       }]
     },
     {
+      "lat": 64.142950000,
+      "lon": -21.927170000,
       "name": "Rok",
       "type": ["Steikur"],
       "openings": {
@@ -108,7 +118,7 @@
       },
       "address": "Frakkastígur 26a",
       "postalcode": "101 Reykjavík",
-      "website": "rokrestaurant.is",
+      "mail": "rokrestaurant.is",
       "phone": "544 4443",
       "imagesurl": "https://lonelyplanetimages.imgix.net/a/g/hi/t/7888249216adc79a465ff703e606653a-rok.png",
       "comments": [{
@@ -116,6 +126,8 @@
       }]
     },
     {
+      "lat": 64.146300000,
+      "lon": -21.934520000,
       "name": "Sushi Social",
       "type": ["Steikur", "Sushi"],
       "openings": {
@@ -124,7 +136,7 @@
       },
       "address": "Þingholtsstræti 5",
       "postalcode": "101 Reykjavík",
-      "website": "sushisocial.is",
+      "mail": "sushisocial.is",
       "phone": "568 6600",
       "imagesurl": "https://www.stuckiniceland.com/wp-content/uploads/2019/06/%C2%A9Portra_SSamba_0608-Edit-1200x675.jpeg",
       "comments": [{
@@ -132,6 +144,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Skólabrú Restaurant",
       "type": ["Steikur", "Sjávarréttir"],
       "openings": {
@@ -148,6 +162,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Lækjarbrekka",
       "type": ["Steikur" , "Sjávarréttir"],
       "openings": {
@@ -164,6 +180,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Snaps Bistro",
       "type": ["Steikur", "Bistro"],
       "openings": {
@@ -179,6 +197,8 @@
 
       }]
     },{
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Veganæs",
       "type": ["Vegan"],
       "openings": {
@@ -238,6 +258,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Sundlaug Seltjarnarness",
       "type": [
         "Barnalaug",
@@ -256,6 +278,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Laugardalslaug",
       "type": [
         "Barnalaug",
@@ -308,6 +332,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Kaffibrennslan",
       "type": [ "$"],
       "openings": {
@@ -322,6 +348,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Iðnó",
       "type": ["$$$"],
       "openings": {
@@ -336,6 +364,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Kaldi Bar/Café",
       "type": ["$"],
       "openings": {
@@ -350,7 +380,9 @@
       "comments": [{}]
     },
     {
-      "name": ["Mokka Kaffi"],
+      "lat": 64.148940000,
+      "lon": -21.941470000,
+      "name": "Mokka Kaffi",
       "type": ["$$"],
       "openings": {
         "Virkadaga": "6:30-22",
@@ -364,6 +396,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Cupcake Cafe",
       "type": ["$$$"],
       "openings": {
@@ -411,6 +445,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Slippurinn Hárgreiðslustofa",
       "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
@@ -425,6 +461,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Hár í Höndum",
       "type": ["Hárgreiðslustofa"],
       "openings": {
@@ -439,6 +477,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Rakararnir",
       "type": ["Rakarastofa","Engar Tímapantanir"],
       "openings": {
@@ -453,6 +493,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Effect",
       "type": ["Rakarastofa", "Engar Tímapantanir"],
       "openings": {
@@ -467,7 +509,9 @@
       "comments": [{}]
     },
     {
-      "name": ["Hárgreiðslustöðin Valhöll"],
+      "lat": 64.148940000,
+      "lon": -21.941470000,
+      "name": "Hárgreiðslustöðin Valhöll",
       "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
         "Virkadaga": "6:30-22",
@@ -481,6 +525,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Hár og Heilsa",
       "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
@@ -495,6 +541,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Hárhornið",
       "type": ["Engar Tímapantanir", "Rakarastofa"],
       "openings": {
@@ -509,6 +557,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Reykjavík Hair",
       "type": ["Hárgreiðslustofa","Rakarastofa"],
       "openings": {
@@ -523,6 +573,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Sjoppan",
       "type": ["Rakarastofa","Hárgreiðslustofa"],
       "openings": {
@@ -537,6 +589,8 @@
       "comments": [{}]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Rauðhetta og Úlfurinn",
       "type": ["Rakarastofa","Hárgreiðslustofa"],
       "openings": {
@@ -590,6 +644,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Lebowski Bar",
       "type": ["Næturbar","Kokteilbar"],
       "openings": {
@@ -607,6 +663,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Klaustur Bar",
       "type": ["Kokteilbar"],
       "openings": {
@@ -624,6 +682,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Micro bar",
       "type": ["Craft-Bar"],
       "openings": {
@@ -641,6 +701,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Gaukurinn",
       "type": ["Næturbar"],
       "openings": {
@@ -658,6 +720,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Pablo Discobar",
       "type": ["Kokteilbar","Næturbar"],
       "openings": {
@@ -675,6 +739,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Skúli Craft Bar",
       "type": ["Craft-Bar"],
       "openings": {
@@ -692,6 +758,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Bjarni Fel Sportbar",
       "type": ["Sport-Bar"],
       "openings": {
@@ -709,6 +777,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Prikið",
       "type": ["Næturbar"],
       "openings": {
@@ -726,6 +796,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Solon Bistro & Bar",
       "type": ["Kokteilbar"],
       "openings": {
@@ -743,6 +815,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Íslenski barinn",
       "type": ["Næturbar"],
       "openings": {
@@ -760,6 +834,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Ölstofa Kormáks og Skjaldar",
       "type": ["Craft-Bar"],
       "openings": {
@@ -777,6 +853,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Bravó",
       "type": ["Næturbar","Kokteilbar"],
       "openings": {
@@ -794,6 +872,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Kiki Queer Bar",
       "type": ["Næturbar"],
       "openings": {
@@ -811,6 +891,8 @@
       }]
     },
     {
+      "lat": 64.148940000,
+      "lon": -21.941470000,
       "name": "Veður",
       "type": ["Kokteilbar"],
       "openings": {

@@ -1,121 +1,143 @@
-.title{
-    width: 100%;
+.title {
+  width: 100%;
 }
-h1{
-    justify-content: center;
-    margin: 0px;
+
+h1 {
+  justify-content: center;
+  margin: 0px;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../app/img/reykjavik.jpg");
-    height: 70%;
-    padding-top: 40px;
-    margin-bottom: -10px;
-    display: flex;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../app/img/reykjavik.jpg");
+  height: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.events{
-    
-    justify-content: center;
-    color: #b3b3b3;
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
-.logo{
-    color: #b3b3b3;
+
+.events {
+
+  justify-content: center;
+  color: #b3b3b3;
 }
-.main{
-    height: 100%;
-    background: rgba(200,200,200,1);
+
+.logo {
+  color: #b3b3b3;
+}
+
+.main {
+  height: 100%;
+  background: rgba(45, 48, 51, .8);
 }
 
 .fade-in {
-    animation: fadeIn ease 10s;
+  animation: fadeIn ease 10s;
 }
 
 @keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-    }
+  0% {
+    opacity: 0;
   }
 
-  .main-nav {
-    position: fixed;
-    top: 0;
-    bottom: auto;
-    left: 0;
-    right: 0;
-    font-size: 0;
-    z-index: 4;
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-nav {
+  --default-height: 50px;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+  font-size: 0;
+  z-index: 4;
 }
 
 .main-nav .main-menu {
-    padding: 0 10px 0 40px;
-    margin: 0 auto;
-    background: #1a1a1a;
-    max-width: 1920px;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid transparent;
-    outline: none;
+  padding: 0 10px 0 40px;
+  margin: 0 auto;
+  background: rgba(45, 48, 51, 1);
+  max-width: 1920px;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid transparent;
+  outline: none;
 }
 
 .main-nav li {
-    display: inline-block;
-    font: normal 18px/1 klavika,Arial,sans-serif;
-    color: #666;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    padding: 31px 22px 30px;
-    transition: padding-right 150ms ease-out;
-    outline: none;
+  display: inline-block;
+  font: normal 18px/1 klavika, Arial, sans-serif;
+  color: #b3b3b3;
+  letter-spacing: 2px;
+  padding: 20px;
+  transition: padding-right 150ms ease-out;
+  outline: none;
 }
 
 .main-nav Button:hover {
-    color: white;
-    transition: color 150ms ease-out;
-    outline: none;
+  color: white;
+  transition: color 150ms ease-out;
+  outline: none;
 }
 
 .main-nav Button {
-    outline: none;
+  outline: none;
 }
 
 Button {
-    text-decoration: none;
-    outline: none;
+  text-decoration: none;
+  outline: none;
 }
 
 Button:hover {
-    text-decoration-color: red;
-    text-decoration: none;
-    outline: none;
+  text-decoration-color: red;
+  text-decoration: none;
+  outline: none;
 }
 
 
 .main-logo {
-    position: absolute;
-    right: 23px;
-    top: 0;
-    margin: 0;
-    height: 128px;
-    cursor: pointer;
-    transition: top .2s ease-in-out;
-    z-index: 3;
+  position: absolute;
+  width: 12%;
+  right: 20px;
+  top: 0;
+  cursor: pointer;
+  transition: top .2s ease-in-out;
+  z-index: 3;
+  color: #b3b3b3;
 }
 
+.logSignButtons {
+  padding-top: 20px;
+  display: inline-flex;
+}
+
+img {
+  height: 35px;
+  width: 18px;
+  margin-top: 20px;
+}
+
+.loggedUser {
+  padding-top: 20px;
+  margin-left: -20px;
+  display: inline-flex;
+  float: left;
+  color: rgba(170, 75, 65, 0.85);
+}

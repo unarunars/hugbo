@@ -29,11 +29,13 @@
           </li>
         </ul>
 
-        <div class="main-logo" *ngIf = "isData">
-          <button mat-button (click)="goHome()">
-            ReykjavíkLogo
+        <div class="main-logo" *ngIf="isData">
+          <button mat-button (click)="goHome()" style="float:right;">
+            <img
+              src="https://gongugotur.reykjavik.is/wp-content/uploads/2019/02/Reykjavik_Coat_of_Arms.svg-uai-258x400.png"
+              alt="Logo">
           </button>
-          <div *ngIf = "!isLogedIn">
+          <div *ngIf="!isLogedIn" class="logSignButtons">
             <button mat-button (click)="goLogin()">
               Login
             </button>
@@ -41,14 +43,14 @@
               Signup
             </button>
           </div>
-          <div *ngIf = "isLogedIn">
+          <div *ngIf="isLogedIn" class="loggedUser">
             <button mat-button (click)="logOut()">
-                {{username}} logout
+              {{username}} logout
             </button>
           </div>
-          
+
         </div>
-      
+
 
       </div>
     </div>
@@ -89,10 +91,5 @@
         </div>
       </div>
     </div>
-
-    <div class="">
-
-    </div>
-    <app-main class="main" [chosen]="chosen" (user) = "getUser($event)"></app-main>
-
+    <app-main class="main" [chosen]="chosen" (user)="getUser($event)"></app-main>
   </div>

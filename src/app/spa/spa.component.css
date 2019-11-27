@@ -1,108 +1,139 @@
 .main {
-   display: flex;
-   height: 100%;
- }
- 
- .all {
-   height: 100%;
- }
- 
- .item {
-   display: flex;
-   background: rgba(200,200,200,1);
-   margin: 0px 5px;
-   padding-top: 10px;
- }
- 
+  display: flex;
+  height: 100%;
+}
+
+.all {
+  --toggeButton-height: 100%;
+  position: relative;
+}
+
+.item {
+  display: flex;
+  background: rgba(45, 75, 75, 1);
+  margin: 0px 5px;
+  padding-top: 10px;
+  color: rgba(212, 221, 225, 1);
+}
+
 /*Search-Box*/
-.search-box{
+.search-box {
   padding-top: 10px;
   padding-left: 10px;
   margin: 0px 5px;
   width: 20%;
 }
 
- /*Name of place*/
- h3.placeName {
-   font-weight: bolder;
- }
- /*Phone Number*/
- p.placePhone p.workDays p.weekends {
-   font-style: italic;
- }
- 
- /*Other info Ex. Address, PostCode, Website*/
- .xrtraInfo {
-   font-style: italic;
- }
- 
- /*Image*/
+/*Name of place*/
+h3.placeName {
+  font-weight: bolder;
+  color: rgba(210, 210, 210, 1);
+}
+
+/*Phone Number*/
+p.placePhone p.workDays p.weekends {
+  font-style: italic
+}
+
+/*Other info Ex. Address, PostCode, Website*/
+.xrtraInfo {
+  font-style: italic;
+}
+
+/*Image*/
 .images {
   height: 150px;
   width: 200px;
+  margin: 0px 10px;
 }
 
-img{
+img {
   height: 100%;
   width: 100%;
   border-radius: 10%;
 }
- 
- .click:hover {
-   cursor: pointer;
- }
- 
- .list {
-   border-bottom: 1px solid;
- }
- 
- /*Cotntrols the layout of List area, size*/
- .toggeButton {
-    border-radius: 10px;
-    background: rgba(200,200,200,1);
-    width: 38%;
- }
- 
- h1{
-    margin: 10px;
-    text-align: center;
- }
- 
- 
- mat-button-toggle-group {
-   flex: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   padding: 0px 10px;
- }
- 
- /*Filter buttons*/
- mat-button-toggle {
-   width: 125px;
-   border-radius: 15px;
-   margin: 8px;
-   background-color: coral;
- }
- 
- /*Title of comment*/
- .comment-title {
-   position: initial;
-   width: 50%;
- }
- 
- /*Comment Section*/
- .comment-sec {
-   position: initial;
-   width: 75%;
- }
- 
- /*Percoeved size of comment section area*/
- textarea {
-   height: 150px;
- }
 
- .map{
-   height: 100%;
-   width: 100%;
- }
+.click:hover {
+  cursor: pointer;
+}
+
+.list {
+  border-bottom: 1px solid;
+}
+
+/*Cotntrols the layout of List area, size*/
+.toggeButton {
+  min-height: auto;
+  border-radius: 10px;
+  background: rgba(45, 75, 75, 1);
+  width: 38%;
+  color: rgba(212, 221, 225, 0.9);
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: rgba(210, 210, 210, 1);
+}
+
+
+mat-button-toggle-group {
+  flex: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+/*Filter buttons*/
+mat-button-toggle {
+  width: 125px;
+  border-radius: 15px;
+  margin: 8px;
+  background-color: rgba(170, 75, 65, 0.95);
+  color: rgba(212, 221, 225, 1);
+}
+
+/*Title of comment*/
+.comment-title {
+  position: initial;
+  width: 50%;
+  color: rgba(212, 221, 225, 1);
+}
+
+/*Comment Section*/
+.comment-sec {
+  position: initial;
+  width: 75%;
+  color: rgba(212, 221, 225, 1);
+}
+
+.commentButton{
+  margin-left: 10px;
+  background-color: rgba(170, 75, 65, 0.95);
+  color: rgba(212, 221, 225, 1);
+}
+/*Percoeved size of comment section area*/
+textarea {
+  height: 150px;
+}
+
+/*Manipulation on .gmap and .map*/
+.contmap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -15px;
+  height: 950px;
+  width: 100%;
+}
+
+/*Size on map*/
+.gmap {
+  height: 100%;
+  width: 100%;
+}
+
+/*Absolute positioning within .map class*/
+.map {
+  position: absolute;
+}
