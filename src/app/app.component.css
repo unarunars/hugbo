@@ -124,6 +124,7 @@ Button:hover {
 }
 
 .logSignButtons {
+  width: 50px;
   padding-top: 20px;
   display: inline-flex;
 }

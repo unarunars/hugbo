@@ -1,36 +1,40 @@
+<div class="logMain">
+
 <div *ngIf="!isRegisterd">
-  <h3>Nýskráning</h3>
+  <h3 style="color: rgba(210, 210, 210, 1); margin: 20px 10px 10px 20px">Nýskráning</h3>
 
   <form class="example-form">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Notendnafn" (keyup)="onKeyUsername($event)">
+      <input matInput placeholder="Notendnafn" (keyup)="onKeyUsername($event)" required>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Lykilorð" type="password" (keyup)="onKeyPsw($event)">
+      <input matInput placeholder="Lykilorð" type="password" (keyup)="onKeyPsw($event)" required>
     </mat-form-field>
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Lykilorð aftur" type="password" (keyup)="onKeyPsw2($event)">
+      <input matInput placeholder="Lykilorð aftur" type="password" (keyup)="onKeyPsw2($event)" required>
     </mat-form-field>
 
 
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Netfang" (keyup)="onKeyMail($event)">
+      <input matInput placeholder="Netfang" (keyup)="onKeyMail($event)" required>
     </mat-form-field>
   </form>
-  <button mat-button (click)="submit()">Skrá notenda</button>
-  <div *ngIf="isNotValidPsw">
-    Lykilorð vitlaust
-  </div>
-
-  <div *ngIf="isNotValidUsename">
-    Notendnafn vantar
-  </div>
-  <div *ngIf="isNotValidMail">
-    Netfang vantar
-  </div>
-</div>
+  <div class="invalidation">
+      <div class="invalidName" *ngIf="isNotValidUsename">
+          Notendanafn vantar
+      </div>
+      <div class="invalidPsw" *ngIf="isNotValidPsw">
+        Lykilorð vitlaust
+      </div>
+      <div class="invalidMail" *ngIf="isNotValidMail">
+        Netfang vantar
+      </div>
+    </div>
+    </div>
+  <button class="signButton" mat-button (click)="submit()">Skrá notenda</button>
 <div *ngIf="isRegisterd">
   <app-log-in></app-log-in>
 
+</div>
 </div>

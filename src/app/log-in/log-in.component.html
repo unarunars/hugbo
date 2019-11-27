@@ -1,28 +1,32 @@
-<div *ngIf="!isLogedIn">
-  <h3>Innskráning</h3>
+<div class="logMain">
 
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Notendnafn" (keyup)="onKeyUsername($event)">
-    </mat-form-field>
+  <div *ngIf="!isLogedIn">
+    <h3 style="color: rgba(210, 210, 210, 1); margin: 20px 10px 10px 10px">Innskráning</h3>
 
-    <mat-form-field class="example-full-width">
-      <input matInput placeholder="Lykilorð" type="password" (keyup)="onKeyPsw($event)">
-    </mat-form-field>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Notendnafn" color="white" (keyup)="onKeyUsername($event)" required>
+      </mat-form-field>
 
-  </form>
-  <div *ngIf="isNotValidPsw">
-    Lykilorð vanntar
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Lykilorð" color="black" type="password" (keyup)="onKeyPsw($event)" required>
+      </mat-form-field>
+
+    </form>
+    <div class="invalidation">
+      <div class="invalidName" *ngIf="isNotValidUsename">
+        Notendanafn vantar
+      </div>
+      <div class="invalidPsw" *ngIf="isNotValidPsw">
+        Lykilorð vantar
+      </div>
+    </div>
+    <button class="logButton" mat-button (click)="submit()">Skrá inn</button>
+
+
   </div>
+  <div *ngIf="isLogedIn">
+    <app-home></app-home>
 
-  <div *ngIf="isNotValidUsename">
-    Notendnafn vantar
   </div>
-  <button mat-button (click)="submit()">Skrá inn</button>
-
-
-</div>
-<div *ngIf="isLogedIn">
-  <app-home></app-home>
-
 </div>
